@@ -30013,7 +30013,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Platform_GetTypeName_m96C832457C690
 		Type_t* L_0 = ___0_t;
 		NullCheck(L_0);
 		String_t* L_1;
-		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(40, L_0);
+		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(31, L_0);
 		return L_1;
 	}
 }

@@ -24,13 +24,25 @@ MonoBehaviour:
     - default
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 258ccbae4897ddf49b892b43289b80b3
-    m_Address: Network Player
+    m_Address: Network GamePlayer
     m_ReadOnly: 0
     m_SerializedLabels:
     - default
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c285f15e51cf6ba4c8b560d260839021
     m_Address: PlayerFollowCamera
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 02f82e2bc51f6594e9109f87b8dada6b
+    m_Address: Network RoomPlayer
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 33430213c7ee8a04f994a993956b7175
+    m_Address: NetRoomManager
     m_ReadOnly: 0
     m_SerializedLabels:
     - default

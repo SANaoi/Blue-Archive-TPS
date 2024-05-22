@@ -238,6 +238,7 @@ struct ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F;
 struct ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A;
 struct AsnEncodedData_t9341C847F05FA5D9D579173CBB19B4448445C8A8;
 struct AsymmetricAlgorithm_t5E7E9D26CE0EDCAABD84F616A44E476473BA2AF8;
+struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
 struct AsyncHandshakeRequest_tC7CB006B95B7B6CFF6AABA2C04637A7CEEE8E9FD;
 struct AsyncProtocolRequest_tF31CF30F8C57A3D5DC10A9FB0A5568FA254DFE86;
 struct AsyncProtocolResult_t9A7197618C6BD851C5A33C65F45B4622C3CF9E05;
@@ -268,6 +269,7 @@ struct Exception_t;
 struct ExceptionDispatchInfo_tD7AF19E75FEC22F4A8329FD1E9EDF96615CB2757;
 struct ExecutionContext_t9D6EDFD92F0B2D391751963E2D77A8B03CB81710;
 struct HttpWebRequest_tDE1EF6EAE715BE99DB1645ED937A6A2AB930E7C9;
+struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
 struct IAsyncStateMachine_t0680C7F905C553076B552D5A1A6E39E2F0F36AA2;
 struct ICertificatePolicy_t520F2D7BB74545D086C9D6A71E98B5DE3AD9052B;
 struct ICertificateValidator_t8ECF48A37EC708C8A16305F9B6B44C50676AA854;
@@ -13459,7 +13461,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AsyncProtocolRequest_get_Name_m3D5D
 		L_0 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 		NullCheck(L_0);
 		String_t* L_1;
-		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_0);
+		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(7, L_0);
 		return L_1;
 	}
 }
@@ -21804,7 +21806,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoTlsProviderFactory_PopulateProviders
 		L_3 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_2, NULL);
 		NullCheck(L_3);
 		String_t* L_4;
-		L_4 = VirtualFuncInvoker0< String_t* >::Invoke(40, L_3);
+		L_4 = VirtualFuncInvoker0< String_t* >::Invoke(31, L_3);
 		Tuple_2_t8A67FBD80CECF93E77E04F75D4B379CC242F7DA5* L_5 = (Tuple_2_t8A67FBD80CECF93E77E04F75D4B379CC242F7DA5*)il2cpp_codegen_object_new(Tuple_2_t8A67FBD80CECF93E77E04F75D4B379CC242F7DA5_il2cpp_TypeInfo_var);
 		Tuple_2__ctor_m1C02D02DDF579D8A09311C682B1A7D14ABDEA604(L_5, L_1, L_4, Tuple_2__ctor_m1C02D02DDF579D8A09311C682B1A7D14ABDEA604_RuntimeMethod_var);
 		V_0 = L_5;
@@ -25945,7 +25947,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBtlsObject_CheckError_m64C6CD5609527
 		L_5 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 		NullCheck(L_5);
 		String_t* L_6;
-		L_6 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_5);
+		L_6 = VirtualFuncInvoker0< String_t* >::Invoke(7, L_5);
 		NullCheck(L_4);
 		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_6);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7 = L_4;
@@ -26045,7 +26047,7 @@ IL_0023:
 		L_10 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 		NullCheck(L_10);
 		String_t* L_11;
-		L_11 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_10);
+		L_11 = VirtualFuncInvoker0< String_t* >::Invoke(7, L_10);
 		NullCheck(L_9);
 		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_11);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_12 = L_9;
@@ -26138,7 +26140,7 @@ FINALLY_0025:
 				L_1 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 				NullCheck(L_1);
 				String_t* L_2;
-				L_2 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_1);
+				L_2 = VirtualFuncInvoker0< String_t* >::Invoke(7, L_1);
 				ObjectDisposedException_tC5FB29E8E980E2010A2F6A5B9B791089419F89EB* L_3 = (ObjectDisposedException_tC5FB29E8E980E2010A2F6A5B9B791089419F89EB*)il2cpp_codegen_object_new(ObjectDisposedException_tC5FB29E8E980E2010A2F6A5B9B791089419F89EB_il2cpp_TypeInfo_var);
 				ObjectDisposedException__ctor_mB2C8582279AF3F0C1CF9AA52DA7331BF848DFD48(L_3, L_2, NULL);
 				V_0 = L_3;
@@ -29602,7 +29604,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Exception_t* MonoBtlsSsl_ThrowError_m433E4D0C
 			L_1 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 			NullCheck(L_1);
 			String_t* L_2;
-			L_2 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_1);
+			L_2 = VirtualFuncInvoker0< String_t* >::Invoke(7, L_1);
 			___0_callerName = L_2;
 		}
 

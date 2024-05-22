@@ -11985,7 +11985,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Extensions_GetMethodName_mA6000AE61
 		L_1 = Delegate_get_Method_mB684A7525653DFE0EFC35E58449E1FC8E2A9F019(L_0, NULL);
 		NullCheck(L_1);
 		String_t* L_2;
-		L_2 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_1);
+		L_2 = VirtualFuncInvoker0< String_t* >::Invoke(7, L_1);
 		return L_2;
 	}
 }
@@ -14461,7 +14461,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RemoteProcedureCalls_Invoke_m42D18C7AA78
 		NetworkBehaviour_tB9808F4640389688B2CE5EBBB553626DA4FEE88C* L_5 = ___3_component;
 		NullCheck(L_4);
 		bool L_6;
-		L_6 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(165, L_4, L_5);
+		L_6 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(156, L_4, L_5);
 		if (!L_6)
 		{
 			goto IL_002a;

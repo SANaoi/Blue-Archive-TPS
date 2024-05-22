@@ -538,12 +538,6 @@
     <Filter Include="IL2CPP\libmono">
       <UniqueIdentifier>{130ea70e-f388-26fc-5b2c-208e276f0f5e}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="Source\Assembly-CSharp-firstpass.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Assembly-CSharp-firstpass__1.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Assembly-CSharp.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -722,9 +716,6 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\Cinemachine__4.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\CommandSystem.cpp">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\GenericMethods.cpp">
@@ -1058,6 +1049,12 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\Generics__17.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Generics__170.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Generics__171.cpp">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\Generics__18.cpp">
@@ -1492,18 +1489,6 @@
     <ClCompile Include="Source\System.Core.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\System.Core__1.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\System.Core__2.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\System.Core__3.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\System.Core__4.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="Source\System.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -1559,6 +1544,9 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\Unity.Addressables__1.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Unity.Animation.Rigging.cpp">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\Unity.Burst.cpp">
@@ -1738,6 +1726,12 @@
     <ClCompile Include="Source\Unity.Timeline__1.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Unity.VisualEffectGraph.Runtime.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Unity.VisualEffectGraph.Runtime__1.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
     <ClCompile Include="Source\UnityEngine.AIModule.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -1771,9 +1765,6 @@
     <ClCompile Include="Source\UnityEngine.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\UnityEngine.CrashReportingModule.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="Source\UnityEngine.DirectorModule.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -1799,9 +1790,6 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.ParticleSystemModule.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\UnityEngine.PerformanceReportingModule.cpp">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.Physics2DModule.cpp">
@@ -1930,9 +1918,6 @@
     <ClCompile Include="Source\__Generated.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Assembly-CSharp-firstpass_CodeGen.c">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Assembly-CSharp_CodeGen.c">
       <Filter>Source</Filter>
     </ClCompile>
@@ -1940,9 +1925,6 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\Cinemachine_CodeGen.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\CommandSystem_CodeGen.c">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\HybridCLR.Runtime_CodeGen.c">
@@ -2041,6 +2023,9 @@
     <ClCompile Include="Source\Unity.Addressables_CodeGen.c">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Unity.Animation.Rigging_CodeGen.c">
+      <Filter>Source</Filter>
+    </ClCompile>
     <ClCompile Include="Source\Unity.Burst.Unsafe_CodeGen.c">
       <Filter>Source</Filter>
     </ClCompile>
@@ -2077,6 +2062,9 @@
     <ClCompile Include="Source\Unity.Timeline_CodeGen.c">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Unity.VisualEffectGraph.Runtime_CodeGen.c">
+      <Filter>Source</Filter>
+    </ClCompile>
     <ClCompile Include="Source\UnityEngine.AIModule_CodeGen.c">
       <Filter>Source</Filter>
     </ClCompile>
@@ -2093,9 +2081,6 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.CoreModule_CodeGen.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\UnityEngine.CrashReportingModule_CodeGen.c">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.DirectorModule_CodeGen.c">
@@ -2117,9 +2102,6 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.ParticleSystemModule_CodeGen.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\UnityEngine.PerformanceReportingModule_CodeGen.c">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.Physics2DModule_CodeGen.c">

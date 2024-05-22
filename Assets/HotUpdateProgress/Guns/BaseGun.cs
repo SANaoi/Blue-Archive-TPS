@@ -1,14 +1,13 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Pool;
-using UnityEngine.VFX;
 
 public class BaseGun : MonoBehaviour
 {
-    public VisualEffectAsset VFX_Flash;
-    public VisualEffectAsset ImpactParticle;
+    // public VisualEffectAsset VFX_Flash;
+    // public VisualEffectAsset ImpactParticle;
     protected ObjectPool<TrailRenderer> TrailPool;
-    protected ObjectPool<VisualEffect> ImpactPool;
+    // protected ObjectPool<VisualEffect> ImpactPool;
 
     public ShootConfig_SO shootConfig;
     public TrailConfig_SO trailConfig;
@@ -16,7 +15,7 @@ public class BaseGun : MonoBehaviour
     private void Awake() 
     {
         TrailPool = new ObjectPool<TrailRenderer>(CreateTrail);
-        ImpactPool = new ObjectPool<VisualEffect>(CreateImpactParticle);
+        // ImpactPool = new ObjectPool<VisualEffect>(CreateImpactParticle);
     }
 
     protected TrailRenderer CreateTrail()
@@ -34,13 +33,13 @@ public class BaseGun : MonoBehaviour
 
         return trail;
     }
-    protected VisualEffect CreateImpactParticle()
-    {
-        GameObject instance = new GameObject("Impact Particle");
-        VisualEffect impact = instance.AddComponent<VisualEffect>();
-        impact.visualEffectAsset = ImpactParticle;
-        return impact;
-    }
+    // protected VisualEffect CreateImpactParticle()
+    // {
+    //     GameObject instance = new GameObject("Impact Particle");
+    //     VisualEffect impact = instance.AddComponent<VisualEffect>();
+    //     impact.visualEffectAsset = ImpactParticle;
+    //     return impact;
+    // }
 
     protected virtual IEnumerator PlayTrail(Vector3 StartPoint, Vector3 EndPoint, RaycastHit Hit)
     {
@@ -68,14 +67,14 @@ public class BaseGun : MonoBehaviour
         
         if (Hit.collider != null)
         {
-            VisualEffect impactInstance = ImpactPool.Get();
-            impactInstance.transform.position = EndPoint;
-            impactInstance.gameObject.SetActive(true);
+            // VisualEffect impactInstance = ImpactPool.Get();
+            // impactInstance.transform.position = EndPoint;
+            // impactInstance.gameObject.SetActive(true);
 
-            // TODO impactDuration 弹坑保留时间
-            yield return new WaitForSeconds(0.3f); 
-            impactInstance.gameObject.SetActive(false);
-            ImpactPool.Release(impactInstance);
+            // // TODO impactDuration 弹坑保留时间
+            // yield return new WaitForSeconds(0.3f); 
+            // impactInstance.gameObject.SetActive(false);
+            // ImpactPool.Release(impactInstance);
 
         }
 

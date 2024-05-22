@@ -25879,7 +25879,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Asn1Object_t88A4CCA55F497755711F405EE399C0720
 		Asn1Object_t88A4CCA55F497755711F405EE399C0720E53976B* L_1 = ___0_asn1Object;
 		NullCheck(L_0);
 		bool L_2;
-		L_2 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(165, L_0, L_1);
+		L_2 = VirtualFuncInvoker1< bool, RuntimeObject* >::Invoke(156, L_0, L_1);
 		if (!L_2)
 		{
 			goto IL_0010;

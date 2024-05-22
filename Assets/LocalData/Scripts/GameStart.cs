@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Reflection;
 using Cysharp.Threading.Tasks;
-using HybridCLR;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.AddressableAssets;
 using UnityEngine.AddressableAssets.ResourceLocators;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -16,7 +16,8 @@ namespace Main
         // 这里使用标签和引用来加载资源 是为了简单
         public AssetLabelReference hotUpdateDllLabelRef; // 热更DLL标签
         public AssetLabelReference aotMetadataDllLabelRef; // AOT元数据DLL标签
-        public AssetReference hotUpdateMainSceneRef; // 热更主场景
+        // public AssetReference hotUpdateMainSceneRef;
+        
 
         // 热更入口 从这里开始
         private void Start()
@@ -27,10 +28,10 @@ namespace Main
 
         private async UniTask _check_update()
         {
-            //加载AOT元数据DLL任务
-            await _load_meta_data_for_aot_dlls();
             //加载热更DLL任务
             await _load_hotfix_dlls();
+            //加载AOT元数据DLL任务
+            // await _load_meta_data_for_aot_dlls();
             //检查资源更新任务
             await _update_address_ables();
             //进入热更主场景任务
@@ -127,31 +128,50 @@ namespace Main
             }
         }
 
-        private async UniTask _load_meta_data_for_aot_dlls()
-        {
-            //这一步实际上是为了解决AOT 泛型类的问题 
-            HomologousImageMode mode = HomologousImageMode.SuperSet;
-            var aots = await Addressables.LoadAssetsAsync<TextAsset>(aotMetadataDllLabelRef, null);
-            foreach (var asset in aots)
-            {
-                LoadImageErrorCode errorCode = RuntimeApi.LoadMetadataForAOTAssembly(asset.bytes, mode);
-                if (errorCode == LoadImageErrorCode.OK)
-                {
-                    continue;
-                }
+        // private async UniTask _load_meta_data_for_aot_dlls()
+        // {
+        //     //这一步实际上是为了解决AOT 泛型类的问题 
+        //     HomologousImageMode mode = HomologousImageMode.SuperSet;
+        //     var aots = await Addressables.LoadAssetsAsync<TextAsset>(aotMetadataDllLabelRef, null);
+        //     foreach (var asset in aots)
+        //     {
+        //         LoadImageErrorCode errorCode = RuntimeApi.LoadMetadataForAOTAssembly(asset.bytes, mode);
+        //         if (errorCode == LoadImageErrorCode.OK)
+        //         {
+        //             continue;
+        //         }
 
-                Debug.LogError($"加载AOT元数据DLL:{asset.name}失败,错误码:{errorCode}");
-            }
-        }
+        //         Debug.LogError($"加载AOT元数据DLL:{asset.name}失败,错误码:{errorCode}");
+        //     }
+        // }
 
         private async UniTask _enter_hotfix_main_scene()
         {
             // 等待用户输入
             await _wait_for_enter_input();
+
+            Addressables.LoadAssetAsync<GameObject>("NetRoomManager").Completed += gameObjectLoaded;
+            // AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+            // while (!asyncLoad.isDone)
+            // {
+            //     // 可以在这里更新加载进度，如设置UI元素的值
+            //     float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
+            //     Debug.Log("加载进度: " + (progress * 100) + "%");
+
+            //     // 等待下一帧
+            //     await UniTask.Yield();
+            // }
             // 加载热更主场景
-            var scene = await Addressables.LoadSceneAsync(hotUpdateMainSceneRef);
-            // 激活场景
-            await scene.ActivateAsync();
+            // var scene = await Addressables.LoadSceneAsync(hotUpdateMainSceneRef);
+            // // 激活场景
+            // await scene.ActivateAsync();
+        }
+        private void gameObjectLoaded(AsyncOperationHandle<GameObject> obj)
+        {
+            if (obj.Status == AsyncOperationStatus.Succeeded)
+            {
+                Instantiate(obj.Result);
+            }
         }
 
         private async UniTask _wait_for_enter_input()

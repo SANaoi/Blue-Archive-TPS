@@ -659,9 +659,6 @@ struct PlayableExtensions_t86D67105B499492AE917BF5A7CFBEEEB5FADED7E  : public Ru
 struct PlayableOutputExtensions_t03B5A73210D9C8B1A0C2E3AA032FB32E6797F421  : public RuntimeObject
 {
 };
-struct PlayerConnection_t0A3514072F25F57E3B8CACB936ACBE44866B8C65  : public RuntimeObject
-{
-};
 struct RenderPipeline_t3AF1E2046D27ABCEBA2279770AADA9F531073E69  : public RuntimeObject
 {
 	bool ___U3CdisposedU3Ek__BackingField;
@@ -3541,11 +3538,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayableHandle_t5D6A01EF94382EFEDC047202F71DF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F PlayableGraph_GetRootPlayable_m3BA0011AD6B13FCE5D58EA3E9BB17BE84319B53C (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Evaluate_m56DAAF530D0A6079FCBCFE86EF5E3E33374A22A7 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, float ___0_deltaTime, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Evaluate_m5E8756A5AB34EB7F9FC7682932D4BD6BE418352A (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Create_Injected_m5EA9B2CB06FABAA4BDEE33291C9448469E633A1A (String_t* ___0_name, PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___1_ret, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Destroy_Injected_mE409E40099C41BDAB6819C97C2CCF49591EF272D (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Destroy_m738D8E5A37FB8502CC6D639E68B76A6A4A535666 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableGraph_IsValid_Injected_mFFF3A7CB0D151BB47517B179E6D896896EABEB59 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableGraph_IsValid_mB608FD2CEDAA27C31C34DF4639CF98199ECDC3CA (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableGraph_IsPlaying_Injected_m468BBBE757D50B44C92E779DF415E1DAE1347D15 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableGraph_IsPlaying_m9289A7D3CBD3A73051568C20F384C1D4FBBA89E0 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Play_Injected_m37BC2DDD72185E12FB7FC2600F4378F3C1EBAE23 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Play_mE2A27205C369339BB8B39B9CCBF5F5EE9B26F9A6 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Evaluate_Injected_mE269438DB1E95213E3D0FDFE4F4812FB46E497D2 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, float ___1_deltaTime, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_SetTimeUpdateMode_Injected_m33CA657ECDFB6EB59DE8DADCD6CB355D8F1AFBD3 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, int32_t ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_SetTimeUpdateMode_mD9D642D672CAE1C63CEB049136626AC3C6990381 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PlayableGraph_GetResolver_Injected_m9AFBA9449AE07F7EAFA9584F94C982AB8EA86884 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PlayableGraph_GetResolver_m7869599485E96C9D09E0680FA25099E9B2789A47 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayableGraph_GetPlayableCount_Injected_mFD310C816E60BC671AAD0F28BBA6F56AF7A8BECC (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, const RuntimeMethod* method) ;
@@ -3566,6 +3570,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableGraph_ConnectInternal_Injected_m
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableGraph_ConnectInternal_m86DBDCCD0D8D5B1734EA7E90268F057A6E52525A (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 ___0_source, int32_t ___1_sourceOutputPort, PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 ___2_destination, int32_t ___3_destinationInputPort, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 PlayableHandle_GetInputHandle_mB9DAEF700C72515D7CA640F71C51A09C08DAD380 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F PlayableHandle_GetInput_m3F42E2CF0D7DFA2396295133D02622C1BE3A8633 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, int32_t ___0_inputPort, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 PlayableHandle_GetOutputHandle_mBACB55AE06D9B4EDD26D8B581497F6932D1BCF1D (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F PlayableHandle_GetOutput_mD6181EB3FB1E0F7B771DEAB21326F129F84713A0 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, int32_t ___0_outputPort, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableHandle_CheckInputBounds_m5A5D02E53EF84B63F75DBB414906923677EED1E3 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, int32_t ___0_inputIndex, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_SetInputWeightFromIndex_mF56AA0C0055C18FF46EF8E315331FDF45D832752 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, int32_t ___0_index, float ___1_weight, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableHandle_SetInputWeight_m8647C2593A24870E429A0832FC26EE2241CC302E (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, int32_t ___0_inputIndex, float ___1_weight, const RuntimeMethod* method) ;
@@ -3583,6 +3589,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m647EBF831F54B6DF7D5A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableHandle_IsValid_Injected_m9D662778C1A39FD8AEC18AEF053AE5C3DBD7B4B9 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableHandle_IsValid_m07631D12846BAAF2CC302E69A28A44BFE9EB5098 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* PlayableHandle_GetPlayableType_Injected_mD71007C85AACC8A18E2A5296B88FD8EA47349A9D (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* PlayableHandle_GetJobType_Injected_m9CFF12B180CAD68443FA01C4B165364B56DBF4F0 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* PlayableHandle_GetJobType_mCAFDF0801870C93DC1E9370F224F85DA71E182C4 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_SetScriptInstance_Injected_m0857A5E5961A9F0C85AF6FBC8BDCA81040B472A9 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, RuntimeObject* ___1_scriptInstance, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_SetScriptInstance_m479F7C03A25E77284BE1949CF5EABE903B9B26EE (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, RuntimeObject* ___0_scriptInstance, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayableHandle_GetPlayState_Injected_m13EB10AE657A2CA4DCDD017BBB6128FE5C5D262A (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, const RuntimeMethod* method) ;
@@ -3618,6 +3626,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double PlayableHandle_GetPreviousTime_Injecte
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double PlayableHandle_GetPreviousTime_m0C6881E900DF5FE7281699876DFE48BA64DEC1BF (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_SetTraversalMode_Injected_mC412F9CD172B11A45E1F68441F1C9905C2D7B315 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, int32_t ___1_mode, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_SetTraversalMode_m5302D6FC1935F2EF97E25DF58B402CC8700DE03D (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, int32_t ___0_mode, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t PlayableHandle_GetJobData_Injected_m81F93D21BAFAEAAFBFF0D217E851CDC09079725B (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t PlayableHandle_GetJobData_mBEBD5BEEA64C2FF459F19FC0CA12DD9F8E8BC427 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayableHandle_GetTimeWrapMode_Injected_m48C83527FF7BBD9B7F100ED2490E50A5BE327415 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayableHandle_GetTimeWrapMode_m3C4CF421B7470E04537C45092DA9A1D242A5D1B4 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_SetTimeWrapMode_Injected_mADEF8F2E92C329006CC97E7B179AC8DEB945F84B (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, int32_t ___1_mode, const RuntimeMethod* method) ;
@@ -3625,6 +3635,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_SetTimeWrapMode_m88B50CE0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PlayableHandle_GetScriptInstance_Injected_mEA519D092C0AEECAB6B22178D837CB0F6F9FCF21 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PlayableHandle_GetScriptInstance_m14D182ED7BEB2AAE1ADD86189A687FF0F86FA925 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_GetInputHandle_Injected_mE1DBCCE1A34C8C3E8B8939A7232EB6B69976ADBF (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, int32_t ___1_index, PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___2_ret, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_GetOutputHandle_Injected_mBD0825CCA42BD2C20B06B6B2767527D4897985ED (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, int32_t ___1_index, PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___2_ret, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_SetInputWeightFromIndex_Injected_m1B209DBD186EA35CA4B32A5DB2616F882250E7E9 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, int32_t ___1_index, float ___2_weight, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PlayableHandle_GetInputWeightFromIndex_Injected_mBD7D1FBCD09D2AAE5F9D86D9F06A897DCD40493A (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, int32_t ___1_index, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableOutput__ctor_m55FBB20EC479F67641835EA48D84A1AB3DF39747 (PlayableOutput_t2F7C45A58DA3E788EEDDB439549E21CF3FCF3680* __this, PlayableOutputHandle_tEB217645A8C0356A3AC6F964F283003B9740E883 ___0_handle, const RuntimeMethod* method) ;
@@ -22468,6 +22479,31 @@ IL2CPP_EXTERN_C  void PlayableGraph_Evaluate_m5E8756A5AB34EB7F9FC7682932D4BD6BE4
 	_thisAdjusted = reinterpret_cast<PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*>(__this + _offset);
 	PlayableGraph_Evaluate_m5E8756A5AB34EB7F9FC7682932D4BD6BE418352A(_thisAdjusted, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E PlayableGraph_Create_mDC2489DE39276A86B63BB9B597D3F2BED5E01F0C (String_t* ___0_name, const RuntimeMethod* method) 
+{
+	PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		String_t* L_0 = ___0_name;
+		PlayableGraph_Create_Injected_m5EA9B2CB06FABAA4BDEE33291C9448469E633A1A(L_0, (&V_0), NULL);
+		PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Destroy_m738D8E5A37FB8502CC6D639E68B76A6A4A535666 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayableGraph_Destroy_Injected_mE409E40099C41BDAB6819C97C2CCF49591EF272D(__this, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void PlayableGraph_Destroy_m738D8E5A37FB8502CC6D639E68B76A6A4A535666_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*>(__this + _offset);
+	PlayableGraph_Destroy_m738D8E5A37FB8502CC6D639E68B76A6A4A535666(_thisAdjusted, method);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableGraph_IsValid_mB608FD2CEDAA27C31C34DF4639CF98199ECDC3CA (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -22502,6 +22538,20 @@ IL2CPP_EXTERN_C  bool PlayableGraph_IsPlaying_m9289A7D3CBD3A73051568C20F384C1D4F
 	_returnValue = PlayableGraph_IsPlaying_m9289A7D3CBD3A73051568C20F384C1D4FBBA89E0(_thisAdjusted, method);
 	return _returnValue;
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Play_mE2A27205C369339BB8B39B9CCBF5F5EE9B26F9A6 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, const RuntimeMethod* method) 
+{
+	{
+		PlayableGraph_Play_Injected_m37BC2DDD72185E12FB7FC2600F4378F3C1EBAE23(__this, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void PlayableGraph_Play_mE2A27205C369339BB8B39B9CCBF5F5EE9B26F9A6_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*>(__this + _offset);
+	PlayableGraph_Play_mE2A27205C369339BB8B39B9CCBF5F5EE9B26F9A6(_thisAdjusted, method);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Evaluate_m56DAAF530D0A6079FCBCFE86EF5E3E33374A22A7 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, float ___0_deltaTime, const RuntimeMethod* method) 
 {
 	{
@@ -22516,6 +22566,21 @@ IL2CPP_EXTERN_C  void PlayableGraph_Evaluate_m56DAAF530D0A6079FCBCFE86EF5E3E3337
 	int32_t _offset = 1;
 	_thisAdjusted = reinterpret_cast<PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*>(__this + _offset);
 	PlayableGraph_Evaluate_m56DAAF530D0A6079FCBCFE86EF5E3E33374A22A7(_thisAdjusted, ___0_deltaTime, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_SetTimeUpdateMode_mD9D642D672CAE1C63CEB049136626AC3C6990381 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_value;
+		PlayableGraph_SetTimeUpdateMode_Injected_m33CA657ECDFB6EB59DE8DADCD6CB355D8F1AFBD3(__this, L_0, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void PlayableGraph_SetTimeUpdateMode_mD9D642D672CAE1C63CEB049136626AC3C6990381_AdjustorThunk (RuntimeObject* __this, int32_t ___0_value, const RuntimeMethod* method)
+{
+	PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*>(__this + _offset);
+	PlayableGraph_SetTimeUpdateMode_mD9D642D672CAE1C63CEB049136626AC3C6990381(_thisAdjusted, ___0_value, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PlayableGraph_GetResolver_m7869599485E96C9D09E0680FA25099E9B2789A47 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* __this, const RuntimeMethod* method) 
 {
@@ -22695,6 +22760,22 @@ IL2CPP_EXTERN_C  bool PlayableGraph_ConnectInternal_m86DBDCCD0D8D5B1734EA7E90268
 	_returnValue = PlayableGraph_ConnectInternal_m86DBDCCD0D8D5B1734EA7E90268F057A6E52525A(_thisAdjusted, ___0_source, ___1_sourceOutputPort, ___2_destination, ___3_destinationInputPort, method);
 	return _returnValue;
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Create_Injected_m5EA9B2CB06FABAA4BDEE33291C9448469E633A1A (String_t* ___0_name, PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___1_ret, const RuntimeMethod* method) 
+{
+	typedef void (*PlayableGraph_Create_Injected_m5EA9B2CB06FABAA4BDEE33291C9448469E633A1A_ftn) (String_t*, PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*);
+	static PlayableGraph_Create_Injected_m5EA9B2CB06FABAA4BDEE33291C9448469E633A1A_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PlayableGraph_Create_Injected_m5EA9B2CB06FABAA4BDEE33291C9448469E633A1A_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Playables.PlayableGraph::Create_Injected(System.String,UnityEngine.Playables.PlayableGraph&)");
+	_il2cpp_icall_func(___0_name, ___1_ret);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Destroy_Injected_mE409E40099C41BDAB6819C97C2CCF49591EF272D (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, const RuntimeMethod* method) 
+{
+	typedef void (*PlayableGraph_Destroy_Injected_mE409E40099C41BDAB6819C97C2CCF49591EF272D_ftn) (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*);
+	static PlayableGraph_Destroy_Injected_mE409E40099C41BDAB6819C97C2CCF49591EF272D_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PlayableGraph_Destroy_Injected_mE409E40099C41BDAB6819C97C2CCF49591EF272D_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Playables.PlayableGraph::Destroy_Injected(UnityEngine.Playables.PlayableGraph&)");
+	_il2cpp_icall_func(___0__unity_self);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableGraph_IsValid_Injected_mFFF3A7CB0D151BB47517B179E6D896896EABEB59 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, const RuntimeMethod* method) 
 {
 	typedef bool (*PlayableGraph_IsValid_Injected_mFFF3A7CB0D151BB47517B179E6D896896EABEB59_ftn) (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*);
@@ -22713,6 +22794,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableGraph_IsPlaying_Injected_m468BBB
 	bool icallRetVal = _il2cpp_icall_func(___0__unity_self);
 	return icallRetVal;
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Play_Injected_m37BC2DDD72185E12FB7FC2600F4378F3C1EBAE23 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, const RuntimeMethod* method) 
+{
+	typedef void (*PlayableGraph_Play_Injected_m37BC2DDD72185E12FB7FC2600F4378F3C1EBAE23_ftn) (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*);
+	static PlayableGraph_Play_Injected_m37BC2DDD72185E12FB7FC2600F4378F3C1EBAE23_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PlayableGraph_Play_Injected_m37BC2DDD72185E12FB7FC2600F4378F3C1EBAE23_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Playables.PlayableGraph::Play_Injected(UnityEngine.Playables.PlayableGraph&)");
+	_il2cpp_icall_func(___0__unity_self);
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Evaluate_Injected_mE269438DB1E95213E3D0FDFE4F4812FB46E497D2 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, float ___1_deltaTime, const RuntimeMethod* method) 
 {
 	typedef void (*PlayableGraph_Evaluate_Injected_mE269438DB1E95213E3D0FDFE4F4812FB46E497D2_ftn) (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*, float);
@@ -22720,6 +22809,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_Evaluate_Injected_mE269438
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (PlayableGraph_Evaluate_Injected_mE269438DB1E95213E3D0FDFE4F4812FB46E497D2_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Playables.PlayableGraph::Evaluate_Injected(UnityEngine.Playables.PlayableGraph&,System.Single)");
 	_il2cpp_icall_func(___0__unity_self, ___1_deltaTime);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableGraph_SetTimeUpdateMode_Injected_m33CA657ECDFB6EB59DE8DADCD6CB355D8F1AFBD3 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, int32_t ___1_value, const RuntimeMethod* method) 
+{
+	typedef void (*PlayableGraph_SetTimeUpdateMode_Injected_m33CA657ECDFB6EB59DE8DADCD6CB355D8F1AFBD3_ftn) (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E*, int32_t);
+	static PlayableGraph_SetTimeUpdateMode_Injected_m33CA657ECDFB6EB59DE8DADCD6CB355D8F1AFBD3_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PlayableGraph_SetTimeUpdateMode_Injected_m33CA657ECDFB6EB59DE8DADCD6CB355D8F1AFBD3_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Playables.PlayableGraph::SetTimeUpdateMode_Injected(UnityEngine.Playables.PlayableGraph&,UnityEngine.Playables.DirectorUpdateMode)");
+	_il2cpp_icall_func(___0__unity_self, ___1_value);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PlayableGraph_GetResolver_Injected_m9AFBA9449AE07F7EAFA9584F94C982AB8EA86884 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E* ___0__unity_self, const RuntimeMethod* method) 
 {
@@ -22873,6 +22970,43 @@ IL2CPP_EXTERN_C  Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F PlayableHand
 	_thisAdjusted = reinterpret_cast<PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*>(__this + _offset);
 	Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F _returnValue;
 	_returnValue = PlayableHandle_GetInput_m3F42E2CF0D7DFA2396295133D02622C1BE3A8633(_thisAdjusted, ___0_inputPort, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F PlayableHandle_GetOutput_mD6181EB3FB1E0F7B771DEAB21326F129F84713A0 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, int32_t ___0_outputPort, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		int32_t L_0 = ___0_outputPort;
+		il2cpp_codegen_runtime_class_init_inline(PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4_il2cpp_TypeInfo_var);
+		PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 L_1;
+		L_1 = PlayableHandle_GetOutputHandle_mBACB55AE06D9B4EDD26D8B581497F6932D1BCF1D(__this, L_0, NULL);
+		Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F L_2;
+		memset((&L_2), 0, sizeof(L_2));
+		Playable__ctor_mD2EB35E024816AEED68795D0124EAB30E05BF6C4((&L_2), L_1, NULL);
+		V_0 = L_2;
+		goto IL_0010;
+	}
+
+IL_0010:
+	{
+		Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F L_3 = V_0;
+		return L_3;
+	}
+}
+IL2CPP_EXTERN_C  Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F PlayableHandle_GetOutput_mD6181EB3FB1E0F7B771DEAB21326F129F84713A0_AdjustorThunk (RuntimeObject* __this, int32_t ___0_outputPort, const RuntimeMethod* method)
+{
+	PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*>(__this + _offset);
+	Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F _returnValue;
+	_returnValue = PlayableHandle_GetOutput_mD6181EB3FB1E0F7B771DEAB21326F129F84713A0(_thisAdjusted, ___0_outputPort, method);
 	return _returnValue;
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableHandle_SetInputWeight_m8647C2593A24870E429A0832FC26EE2241CC302E (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, int32_t ___0_inputIndex, float ___1_weight, const RuntimeMethod* method) 
@@ -23352,6 +23486,30 @@ IL2CPP_EXTERN_C  Type_t* PlayableHandle_GetPlayableType_mD9750F1B85DF086F52641D6
 	_returnValue = PlayableHandle_GetPlayableType_mD9750F1B85DF086F52641D6AB85789601486B686(_thisAdjusted, method);
 	return _returnValue;
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* PlayableHandle_GetJobType_mCAFDF0801870C93DC1E9370F224F85DA71E182C4 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4_il2cpp_TypeInfo_var);
+		Type_t* L_0;
+		L_0 = PlayableHandle_GetJobType_Injected_m9CFF12B180CAD68443FA01C4B165364B56DBF4F0(__this, NULL);
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  Type_t* PlayableHandle_GetJobType_mCAFDF0801870C93DC1E9370F224F85DA71E182C4_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*>(__this + _offset);
+	Type_t* _returnValue;
+	_returnValue = PlayableHandle_GetJobType_mCAFDF0801870C93DC1E9370F224F85DA71E182C4(_thisAdjusted, method);
+	return _returnValue;
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_SetScriptInstance_m479F7C03A25E77284BE1949CF5EABE903B9B26EE (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, RuntimeObject* ___0_scriptInstance, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23762,6 +23920,30 @@ IL2CPP_EXTERN_C  void PlayableHandle_SetTraversalMode_m5302D6FC1935F2EF97E25DF58
 	_thisAdjusted = reinterpret_cast<PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*>(__this + _offset);
 	PlayableHandle_SetTraversalMode_m5302D6FC1935F2EF97E25DF58B402CC8700DE03D(_thisAdjusted, ___0_mode, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t PlayableHandle_GetJobData_mBEBD5BEEA64C2FF459F19FC0CA12DD9F8E8BC427 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4_il2cpp_TypeInfo_var);
+		intptr_t L_0;
+		L_0 = PlayableHandle_GetJobData_Injected_m81F93D21BAFAEAAFBFF0D217E851CDC09079725B(__this, NULL);
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  intptr_t PlayableHandle_GetJobData_mBEBD5BEEA64C2FF459F19FC0CA12DD9F8E8BC427_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*>(__this + _offset);
+	intptr_t _returnValue;
+	_returnValue = PlayableHandle_GetJobData_mBEBD5BEEA64C2FF459F19FC0CA12DD9F8E8BC427(_thisAdjusted, method);
+	return _returnValue;
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayableHandle_GetTimeWrapMode_m3C4CF421B7470E04537C45092DA9A1D242A5D1B4 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23859,6 +24041,33 @@ IL2CPP_EXTERN_C  PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 Playab
 	_returnValue = PlayableHandle_GetInputHandle_mB9DAEF700C72515D7CA640F71C51A09C08DAD380(_thisAdjusted, ___0_index, method);
 	return _returnValue;
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 PlayableHandle_GetOutputHandle_mBACB55AE06D9B4EDD26D8B581497F6932D1BCF1D (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, int32_t ___0_index, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		int32_t L_0 = ___0_index;
+		il2cpp_codegen_runtime_class_init_inline(PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4_il2cpp_TypeInfo_var);
+		PlayableHandle_GetOutputHandle_Injected_mBD0825CCA42BD2C20B06B6B2767527D4897985ED(__this, L_0, (&V_0), NULL);
+		PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 PlayableHandle_GetOutputHandle_mBACB55AE06D9B4EDD26D8B581497F6932D1BCF1D_AdjustorThunk (RuntimeObject* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*>(__this + _offset);
+	PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 _returnValue;
+	_returnValue = PlayableHandle_GetOutputHandle_mBACB55AE06D9B4EDD26D8B581497F6932D1BCF1D(_thisAdjusted, ___0_index, method);
+	return _returnValue;
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_SetInputWeightFromIndex_mF56AA0C0055C18FF46EF8E315331FDF45D832752 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* __this, int32_t ___0_index, float ___1_weight, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23935,6 +24144,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* PlayableHandle_GetPlayableType_Inject
 	static PlayableHandle_GetPlayableType_Injected_mD71007C85AACC8A18E2A5296B88FD8EA47349A9D_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (PlayableHandle_GetPlayableType_Injected_mD71007C85AACC8A18E2A5296B88FD8EA47349A9D_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Playables.PlayableHandle::GetPlayableType_Injected(UnityEngine.Playables.PlayableHandle&)");
+	Type_t* icallRetVal = _il2cpp_icall_func(___0__unity_self);
+	return icallRetVal;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* PlayableHandle_GetJobType_Injected_m9CFF12B180CAD68443FA01C4B165364B56DBF4F0 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, const RuntimeMethod* method) 
+{
+	typedef Type_t* (*PlayableHandle_GetJobType_Injected_m9CFF12B180CAD68443FA01C4B165364B56DBF4F0_ftn) (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*);
+	static PlayableHandle_GetJobType_Injected_m9CFF12B180CAD68443FA01C4B165364B56DBF4F0_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PlayableHandle_GetJobType_Injected_m9CFF12B180CAD68443FA01C4B165364B56DBF4F0_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Playables.PlayableHandle::GetJobType_Injected(UnityEngine.Playables.PlayableHandle&)");
 	Type_t* icallRetVal = _il2cpp_icall_func(___0__unity_self);
 	return icallRetVal;
 }
@@ -24088,6 +24306,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_SetTraversalMode_Injected
 	_il2cpp_icall_func = (PlayableHandle_SetTraversalMode_Injected_mC412F9CD172B11A45E1F68441F1C9905C2D7B315_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Playables.PlayableHandle::SetTraversalMode_Injected(UnityEngine.Playables.PlayableHandle&,UnityEngine.Playables.PlayableTraversalMode)");
 	_il2cpp_icall_func(___0__unity_self, ___1_mode);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t PlayableHandle_GetJobData_Injected_m81F93D21BAFAEAAFBFF0D217E851CDC09079725B (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, const RuntimeMethod* method) 
+{
+	typedef intptr_t (*PlayableHandle_GetJobData_Injected_m81F93D21BAFAEAAFBFF0D217E851CDC09079725B_ftn) (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*);
+	static PlayableHandle_GetJobData_Injected_m81F93D21BAFAEAAFBFF0D217E851CDC09079725B_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PlayableHandle_GetJobData_Injected_m81F93D21BAFAEAAFBFF0D217E851CDC09079725B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Playables.PlayableHandle::GetJobData_Injected(UnityEngine.Playables.PlayableHandle&)");
+	intptr_t icallRetVal = _il2cpp_icall_func(___0__unity_self);
+	return icallRetVal;
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayableHandle_GetTimeWrapMode_Injected_m48C83527FF7BBD9B7F100ED2490E50A5BE327415 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, const RuntimeMethod* method) 
 {
 	typedef int32_t (*PlayableHandle_GetTimeWrapMode_Injected_m48C83527FF7BBD9B7F100ED2490E50A5BE327415_ftn) (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*);
@@ -24120,6 +24347,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_GetInputHandle_Injected_m
 	static PlayableHandle_GetInputHandle_Injected_mE1DBCCE1A34C8C3E8B8939A7232EB6B69976ADBF_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (PlayableHandle_GetInputHandle_Injected_mE1DBCCE1A34C8C3E8B8939A7232EB6B69976ADBF_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Playables.PlayableHandle::GetInputHandle_Injected(UnityEngine.Playables.PlayableHandle&,System.Int32,UnityEngine.Playables.PlayableHandle&)");
+	_il2cpp_icall_func(___0__unity_self, ___1_index, ___2_ret);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_GetOutputHandle_Injected_mBD0825CCA42BD2C20B06B6B2767527D4897985ED (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, int32_t ___1_index, PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___2_ret, const RuntimeMethod* method) 
+{
+	typedef void (*PlayableHandle_GetOutputHandle_Injected_mBD0825CCA42BD2C20B06B6B2767527D4897985ED_ftn) (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*, int32_t, PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4*);
+	static PlayableHandle_GetOutputHandle_Injected_mBD0825CCA42BD2C20B06B6B2767527D4897985ED_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (PlayableHandle_GetOutputHandle_Injected_mBD0825CCA42BD2C20B06B6B2767527D4897985ED_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Playables.PlayableHandle::GetOutputHandle_Injected(UnityEngine.Playables.PlayableHandle&,System.Int32,UnityEngine.Playables.PlayableHandle&)");
 	_il2cpp_icall_func(___0__unity_self, ___1_index, ___2_ret);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayableHandle_SetInputWeightFromIndex_Injected_m1B209DBD186EA35CA4B32A5DB2616F882250E7E9 (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4* ___0__unity_self, int32_t ___1_index, float ___2_weight, const RuntimeMethod* method) 
@@ -25054,14 +25289,6 @@ IL_0010:
 		return L_2;
 	}
 }
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

@@ -520,7 +520,7 @@ IL2CPP_EXTERN_C RuntimeClass* U3Cget_outputsU3Ed__49_t590B0A0FEE820B5A8A1F548908
 IL2CPP_EXTERN_C RuntimeClass* U3Cget_outputsU3Ed__4_tD8B1787938F01CCD67866DCA69224515E78663C5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3Cget_outputsU3Ed__65_tE61187F3860B492601D3B49624D0E518A1D10F46_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t4403E54E29EC9471F07384EB8E26C89441A4B3D7____D6F543CC4723AE9759873ABF372DB4A89A1A0BC31CD081F1F5C807806A08925A_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t4403E54E29EC9471F07384EB8E26C89441A4B3D7____BD2AFCAB5B80966F83C5A2067591A23DCFF4DC6713A24B46E2542AAF1A9FE29B_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t4403E54E29EC9471F07384EB8E26C89441A4B3D7____FB300D7B50C978EDC99DC1908D80F67F0FE185AC43A1C7043529CBFB8B401B3F_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral016880071372920B6C521250574026F0A2A8FCDE;
 IL2CPP_EXTERN_C String_t* _stringLiteral09EF963B191F5691D66A42538D477D4A3F4F848B;
@@ -3540,8 +3540,8 @@ inline bool GameObject_TryGetComponent_TisPlayableDirector_t895D7BC3CFBFFD823278
 {
 	return ((  bool (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, PlayableDirector_t895D7BC3CFBFFD823278F438EAC4AA91DBFEC475**, const RuntimeMethod*))GameObject_TryGetComponent_TisRuntimeObject_m4D430300D2DFB9276DE980D78F60A05D271D3630_gshared)(__this, ___0_component, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayableDirector_get_extrapolationMode_m942C1A4A49D9D81DF54B742A0EFE22ED6D6BCDDD (PlayableDirector_t895D7BC3CFBFFD823278F438EAC4AA91DBFEC475* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 NotificationUtilities_CreateNotificationsPlayable_m2E015D453C40663721AEA2DA883EB070DEFAF586 (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E ___0_graph, RuntimeObject* ___1_markers, double ___2_duration, int32_t ___3_extrapolationMode, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 NotificationUtilities_CreateNotificationsPlayable_mF665AFFEFDFDBD2572948D0A9998348CC268A28E (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E ___0_graph, RuntimeObject* ___1_markers, PlayableDirector_t895D7BC3CFBFFD823278F438EAC4AA91DBFEC475* ___2_director, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 NotificationUtilities_CreateNotificationsPlayable_mEBCA07E594A6E0979666BF7C3397ACC7A5D4753E (PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E ___0_graph, RuntimeObject* ___1_markers, TimelineAsset_tE400C944B07CA9D1349BAD84545E24075ADB3496* ___2_timelineAsset, const RuntimeMethod* method) ;
 inline bool PlayableExtensions_IsValid_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_mFF8546A326EBCD704433CFBA10DC36C8E4DF97BB (ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 ___0_playable, const RuntimeMethod* method)
 {
 	return ((  bool (*) (ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57, const RuntimeMethod*))PlayableExtensions_IsValid_TisScriptPlayable_1_t5E80E6495A91412DAAE85DA280EE5A75E2A89000_mB597801F06F1B3583A8FCFA074EC15EE85EAD3EB_gshared)(___0_playable, method);
@@ -3818,6 +3818,7 @@ inline void PlayableExtensions_SetInputWeight_TisPlayable_t95C6B795846BA0C7D96E4
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CGetControlableScriptsU3Ed__39__ctor_m61DC7C12C95430EF9C16D27768169F05CC5784D0 (U3CGetControlableScriptsU3Ed__39_tCACF2B6E4A5ABDE887D13D1F924D85FABF3CE34F* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteTime_t1598D60B0B2432F702E2A6120D04369EE54600A6 DiscreteTime_OneTickAfter_mD2C58DF00885E44EA0D7AF8C9F56C14F77E53EB7 (DiscreteTime_t1598D60B0B2432F702E2A6120D04369EE54600A6* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PlayableDirector_get_extrapolationMode_m942C1A4A49D9D81DF54B742A0EFE22ED6D6BCDDD (PlayableDirector_t895D7BC3CFBFFD823278F438EAC4AA91DBFEC475* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9 ParticleSystem_get_main_mD86DFCD96150E2CE760CD2F37052BB3BCA33C189 (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MainModule_get_duration_mDCB80E6BD3B6B2DFB92E41FBCCA154D7E7150EB1 (MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MainModule_get_loop_m4F75CD377C0555635995F7C1F8D580517473EDF8 (MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9* __this, const RuntimeMethod* method) ;
@@ -4187,7 +4188,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_tA0C7360799640B8079A5A2795562E
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t4403E54E29EC9471F07384EB8E26C89441A4B3D7____D6F543CC4723AE9759873ABF372DB4A89A1A0BC31CD081F1F5C807806A08925A_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t4403E54E29EC9471F07384EB8E26C89441A4B3D7____BD2AFCAB5B80966F83C5A2067591A23DCFF4DC6713A24B46E2542AAF1A9FE29B_FieldInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t4403E54E29EC9471F07384EB8E26C89441A4B3D7____FB300D7B50C978EDC99DC1908D80F67F0FE185AC43A1C7043529CBFB8B401B3F_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -4197,7 +4198,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_tA0C7360799640B8079A5A2795562E
 		il2cpp_codegen_initobj((&V_0), sizeof(MonoScriptData_tA0C7360799640B8079A5A2795562EFBB25FE27CB));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)6198));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = L_0;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t4403E54E29EC9471F07384EB8E26C89441A4B3D7____D6F543CC4723AE9759873ABF372DB4A89A1A0BC31CD081F1F5C807806A08925A_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_2 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t4403E54E29EC9471F07384EB8E26C89441A4B3D7____BD2AFCAB5B80966F83C5A2067591A23DCFF4DC6713A24B46E2542AAF1A9FE29B_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
@@ -13739,7 +13740,7 @@ IL_0022:
 		Type_t* L_8 = ___0_type;
 		NullCheck(L_7);
 		bool L_9;
-		L_9 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(36, L_7, L_8);
+		L_9 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(27, L_7, L_8);
 		if (L_9)
 		{
 			goto IL_003f;
@@ -13776,14 +13777,14 @@ IL_003f:
 		Type_t* L_16 = ___0_type;
 		NullCheck(L_16);
 		String_t* L_17;
-		L_17 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_16);
+		L_17 = VirtualFuncInvoker0< String_t* >::Invoke(7, L_16);
 		TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96* L_18 = ___1_parent;
 		NullCheck(L_18);
 		Type_t* L_19;
 		L_19 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_18, NULL);
 		NullCheck(L_19);
 		String_t* L_20;
-		L_20 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_19);
+		L_20 = VirtualFuncInvoker0< String_t* >::Invoke(7, L_19);
 		String_t* L_21;
 		L_21 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral671E594D35EA0F64716CBBAF032591F33E2A6F3C)), L_17, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralBD7F6128BA75ABAF5F2F7BD2D5F97DE0AD2E5249)), L_20, NULL);
 		InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_22 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
@@ -13807,7 +13808,7 @@ IL_0077:
 		Type_t* L_26 = ___0_type;
 		NullCheck(L_26);
 		String_t* L_27;
-		L_27 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_26);
+		L_27 = VirtualFuncInvoker0< String_t* >::Invoke(7, L_26);
 		V_0 = L_27;
 	}
 
@@ -14388,7 +14389,7 @@ IL_0022:
 		Type_t* L_8 = ___2_trackType;
 		NullCheck(L_7);
 		bool L_9;
-		L_9 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(36, L_7, L_8);
+		L_9 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(27, L_7, L_8);
 		if (L_9)
 		{
 			goto IL_003f;
@@ -16448,7 +16449,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TimelineClip_t003008F08E56A75F3A47FD9ADE7C066
 		L_2 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_1, NULL);
 		NullCheck(L_0);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3;
-		L_3 = VirtualFuncInvoker2< ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, Type_t*, bool >::Invoke(19, L_0, L_2, (bool)1);
+		L_3 = VirtualFuncInvoker2< ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, Type_t*, bool >::Invoke(13, L_0, L_2, (bool)1);
 		V_0 = (Type_t*)NULL;
 		V_1 = L_3;
 		V_2 = 0;
@@ -16479,7 +16480,7 @@ IL_001d:
 		Type_t* L_12 = L_11->___inspectedType;
 		NullCheck(L_10);
 		bool L_13;
-		L_13 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(36, L_10, L_12);
+		L_13 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(27, L_10, L_12);
 		if (!L_13)
 		{
 			goto IL_0060;
@@ -16495,7 +16496,7 @@ IL_001d:
 		Type_t* L_17 = L_16->___inspectedType;
 		NullCheck(L_15);
 		bool L_18;
-		L_18 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(36, L_15, L_17);
+		L_18 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(27, L_15, L_17);
 		if (!L_18)
 		{
 			goto IL_0060;
@@ -16936,7 +16937,7 @@ IL_003d:
 		Type_t* L_14 = ___0_requestedType;
 		NullCheck(L_14);
 		String_t* L_15;
-		L_15 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_14);
+		L_15 = VirtualFuncInvoker0< String_t* >::Invoke(7, L_14);
 		String_t* L_16;
 		L_16 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral0CF9C710DD00B713E21FC9499605AC647386BB79)), L_15, NULL);
 		InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* L_17 = (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB_il2cpp_TypeInfo_var)));
@@ -16950,7 +16951,7 @@ IL_0063:
 		Type_t* L_19 = ___0_requestedType;
 		NullCheck(L_19);
 		String_t* L_20;
-		L_20 = VirtualFuncInvoker0< String_t* >::Invoke(12, L_19);
+		L_20 = VirtualFuncInvoker0< String_t* >::Invoke(7, L_19);
 		NullCheck(L_18);
 		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(L_18, L_20, NULL);
 		ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* L_21 = V_0;
@@ -17426,11 +17427,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Playable_t95C6B795846BA0C7D96E4DA14897CCCF255
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	int32_t V_0 = 0;
+	ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 V_0;
+	memset((&V_0), 0, sizeof(V_0));
 	PlayableDirector_t895D7BC3CFBFFD823278F438EAC4AA91DBFEC475* V_1 = NULL;
-	double V_2 = 0.0;
-	ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 V_3;
-	memset((&V_3), 0, sizeof(V_3));
 	{
 		il2cpp_codegen_runtime_class_init_inline(TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_il2cpp_TypeInfo_var);
 		List_1_tB481045C42962DD282E8A89B2AF0246A4042EADF* L_0 = (&((TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_StaticFields*)il2cpp_codegen_static_fields_for(TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_il2cpp_TypeInfo_var))->___s_BuildData)->___markerList;
@@ -17438,82 +17437,82 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Playable_t95C6B795846BA0C7D96E4DA14897CCCF255
 		List_1_Clear_mD934FF562E4DFB17D1A570B3068FCE02FE52FF2A_inline(L_0, List_1_Clear_mD934FF562E4DFB17D1A570B3068FCE02FE52FF2A_RuntimeMethod_var);
 		List_1_tB481045C42962DD282E8A89B2AF0246A4042EADF* L_1 = (&((TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_StaticFields*)il2cpp_codegen_static_fields_for(TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_il2cpp_TypeInfo_var))->___s_BuildData)->___markerList;
 		TrackAsset_GatherNotifications_mF5DBDCF22D9CD5ED6FE6D868583BB6D332AD6BFA(__this, L_1, NULL);
-		V_0 = 2;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = ___2_go;
 		NullCheck(L_2);
 		bool L_3;
 		L_3 = GameObject_TryGetComponent_TisPlayableDirector_t895D7BC3CFBFFD823278F438EAC4AA91DBFEC475_mA610A3F582BCB37C69082E2EEF3FD1B13485AA60(L_2, (&V_1), GameObject_TryGetComponent_TisPlayableDirector_t895D7BC3CFBFFD823278F438EAC4AA91DBFEC475_mA610A3F582BCB37C69082E2EEF3FD1B13485AA60_RuntimeMethod_var);
 		if (!L_3)
 		{
-			goto IL_0032;
+			goto IL_003d;
 		}
 	}
 	{
-		PlayableDirector_t895D7BC3CFBFFD823278F438EAC4AA91DBFEC475* L_4 = V_1;
-		NullCheck(L_4);
-		int32_t L_5;
-		L_5 = PlayableDirector_get_extrapolationMode_m942C1A4A49D9D81DF54B742A0EFE22ED6D6BCDDD(L_4, NULL);
-		V_0 = L_5;
+		PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E L_4 = ___0_graph;
+		il2cpp_codegen_runtime_class_init_inline(TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_il2cpp_TypeInfo_var);
+		List_1_tB481045C42962DD282E8A89B2AF0246A4042EADF* L_5 = (&((TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_StaticFields*)il2cpp_codegen_static_fields_for(TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_il2cpp_TypeInfo_var))->___s_BuildData)->___markerList;
+		PlayableDirector_t895D7BC3CFBFFD823278F438EAC4AA91DBFEC475* L_6 = V_1;
+		ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 L_7;
+		L_7 = NotificationUtilities_CreateNotificationsPlayable_mF665AFFEFDFDBD2572948D0A9998348CC268A28E(L_4, L_5, L_6, NULL);
+		V_0 = L_7;
+		goto IL_0054;
 	}
 
-IL_0032:
+IL_003d:
 	{
-		TimelineAsset_tE400C944B07CA9D1349BAD84545E24075ADB3496* L_6;
-		L_6 = TrackAsset_get_timelineAsset_m969726B43E66370FB81F1CCB6C012BCAD2B112A8(__this, NULL);
-		NullCheck(L_6);
-		double L_7;
-		L_7 = VirtualFuncInvoker0< double >::Invoke(7, L_6);
-		V_2 = L_7;
 		PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E L_8 = ___0_graph;
 		il2cpp_codegen_runtime_class_init_inline(TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_il2cpp_TypeInfo_var);
 		List_1_tB481045C42962DD282E8A89B2AF0246A4042EADF* L_9 = (&((TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_StaticFields*)il2cpp_codegen_static_fields_for(TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96_il2cpp_TypeInfo_var))->___s_BuildData)->___markerList;
-		double L_10 = V_2;
-		int32_t L_11 = V_0;
-		ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 L_12;
-		L_12 = NotificationUtilities_CreateNotificationsPlayable_m2E015D453C40663721AEA2DA883EB070DEFAF586(L_8, L_9, L_10, L_11, NULL);
-		V_3 = L_12;
-		ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 L_13 = V_3;
-		bool L_14;
-		L_14 = PlayableExtensions_IsValid_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_mFF8546A326EBCD704433CFBA10DC36C8E4DF97BB(L_13, PlayableExtensions_IsValid_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_mFF8546A326EBCD704433CFBA10DC36C8E4DF97BB_RuntimeMethod_var);
-		if (!L_14)
-		{
-			goto IL_008e;
-		}
-	}
-	{
-		il2cpp_codegen_runtime_class_init_inline(ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_il2cpp_TypeInfo_var);
-		TimeNotificationBehaviour_tE17AD7EF43D3F48E5BB2C35250F82AB5F9B47535* L_15;
-		L_15 = ScriptPlayable_1_GetBehaviour_m00070B57F6A1194957F7AF216F8B94D16026495F((&V_3), ScriptPlayable_1_GetBehaviour_m00070B57F6A1194957F7AF216F8B94D16026495F_RuntimeMethod_var);
-		Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F L_16 = ___3_timelinePlayable;
-		NullCheck(L_15);
-		TimeNotificationBehaviour_set_timeSource_mD0096011A303EB4C84B3DE3AAE908C51955E2F8E_inline(L_15, L_16, NULL);
-		Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F L_17 = ___1_mixerPlayable;
-		bool L_18;
-		L_18 = PlayableExtensions_IsValid_TisPlayable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_mEBB50D8764487C299FFE9DFA47DA4A462B114D0F(L_17, PlayableExtensions_IsValid_TisPlayable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_mEBB50D8764487C299FFE9DFA47DA4A462B114D0F_RuntimeMethod_var);
-		if (!L_18)
-		{
-			goto IL_008e;
-		}
-	}
-	{
-		ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 L_19 = V_3;
-		PlayableExtensions_SetInputCount_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_mAB2CEA823632553DFE50D7CFED5629941F147094(L_19, 1, PlayableExtensions_SetInputCount_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_mAB2CEA823632553DFE50D7CFED5629941F147094_RuntimeMethod_var);
-		Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F L_20 = ___1_mixerPlayable;
-		ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 L_21 = V_3;
-		bool L_22;
-		L_22 = PlayableGraph_Connect_TisPlayable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_mC1F72605B7936997892ED7352AE209A4843D6474((&___0_graph), L_20, 0, L_21, 0, PlayableGraph_Connect_TisPlayable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_mC1F72605B7936997892ED7352AE209A4843D6474_RuntimeMethod_var);
-		ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 L_23 = V_3;
-		Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F L_24 = ___1_mixerPlayable;
-		PlayableExtensions_SetInputWeight_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_TisPlayable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_mB7F67E1FD9E519D880E05A23FE6F9B9CA527B838(L_23, L_24, (1.0f), PlayableExtensions_SetInputWeight_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_TisPlayable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_mB7F67E1FD9E519D880E05A23FE6F9B9CA527B838_RuntimeMethod_var);
+		TimelineAsset_tE400C944B07CA9D1349BAD84545E24075ADB3496* L_10;
+		L_10 = TrackAsset_get_timelineAsset_m969726B43E66370FB81F1CCB6C012BCAD2B112A8(__this, NULL);
+		ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 L_11;
+		L_11 = NotificationUtilities_CreateNotificationsPlayable_mEBCA07E594A6E0979666BF7C3397ACC7A5D4753E(L_8, L_9, L_10, NULL);
+		V_0 = L_11;
 	}
 
-IL_008e:
+IL_0054:
 	{
-		ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 L_25 = V_3;
+		ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 L_12 = V_0;
+		bool L_13;
+		L_13 = PlayableExtensions_IsValid_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_mFF8546A326EBCD704433CFBA10DC36C8E4DF97BB(L_12, PlayableExtensions_IsValid_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_mFF8546A326EBCD704433CFBA10DC36C8E4DF97BB_RuntimeMethod_var);
+		if (!L_13)
+		{
+			goto IL_0091;
+		}
+	}
+	{
 		il2cpp_codegen_runtime_class_init_inline(ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_il2cpp_TypeInfo_var);
-		Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F L_26;
-		L_26 = ScriptPlayable_1_op_Implicit_m2C50F8086CBE103DBDB66628289E9E20FA06B971(L_25, ScriptPlayable_1_op_Implicit_m2C50F8086CBE103DBDB66628289E9E20FA06B971_RuntimeMethod_var);
-		return L_26;
+		TimeNotificationBehaviour_tE17AD7EF43D3F48E5BB2C35250F82AB5F9B47535* L_14;
+		L_14 = ScriptPlayable_1_GetBehaviour_m00070B57F6A1194957F7AF216F8B94D16026495F((&V_0), ScriptPlayable_1_GetBehaviour_m00070B57F6A1194957F7AF216F8B94D16026495F_RuntimeMethod_var);
+		Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F L_15 = ___3_timelinePlayable;
+		NullCheck(L_14);
+		TimeNotificationBehaviour_set_timeSource_mD0096011A303EB4C84B3DE3AAE908C51955E2F8E_inline(L_14, L_15, NULL);
+		Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F L_16 = ___1_mixerPlayable;
+		bool L_17;
+		L_17 = PlayableExtensions_IsValid_TisPlayable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_mEBB50D8764487C299FFE9DFA47DA4A462B114D0F(L_16, PlayableExtensions_IsValid_TisPlayable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_mEBB50D8764487C299FFE9DFA47DA4A462B114D0F_RuntimeMethod_var);
+		if (!L_17)
+		{
+			goto IL_0091;
+		}
+	}
+	{
+		ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 L_18 = V_0;
+		PlayableExtensions_SetInputCount_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_mAB2CEA823632553DFE50D7CFED5629941F147094(L_18, 1, PlayableExtensions_SetInputCount_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_mAB2CEA823632553DFE50D7CFED5629941F147094_RuntimeMethod_var);
+		Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F L_19 = ___1_mixerPlayable;
+		ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 L_20 = V_0;
+		bool L_21;
+		L_21 = PlayableGraph_Connect_TisPlayable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_mC1F72605B7936997892ED7352AE209A4843D6474((&___0_graph), L_19, 0, L_20, 0, PlayableGraph_Connect_TisPlayable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_mC1F72605B7936997892ED7352AE209A4843D6474_RuntimeMethod_var);
+		ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 L_22 = V_0;
+		Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F L_23 = ___1_mixerPlayable;
+		PlayableExtensions_SetInputWeight_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_TisPlayable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_mB7F67E1FD9E519D880E05A23FE6F9B9CA527B838(L_22, L_23, (1.0f), PlayableExtensions_SetInputWeight_TisScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_TisPlayable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F_mB7F67E1FD9E519D880E05A23FE6F9B9CA527B838_RuntimeMethod_var);
+	}
+
+IL_0091:
+	{
+		ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57 L_24 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(ScriptPlayable_1_tABE33CB87D4E6F95DCDF1EC076C36E6B64DE6D57_il2cpp_TypeInfo_var);
+		Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F L_25;
+		L_25 = ScriptPlayable_1_op_Implicit_m2C50F8086CBE103DBDB66628289E9E20FA06B971(L_24, ScriptPlayable_1_op_Implicit_m2C50F8086CBE103DBDB66628289E9E20FA06B971_RuntimeMethod_var);
+		return L_25;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F TrackAsset_CreatePlayableGraph_mB09B3F258784F140E7D3F33ED4029056EA220371 (TrackAsset_t31E19BE900C90F6616C0D337652C8614CD833B96* __this, PlayableGraph_t4A5B0B45343A240F0761574FD7C672E0CFFF7A6E ___0_graph, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___1_go, IntervalTree_1_t56942FFEDE9739CBDEB79B0B42BE1F89DA07314B* ___2_tree, Playable_t95C6B795846BA0C7D96E4DA14897CCCF2554334F ___3_timelinePlayable, const RuntimeMethod* method) 
@@ -17596,7 +17595,7 @@ IL_001e:
 		L_19 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 		NullCheck(L_19);
 		String_t* L_20;
-		L_20 = VirtualFuncInvoker0< String_t* >::Invoke(40, L_19);
+		L_20 = VirtualFuncInvoker0< String_t* >::Invoke(31, L_19);
 		NullCheck(L_18);
 		ArrayElementTypeCheck (L_18, L_20);
 		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_20);
@@ -19314,7 +19313,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TrackAsset_ValidateClipType_mD794D7B040F
 		L_2 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_1, NULL);
 		NullCheck(L_0);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3;
-		L_3 = VirtualFuncInvoker2< ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, Type_t*, bool >::Invoke(19, L_0, L_2, (bool)1);
+		L_3 = VirtualFuncInvoker2< ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, Type_t*, bool >::Invoke(13, L_0, L_2, (bool)1);
 		V_0 = L_3;
 		V_1 = 0;
 		goto IL_0036;
@@ -19332,7 +19331,7 @@ IL_001b:
 		Type_t* L_9 = ___0_clipType;
 		NullCheck(L_8);
 		bool L_10;
-		L_10 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(36, L_8, L_9);
+		L_10 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(27, L_8, L_9);
 		if (!L_10)
 		{
 			goto IL_0032;
@@ -19367,7 +19366,7 @@ IL_0036:
 		L_16 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 		NullCheck(L_15);
 		bool L_17;
-		L_17 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(36, L_15, L_16);
+		L_17 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(27, L_15, L_16);
 		if (!L_17)
 		{
 			goto IL_0076;
@@ -19381,7 +19380,7 @@ IL_0036:
 		Type_t* L_20 = ___0_clipType;
 		NullCheck(L_19);
 		bool L_21;
-		L_21 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(36, L_19, L_20);
+		L_21 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(27, L_19, L_20);
 		if (!L_21)
 		{
 			goto IL_0076;
@@ -19395,7 +19394,7 @@ IL_0036:
 		Type_t* L_24 = ___0_clipType;
 		NullCheck(L_23);
 		bool L_25;
-		L_25 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(36, L_23, L_24);
+		L_25 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(27, L_23, L_24);
 		return L_25;
 	}
 
@@ -19768,7 +19767,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TrackAsset_IsCompilable_mD65DF730D54F4D1
 		L_2 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 		NullCheck(L_1);
 		bool L_3;
-		L_3 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(36, L_1, L_2);
+		L_3 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(27, L_1, L_2);
 		if (!L_3)
 		{
 			goto IL_0019;
@@ -26809,7 +26808,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MarkerList_CreateMarker_m404F5
 		Type_t* L_2 = ___0_type;
 		NullCheck(L_1);
 		bool L_3;
-		L_3 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(36, L_1, L_2);
+		L_3 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(27, L_1, L_2);
 		if (!L_3)
 		{
 			goto IL_0024;
@@ -26823,7 +26822,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MarkerList_CreateMarker_m404F5
 		Type_t* L_6 = ___0_type;
 		NullCheck(L_5);
 		bool L_7;
-		L_7 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(36, L_5, L_6);
+		L_7 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(27, L_5, L_6);
 		if (L_7)
 		{
 			goto IL_002f;
@@ -26856,7 +26855,7 @@ IL_002f:
 		Type_t* L_13 = ___0_type;
 		NullCheck(L_12);
 		bool L_14;
-		L_14 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(36, L_12, L_13);
+		L_14 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(27, L_12, L_13);
 		if (!L_14)
 		{
 			goto IL_0054;

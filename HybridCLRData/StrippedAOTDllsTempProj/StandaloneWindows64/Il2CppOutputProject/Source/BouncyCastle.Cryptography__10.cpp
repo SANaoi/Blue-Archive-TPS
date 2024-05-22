@@ -9977,7 +9977,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LowmcConstantsL1__ctor_m2EF8424694B856EC
 		L_2 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_1, NULL);
 		NullCheck(L_2);
 		Assembly_t* L_3;
-		L_3 = VirtualFuncInvoker0< Assembly_t* >::Invoke(41, L_2);
+		L_3 = VirtualFuncInvoker0< Assembly_t* >::Invoke(32, L_2);
 		NullCheck(L_3);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_4;
 		L_4 = VirtualFuncInvoker1< Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE*, String_t* >::Invoke(15, L_3, _stringLiteral6E0703F4F86E189E0EE2433F76AE057D706D1A38);
@@ -10298,7 +10298,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LowmcConstantsL3__ctor_m283B30F59878B497
 		L_2 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_1, NULL);
 		NullCheck(L_2);
 		Assembly_t* L_3;
-		L_3 = VirtualFuncInvoker0< Assembly_t* >::Invoke(41, L_2);
+		L_3 = VirtualFuncInvoker0< Assembly_t* >::Invoke(32, L_2);
 		NullCheck(L_3);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_4;
 		L_4 = VirtualFuncInvoker1< Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE*, String_t* >::Invoke(15, L_3, _stringLiteral692B6295330D58006EEA4694C35BD9E1F8BFFE82);
@@ -10619,7 +10619,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LowmcConstantsL5__ctor_m35290BC48CF3FBA1
 		L_2 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_1, NULL);
 		NullCheck(L_2);
 		Assembly_t* L_3;
-		L_3 = VirtualFuncInvoker0< Assembly_t* >::Invoke(41, L_2);
+		L_3 = VirtualFuncInvoker0< Assembly_t* >::Invoke(32, L_2);
 		NullCheck(L_3);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_4;
 		L_4 = VirtualFuncInvoker1< Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE*, String_t* >::Invoke(15, L_3, _stringLiteral53E3BAE53B4595FE9B005EB70EF8F6E5A1C84C08);

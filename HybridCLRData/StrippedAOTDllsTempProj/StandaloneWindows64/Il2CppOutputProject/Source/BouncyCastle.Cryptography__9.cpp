@@ -5923,7 +5923,7 @@ IL_005a:
 		L_70 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_69, NULL);
 		NullCheck(L_70);
 		Assembly_t* L_71;
-		L_71 = VirtualFuncInvoker0< Assembly_t* >::Invoke(41, L_70);
+		L_71 = VirtualFuncInvoker0< Assembly_t* >::Invoke(32, L_70);
 		NullCheck(L_71);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_72;
 		L_72 = VirtualFuncInvoker1< Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE*, String_t* >::Invoke(15, L_71, _stringLiteralA0CA1BE51A1E11FEB5B328D1477386642C00360E);
@@ -6598,7 +6598,7 @@ IL_005a:
 		L_73 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_72, NULL);
 		NullCheck(L_73);
 		Assembly_t* L_74;
-		L_74 = VirtualFuncInvoker0< Assembly_t* >::Invoke(41, L_73);
+		L_74 = VirtualFuncInvoker0< Assembly_t* >::Invoke(32, L_73);
 		NullCheck(L_74);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_75;
 		L_75 = VirtualFuncInvoker1< Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE*, String_t* >::Invoke(15, L_74, _stringLiteral3686ED23DB5B4D2451BFCCAD33657B91C49659AB);
@@ -7265,7 +7265,7 @@ IL_005a:
 		L_70 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_69, NULL);
 		NullCheck(L_70);
 		Assembly_t* L_71;
-		L_71 = VirtualFuncInvoker0< Assembly_t* >::Invoke(41, L_70);
+		L_71 = VirtualFuncInvoker0< Assembly_t* >::Invoke(32, L_70);
 		NullCheck(L_71);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_72;
 		L_72 = VirtualFuncInvoker1< Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE*, String_t* >::Invoke(15, L_71, _stringLiteral62D5449140B647EE64073099F5964374ED4DED59);
@@ -7933,7 +7933,7 @@ IL_005a:
 		L_70 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_69, NULL);
 		NullCheck(L_70);
 		Assembly_t* L_71;
-		L_71 = VirtualFuncInvoker0< Assembly_t* >::Invoke(41, L_70);
+		L_71 = VirtualFuncInvoker0< Assembly_t* >::Invoke(32, L_70);
 		NullCheck(L_71);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_72;
 		L_72 = VirtualFuncInvoker1< Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE*, String_t* >::Invoke(15, L_71, _stringLiteral1DB9693B05FF4A5E84C8D5C5550EA55B01F7A1A1);

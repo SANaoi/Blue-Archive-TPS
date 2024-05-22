@@ -162,16 +162,6 @@ struct InvokerActionInvoker3<T1*, T2*, T3>
 		method->invoker_method(methodPtr, method, obj, params, params[2]);
 	}
 };
-template <typename R>
-struct InvokerFuncInvoker0
-{
-	static inline R Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj)
-	{
-		R ret;
-		method->invoker_method(methodPtr, method, obj, NULL, &ret);
-		return ret;
-	}
-};
 template <typename R, typename T1>
 struct InvokerFuncInvoker1;
 template <typename R, typename T1>
@@ -246,8 +236,6 @@ struct U3CU3Ec__313_2_t839D4CBD034FC6A67F9F4388F5A5813D59E18F06;
 struct U3CU3Ec__314_2_t8FED8D596F9629CCF342714C89290FD29AA0F238;
 struct U3CU3Ec__317_2_t1E7932FAE15A28106293604E85A9142011E9F696;
 struct U3CU3Ec__318_2_t5FBC021118D98AC52E4BC4F9AE0CF9B846B4FD4D;
-struct U3CU3Ec__3_2_t8BD15A7D1BB2AB7E6EBEF645A1DFC8C5BDF3C3C1;
-struct U3CU3Ec__3_2_tBB29CF1C815215807833CEA7087B12B63B7551BC;
 struct U3CU3Ec__471_2_t93D540B1F0AE2798718D85DAD9E3C19D75F96AAB;
 struct U3CU3Ec__60_1_t347B6CF091C33FCB1F4A6D9D4E031B6497713088;
 struct U3CU3Ec__88_1_tF4A8042660CB93A4683176ED4D8678761468B6A2;
@@ -271,7 +259,6 @@ struct U3CU3Ec__DisplayClass26_0_t0351534540620B73FBE9D3014F83853381E9EB95;
 struct U3CU3Ec__DisplayClass26_0_tF89C99BDB4D0C46A072BF705A8BD31377C6FF470;
 struct U3CU3Ec__DisplayClass33_0_1_tB56474CDD9B2697672082F9EF3314F281FC21C55;
 struct U3CU3Ec__DisplayClass33_0_1_tB6CF9727F3704623A7C8D43E9FEB20554021BFB3;
-struct U3CU3Ec__DisplayClass34_0_1_tE550D45F56ED5795E33EF3CCFB28825B0DCAC2AD;
 struct U3CU3Ec__DisplayClass34_0_1_tCF4988ECE449CD140B13F5D3E6D3C2B6BDEEEBCD;
 struct U3CU3Ec__DisplayClass34_1_1_tD4EABA378826BCCF6F9927D2ADB579C213942C64;
 struct U3CU3Ec__DisplayClass35_0_t769B7FB5A85BA5164E82971D3216889A9ECA8228;
@@ -565,10 +552,8 @@ struct Action_2_tFDA59A266B876E9846989E1EC1AC2B92BC20CEDA;
 struct Action_2_t67647DD70912484E9205AC38396D2849ED602730;
 struct Action_2_t240BAEB1DC7A6558995FFCB7E0186F2ABB2CE346;
 struct Action_2_t0A355F395B37608D12ABF3C67F5DDCE0FD6DA6E7;
-struct Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C;
 struct Action_2_tA1EAD43A5C76FF3E77D1705EC83B9AB7B1BE7D88;
 struct Action_2_t59D76E8E33E42C8C40C55EF3A30B86F9FACA7842;
-struct Action_2_t1D42C7D8DCD2DEB7C556FB3783F0EDAFF694E5E8;
 struct Action_3_t01DF95D21607FF0A99EFC836DEBEBB87D8F6843A;
 struct Action_3_tDDD794E47A1566FDB2DCD6474A924C30A44E1456;
 struct Action_3_t242FCAFE4A12A177586B2F7387683D7F96998E54;
@@ -838,7 +823,6 @@ struct List_1_t6FBD33EFCD307A54E0E8F62AAA0677E2ADAE58D3;
 struct List_1_t41C2EDD66117D972FEA55570670E98C21D5C49E1;
 struct List_1_t96E9133B70FB6765E6B138E810D33E18901715DA;
 struct List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73;
-struct List_1_t269913CE854C1793B808480C94E04A8DB19CD0A4;
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
 struct List_1_tA8CDD10241272F52D820B8D34B369A175EF12A7C;
 struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD;
@@ -1127,8 +1111,6 @@ struct TextInputBase_t1C4ADC0DE8BF430AA17D822D068E2204405C139A;
 struct TextInputBase_tEC90EE082678B4A2F6AD45223E7A865597BED41D;
 struct TextInputBaseField_1_t22B13113CAA1983EB68A9C82AA257206C5729320;
 struct TextInputBaseField_1_tC693C9223BC3F56D9387F26A86CAB402209921C2;
-struct Tuple_3_t2D4C29E74A6A48C954C54F2C5156BD19C434BA40;
-struct Tuple_3_tA9629AB90A9BD8C1E0490927A977DF122A277ACF;
 struct WhenAllPromise_10_t976EF21CEC1CA2BDE4053D80995D76C0A926D60B;
 struct WhenAllPromise_11_t17B49F6FD7D646AD34BCFA260E28D7DB2CA195E6;
 struct WhenAllPromise_12_t5A0433F9D41D7B7A87BACDCDAB5C6CDB2A74386F;
@@ -1160,14 +1142,12 @@ struct InputControlU5BU5D_t0B951FEF1504D6340387C4735F5D6F426F40FE17;
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 struct InternedStringU5BU5D_t0B851758733FC0B118D84BE83AED10A0404C18D5;
 struct MatchInfoU5BU5D_t84F2B1AF508D4E935AE77C1C24AB38218EDD8572;
-struct MemberInfoU5BU5D_t4CB6970BB166E8E1CFB06152B2A2284971873053;
 struct NameAndParametersU5BU5D_tA6C2AC34ACDB1967A7A2CEF4BE1D717ADA695CA2;
 struct NamedValueU5BU5D_tADD8F1373B88C55F68499688D72C21A97F63303A;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct PlayerInfoU5BU5D_t59D07B232F694E4B564EF004D5EC70E663FAD415;
 struct PlayerLoopSystemU5BU5D_t07C04E53AAC3CDA17603E8BA1B41D7E1AC083C6D;
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
-struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 struct TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB;
 struct UInt16U5BU5D_tEB7C42D811D999D2AA815BADC3FCCDD9C67B3F83;
 struct UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA;
@@ -1211,7 +1191,6 @@ struct InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B;
 struct Label_tC160668F9119CE0F5567021FB208E64A5B1C5B70;
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
 struct MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553;
-struct MemberInfo_t;
 struct MeshHandle_tC1E9A7ECCFDAEFDE064B8D58B35B9CEE5A70A22E;
 struct MethodInfo_t;
 struct NetworkConnection_t49880296B0FA972023F34582D7A41D7B63383E78;
@@ -1251,7 +1230,6 @@ struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115;
 struct VisualTreeAsset_tFB5BF81F0780A412AE5A7C2C552B3EEA64EA2EEB;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B;
-struct MemberBuilderSettings_t25461CAF76E30C84D1BA8129EB3B96C85628F189;
 struct UpdateFunction_t1C48B7EECBE47AC123A9D9D7D9D2A9EE951C56C4;
 struct ContingentProperties_t3FA59480914505CEA917B1002EC675F29D0CB540;
 struct CustomStyleAccess_t170C852102B4D09FB478B620A75B14D096F9F2B1;
@@ -1418,12 +1396,6 @@ struct U3CU3Ec__317_2_t1E7932FAE15A28106293604E85A9142011E9F696  : public Runtim
 struct U3CU3Ec__318_2_t5FBC021118D98AC52E4BC4F9AE0CF9B846B4FD4D  : public RuntimeObject
 {
 };
-struct U3CU3Ec__3_2_t8BD15A7D1BB2AB7E6EBEF645A1DFC8C5BDF3C3C1  : public RuntimeObject
-{
-};
-struct U3CU3Ec__3_2_tBB29CF1C815215807833CEA7087B12B63B7551BC  : public RuntimeObject
-{
-};
 struct U3CU3Ec__471_2_t93D540B1F0AE2798718D85DAD9E3C19D75F96AAB  : public RuntimeObject
 {
 };
@@ -1473,10 +1445,6 @@ struct U3CU3Ec__DisplayClass26_0_t0351534540620B73FBE9D3014F83853381E9EB95  : pu
 };
 struct U3CU3Ec__DisplayClass26_0_tF89C99BDB4D0C46A072BF705A8BD31377C6FF470 : public RuntimeObject {};
 struct U3CU3Ec__DisplayClass33_0_1_tB6CF9727F3704623A7C8D43E9FEB20554021BFB3 : public RuntimeObject {};
-struct U3CU3Ec__DisplayClass34_0_1_tE550D45F56ED5795E33EF3CCFB28825B0DCAC2AD  : public RuntimeObject
-{
-	MemberBuilderSettings_t25461CAF76E30C84D1BA8129EB3B96C85628F189* ___settings;
-};
 struct U3CU3Ec__DisplayClass34_0_1_tCF4988ECE449CD140B13F5D3E6D3C2B6BDEEEBCD  : public RuntimeObject
 {
 	RuntimeObject* ___comparer;
@@ -2904,19 +2872,6 @@ struct TaskCompletionSource_1_t8A40BE53A167B6D71D5640881A7A894D8DA94970  : publi
 {
 	Task_1_tDF1FF540D7D2248A08580387A39717B7FB7A9CF9* ____task;
 };
-struct Tuple_3_t2D4C29E74A6A48C954C54F2C5156BD19C434BA40  : public RuntimeObject
-{
-	Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* ___m_Item1;
-	RuntimeObject* ___m_Item2;
-	RuntimeObject* ___m_Item3;
-};
-struct Tuple_3_tF0821A7BEADD05320E476CF9AB276DF6ECE58A83 : public RuntimeObject {};
-struct Tuple_3_tA9629AB90A9BD8C1E0490927A977DF122A277ACF  : public RuntimeObject
-{
-	RuntimeObject* ___m_Item1;
-	RuntimeObject* ___m_Item2;
-	RuntimeObject* ___m_Item3;
-};
 struct CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4  : public RuntimeObject
 {
 	bool ___isIMGUIContainer;
@@ -2999,16 +2954,6 @@ struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinv
 };
 struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
 {
-};
-struct MemberBuilderSettings_t25461CAF76E30C84D1BA8129EB3B96C85628F189  : public RuntimeObject
-{
-	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___nameExceptionsList;
-	List_1_t269913CE854C1793B808480C94E04A8DB19CD0A4* ___memberExceptionsList;
-	int32_t ___U3CstaticBindingsU3Ek__BackingField;
-	int32_t ___U3CaccesModiferBindingsU3Ek__BackingField;
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___U3CnameExceptionsU3Ek__BackingField;
-	MemberInfoU5BU5D_t4CB6970BB166E8E1CFB06152B2A2284971873053* ___U3CmemberExceptionsU3Ek__BackingField;
-	bool ___U3CincludeObsoleteU3Ek__BackingField;
 };
 struct U3CU3Ec__DisplayClass2_0_1_t41073816D00B5468033D7AA727FBFFB73E7C9BA2 
 {
@@ -5936,13 +5881,7 @@ struct Action_1_t6CE77E14AC0148F5F028EDED926D2CDA61C05AC9  : public MulticastDel
 struct Action_2_t0A355F395B37608D12ABF3C67F5DDCE0FD6DA6E7  : public MulticastDelegate_t
 {
 };
-struct Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C  : public MulticastDelegate_t
-{
-};
 struct Action_2_t59D76E8E33E42C8C40C55EF3A30B86F9FACA7842  : public MulticastDelegate_t
-{
-};
-struct Action_2_t1D42C7D8DCD2DEB7C556FB3783F0EDAFF694E5E8  : public MulticastDelegate_t
 {
 };
 struct Action_3_t01DF95D21607FF0A99EFC836DEBEBB87D8F6843A  : public MulticastDelegate_t
@@ -7849,16 +7788,6 @@ struct U3CU3Ec__318_2_t5FBC021118D98AC52E4BC4F9AE0CF9B846B4FD4D_StaticFields
 	U3CU3Ec__318_2_t5FBC021118D98AC52E4BC4F9AE0CF9B846B4FD4D* ___U3CU3E9;
 	Func_4_tACF12340039B5BCFBB5ED953C0B2BF68B8F74D25* ___U3CU3E9__318_0;
 };
-struct U3CU3Ec__3_2_t8BD15A7D1BB2AB7E6EBEF645A1DFC8C5BDF3C3C1_StaticFields
-{
-	U3CU3Ec__3_2_t8BD15A7D1BB2AB7E6EBEF645A1DFC8C5BDF3C3C1* ___U3CU3E9;
-	Func_2_tACBF5A1656250800CE861707354491F0611F6624* ___U3CU3E9__3_0;
-};
-struct U3CU3Ec__3_2_tBB29CF1C815215807833CEA7087B12B63B7551BC_StaticFields
-{
-	U3CU3Ec__3_2_tBB29CF1C815215807833CEA7087B12B63B7551BC* ___U3CU3E9;
-	Func_2_tACBF5A1656250800CE861707354491F0611F6624* ___U3CU3E9__3_0;
-};
 struct U3CU3Ec__471_2_t93D540B1F0AE2798718D85DAD9E3C19D75F96AAB_StaticFields
 {
 	U3CU3Ec__471_2_t93D540B1F0AE2798718D85DAD9E3C19D75F96AAB* ___U3CU3E9;
@@ -8865,11 +8794,6 @@ struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeA
 };
 
 
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__3_2__ctor_m380073DA46A52043D11E5E322AC17AD6B65B6F2B_gshared (U3CU3Ec__3_2_t8BD15A7D1BB2AB7E6EBEF645A1DFC8C5BDF3C3C1* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Tuple_3_get_Item1_mF5FCFBBB4F65DB24D82BF3A10AB37C6D25B56A16_gshared_inline (Tuple_3_tA9629AB90A9BD8C1E0490927A977DF122A277ACF* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Tuple_3_get_Item2_m86B3AD728A7526D2D2AFAF81F5D36E370738A737_gshared_inline (Tuple_3_tA9629AB90A9BD8C1E0490927A977DF122A277ACF* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Tuple_3_get_Item3_mB3FB90902E2ECEABF305882D4307381179CA83B0_gshared_inline (Tuple_3_tA9629AB90A9BD8C1E0490927A977DF122A277ACF* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_gshared_inline (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* __this, RuntimeObject* ___0_arg1, RuntimeObject* ___1_arg2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueTuple_2__ctor_mCAE8E725F680FA6BE2C23B9686C9F6056BB7E5CD_gshared (ValueTuple_2_tBAA1E1D7D97D80E0EBA7FE8773B1FF409AEA3829* __this, Il2CppFullySharedGenericAny ___0_item1, Il2CppFullySharedGenericAny ___1_item2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__60_1__ctor_mD7A113B785AF84056B6165FE07819246093ADEAE_gshared (U3CU3Ec__60_1_t347B6CF091C33FCB1F4A6D9D4E031B6497713088* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Activator_CreateInstance_TisRuntimeObject_m62506836177F0F862A8D619638BF37F48721F138_gshared (const RuntimeMethod* method) ;
@@ -9168,26 +9092,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AggregateException_t51B6205846DFB356B94452702
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Exception_t* Exception_get_InnerException_m0C1BDB339C786BA4DA7D2C1AD214571CFBBB1410_inline (Exception_t* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UniTaskScheduler_PublishUnobservedTaskException_m9F6352174ED5654B0A9FB5562B6FF25A788B27D3 (Exception_t* ___0_ex, const RuntimeMethod* method) ;
-inline void U3CU3Ec__3_2__ctor_m380073DA46A52043D11E5E322AC17AD6B65B6F2B (U3CU3Ec__3_2_t8BD15A7D1BB2AB7E6EBEF645A1DFC8C5BDF3C3C1* __this, const RuntimeMethod* method)
-{
-	((  void (*) (U3CU3Ec__3_2_t8BD15A7D1BB2AB7E6EBEF645A1DFC8C5BDF3C3C1*, const RuntimeMethod*))U3CU3Ec__3_2__ctor_m380073DA46A52043D11E5E322AC17AD6B65B6F2B_gshared)(__this, method);
-}
-inline Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* Tuple_3_get_Item1_m1FB8AC5E5091000ED33DADC4CA3B2BE0C3AF522C_inline (Tuple_3_t2D4C29E74A6A48C954C54F2C5156BD19C434BA40* __this, const RuntimeMethod* method)
-{
-	return ((  Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* (*) (Tuple_3_t2D4C29E74A6A48C954C54F2C5156BD19C434BA40*, const RuntimeMethod*))Tuple_3_get_Item1_mF5FCFBBB4F65DB24D82BF3A10AB37C6D25B56A16_gshared_inline)(__this, method);
-}
-inline RuntimeObject* Tuple_3_get_Item2_mD38E4BD899AC36E17DC4B17E310D4057DDCEE0EB_inline (Tuple_3_t2D4C29E74A6A48C954C54F2C5156BD19C434BA40* __this, const RuntimeMethod* method)
-{
-	return ((  RuntimeObject* (*) (Tuple_3_t2D4C29E74A6A48C954C54F2C5156BD19C434BA40*, const RuntimeMethod*))Tuple_3_get_Item2_m86B3AD728A7526D2D2AFAF81F5D36E370738A737_gshared_inline)(__this, method);
-}
-inline RuntimeObject* Tuple_3_get_Item3_mD769D4AFA554EF0978239BA2517D6E639E5E9F2C_inline (Tuple_3_t2D4C29E74A6A48C954C54F2C5156BD19C434BA40* __this, const RuntimeMethod* method)
-{
-	return ((  RuntimeObject* (*) (Tuple_3_t2D4C29E74A6A48C954C54F2C5156BD19C434BA40*, const RuntimeMethod*))Tuple_3_get_Item3_mB3FB90902E2ECEABF305882D4307381179CA83B0_gshared_inline)(__this, method);
-}
-inline void Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_inline (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* __this, RuntimeObject* ___0_arg1, RuntimeObject* ___1_arg2, const RuntimeMethod* method)
-{
-	((  void (*) (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*))Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_gshared_inline)(__this, ___0_arg1, ___1_arg2, method);
-}
 inline void ValueTuple_2__ctor_mCAE8E725F680FA6BE2C23B9686C9F6056BB7E5CD (ValueTuple_2_tBAA1E1D7D97D80E0EBA7FE8773B1FF409AEA3829* __this, Il2CppFullySharedGenericAny ___0_item1, Il2CppFullySharedGenericAny ___1_item2, const RuntimeMethod* method)
 {
 	((  void (*) (ValueTuple_2_tBAA1E1D7D97D80E0EBA7FE8773B1FF409AEA3829*, Il2CppFullySharedGenericAny, Il2CppFullySharedGenericAny, const RuntimeMethod*))ValueTuple_2__ctor_mCAE8E725F680FA6BE2C23B9686C9F6056BB7E5CD_gshared)((ValueTuple_2_tBAA1E1D7D97D80E0EBA7FE8773B1FF409AEA3829*)__this, ___0_item1, ___1_item2, method);
@@ -9329,7 +9233,6 @@ inline void PopupField_1_ChangeValueFromMenu_mCA58F98D164431CBDF0A88AF5153C8BBF9
 	((  void (*) (PopupField_1_t5BB514A54CE3F4E3DCDD2F6F62FB437F22959E8D*, RuntimeObject*, const RuntimeMethod*))PopupField_1_ChangeValueFromMenu_mCA58F98D164431CBDF0A88AF5153C8BBF9993770_gshared)(__this, ___0_menuItem, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InternedString_Equals_m5D291A2CFFE2373F6AA2880B514DC4D5873EA0B8 (InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_other, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MemberBuilderSettings_IsException_m0C2CBDADE52AC9CFDBE869FAED44C3562977DFB9 (MemberBuilderSettings_t25461CAF76E30C84D1BA8129EB3B96C85628F189* __this, MemberInfo_t* ___0_member, const RuntimeMethod* method) ;
 inline void TaskFactory_1_FromAsyncCoreLogic_m6FDB2751D5B42BDEE5E63D84B40496C85B00120A (RuntimeObject* ___0_iar, Func_2_t1391788F059095CD6CE9F8A22EE25D06E3A92647* ___1_endFunction, Action_1_t8AE9CB3E5DC764211C9FEAC59DE7B65AD1444780* ___2_endAction, Task_1_t1253923251256D5BDFC2FDA8EFF422DBBAB7C239* ___3_promise, bool ___4_requiresSynchronization, const RuntimeMethod* method)
 {
 	((  void (*) (RuntimeObject*, Func_2_t1391788F059095CD6CE9F8A22EE25D06E3A92647*, Action_1_t8AE9CB3E5DC764211C9FEAC59DE7B65AD1444780*, Task_1_t1253923251256D5BDFC2FDA8EFF422DBBAB7C239*, bool, const RuntimeMethod*))TaskFactory_1_FromAsyncCoreLogic_m6FDB2751D5B42BDEE5E63D84B40496C85B00120A_gshared)(___0_iar, ___1_endFunction, ___2_endAction, ___3_promise, ___4_requiresSynchronization, method);
@@ -22389,104 +22292,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__318_2_U3CSelectManyAwaitWithCan
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__3_2__cctor_m2D270CF2F8DB871D5162F00B8E96EDEB227E5218_gshared (const RuntimeMethod* method) 
-{
-	{
-		U3CU3Ec__3_2_t8BD15A7D1BB2AB7E6EBEF645A1DFC8C5BDF3C3C1* L_0 = (U3CU3Ec__3_2_t8BD15A7D1BB2AB7E6EBEF645A1DFC8C5BDF3C3C1*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0));
-		U3CU3Ec__3_2__ctor_m380073DA46A52043D11E5E322AC17AD6B65B6F2B(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
-		((U3CU3Ec__3_2_t8BD15A7D1BB2AB7E6EBEF645A1DFC8C5BDF3C3C1_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CU3E9 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec__3_2_t8BD15A7D1BB2AB7E6EBEF645A1DFC8C5BDF3C3C1_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CU3E9), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__3_2__ctor_m380073DA46A52043D11E5E322AC17AD6B65B6F2B_gshared (U3CU3Ec__3_2_t8BD15A7D1BB2AB7E6EBEF645A1DFC8C5BDF3C3C1* __this, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CU3Ec__3_2_U3CRunOnEmptyStackU3Eb__3_0_m2390391A86B7ACAAA3D774530299EE9368552B68_gshared (U3CU3Ec__3_2_t8BD15A7D1BB2AB7E6EBEF645A1DFC8C5BDF3C3C1* __this, RuntimeObject* ___0_s, const RuntimeMethod* method) 
-{
-	Tuple_3_t2D4C29E74A6A48C954C54F2C5156BD19C434BA40* V_0 = NULL;
-	{
-		RuntimeObject* L_0 = ___0_s;
-		V_0 = ((Tuple_3_t2D4C29E74A6A48C954C54F2C5156BD19C434BA40*)CastclassClass((RuntimeObject*)L_0, il2cpp_rgctx_data(method->klass->rgctx_data, 3)));
-		Tuple_3_t2D4C29E74A6A48C954C54F2C5156BD19C434BA40* L_1 = V_0;
-		NullCheck(L_1);
-		Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* L_2;
-		L_2 = Tuple_3_get_Item1_m1FB8AC5E5091000ED33DADC4CA3B2BE0C3AF522C_inline(L_1, il2cpp_rgctx_method(method->klass->rgctx_data, 4));
-		Tuple_3_t2D4C29E74A6A48C954C54F2C5156BD19C434BA40* L_3 = V_0;
-		NullCheck(L_3);
-		RuntimeObject* L_4;
-		L_4 = Tuple_3_get_Item2_mD38E4BD899AC36E17DC4B17E310D4057DDCEE0EB_inline(L_3, il2cpp_rgctx_method(method->klass->rgctx_data, 6));
-		Tuple_3_t2D4C29E74A6A48C954C54F2C5156BD19C434BA40* L_5 = V_0;
-		NullCheck(L_5);
-		RuntimeObject* L_6;
-		L_6 = Tuple_3_get_Item3_mD769D4AFA554EF0978239BA2517D6E639E5E9F2C_inline(L_5, il2cpp_rgctx_method(method->klass->rgctx_data, 8));
-		NullCheck(L_2);
-		Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_inline(L_2, L_4, L_6, il2cpp_rgctx_method(method->klass->rgctx_data, 10));
-		return NULL;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__3_2__cctor_m8FBEB4C0C52DD10E8F0030B8FF764C582EEA3630_gshared (const RuntimeMethod* method) 
-{
-	{
-		U3CU3Ec__3_2_tBB29CF1C815215807833CEA7087B12B63B7551BC* L_0 = (U3CU3Ec__3_2_tBB29CF1C815215807833CEA7087B12B63B7551BC*)il2cpp_codegen_object_new(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 0));
-		((  void (*) (U3CU3Ec__3_2_tBB29CF1C815215807833CEA7087B12B63B7551BC*, const RuntimeMethod*))il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1)))(L_0, il2cpp_rgctx_method(InitializedTypeInfo(method->klass)->rgctx_data, 1));
-		((U3CU3Ec__3_2_tBB29CF1C815215807833CEA7087B12B63B7551BC_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CU3E9 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&((U3CU3Ec__3_2_tBB29CF1C815215807833CEA7087B12B63B7551BC_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(InitializedTypeInfo(method->klass)->rgctx_data, 2)))->___U3CU3E9), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__3_2__ctor_m3E2D4A8F43C73A5B27D3F2030DBD645F3DBB4F9C_gshared (U3CU3Ec__3_2_tBB29CF1C815215807833CEA7087B12B63B7551BC* __this, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CU3Ec__3_2_U3CRunOnEmptyStackU3Eb__3_0_m011E802A5AAF492423E803243A57321EF9C82241_gshared (U3CU3Ec__3_2_tBB29CF1C815215807833CEA7087B12B63B7551BC* __this, RuntimeObject* ___0_s, const RuntimeMethod* method) 
-{
-	const uint32_t SizeOf_T1_t5F0FCC8F68ED5A5AD006CAEC22C97DFE1DA9AEBA = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 7));
-	const Il2CppFullySharedGenericAny L_4 = alloca(SizeOf_T1_t5F0FCC8F68ED5A5AD006CAEC22C97DFE1DA9AEBA);
-	const uint32_t SizeOf_T2_tDF36A940979D2F72D5907EA40C25619DD98A693D = il2cpp_codegen_sizeof(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 9));
-	const Il2CppFullySharedGenericAny L_6 = alloca(SizeOf_T2_tDF36A940979D2F72D5907EA40C25619DD98A693D);
-	Tuple_3_tF0821A7BEADD05320E476CF9AB276DF6ECE58A83* V_0 = NULL;
-	{
-		RuntimeObject* L_0 = ___0_s;
-		V_0 = ((Tuple_3_tF0821A7BEADD05320E476CF9AB276DF6ECE58A83*)CastclassClass((RuntimeObject*)L_0, il2cpp_rgctx_data(method->klass->rgctx_data, 3)));
-		Tuple_3_tF0821A7BEADD05320E476CF9AB276DF6ECE58A83* L_1 = V_0;
-		NullCheck(L_1);
-		Action_2_t1D42C7D8DCD2DEB7C556FB3783F0EDAFF694E5E8* L_2;
-		L_2 = InvokerFuncInvoker0< Action_2_t1D42C7D8DCD2DEB7C556FB3783F0EDAFF694E5E8* >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 4)), il2cpp_rgctx_method(method->klass->rgctx_data, 4), L_1);
-		Tuple_3_tF0821A7BEADD05320E476CF9AB276DF6ECE58A83* L_3 = V_0;
-		NullCheck(L_3);
-		InvokerActionInvoker1< Il2CppFullySharedGenericAny* >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 6)), il2cpp_rgctx_method(method->klass->rgctx_data, 6), L_3, (Il2CppFullySharedGenericAny*)L_4);
-		Tuple_3_tF0821A7BEADD05320E476CF9AB276DF6ECE58A83* L_5 = V_0;
-		NullCheck(L_5);
-		InvokerActionInvoker1< Il2CppFullySharedGenericAny* >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 8)), il2cpp_rgctx_method(method->klass->rgctx_data, 8), L_5, (Il2CppFullySharedGenericAny*)L_6);
-		NullCheck(L_2);
-		InvokerActionInvoker2< Il2CppFullySharedGenericAny, Il2CppFullySharedGenericAny >::Invoke(il2cpp_codegen_get_direct_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 10)), il2cpp_rgctx_method(method->klass->rgctx_data, 10), L_2, (il2cpp_codegen_class_is_value_type(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 7)) ? L_4: *(void**)L_4), (il2cpp_codegen_class_is_value_type(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 9)) ? L_6: *(void**)L_6));
-		return NULL;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__471_2__cctor_mFE359A40BB3A1D3BFB24A104296F4FBDD44793F3_gshared (const RuntimeMethod* method) 
 {
 	{
@@ -22597,7 +22402,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__88_1_U3CGetAllTypesDerivedFromU
 		L_2 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_1, NULL);
 		NullCheck(L_0);
 		bool L_3;
-		L_3 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(35, L_0, L_2);
+		L_3 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(26, L_0, L_2);
 		return L_3;
 	}
 }
@@ -22642,7 +22447,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__88_1_U3CGetAllTypesDerivedFromU
 		L_2 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_1, NULL);
 		NullCheck(L_0);
 		bool L_3;
-		L_3 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(35, L_0, L_2);
+		L_3 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(26, L_0, L_2);
 		return L_3;
 	}
 }
@@ -24231,32 +24036,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass33_0_1_U3CMergeU3Eb
 		il2cpp_codegen_memcpy(L_0, il2cpp_codegen_get_instance_field_data_pointer(__this, il2cpp_rgctx_field(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 1),0)), SizeOf_TValue_t474D439C27D3298C88B3F0E2333AEBBD6A9626C6);
 		bool L_2;
 		L_2 = ConstrainedFuncInvoker1< bool, Il2CppFullySharedGenericAny >::Invoke(il2cpp_rgctx_data(method->klass->rgctx_data, 0), il2cpp_rgctx_method(method->klass->rgctx_data, 3), L_1, (void*)(Il2CppFullySharedGenericAny*)(il2cpp_codegen_class_is_value_type(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 0)) ? ___0_x : &___0_x), (il2cpp_codegen_class_is_value_type(il2cpp_rgctx_data_no_init(method->klass->rgctx_data, 0)) ? L_0: *(void**)L_0));
-		return L_2;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass34_0_1__ctor_m32B7665DF267B8FD2A72CF15A738A919D66CD3B3_gshared (U3CU3Ec__DisplayClass34_0_1_tE550D45F56ED5795E33EF3CCFB28825B0DCAC2AD* __this, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2((RuntimeObject*)__this, NULL);
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass34_0_1_U3CGetMembersForSettingsU3Eb__0_m509F653FC58EDF9C13FEE12C0C4BC7EA2594554B_gshared (U3CU3Ec__DisplayClass34_0_1_tE550D45F56ED5795E33EF3CCFB28825B0DCAC2AD* __this, RuntimeObject* ___0_x, const RuntimeMethod* method) 
-{
-	{
-		MemberBuilderSettings_t25461CAF76E30C84D1BA8129EB3B96C85628F189* L_0 = __this->___settings;
-		RuntimeObject* L_1 = ___0_x;
-		NullCheck(L_0);
-		bool L_2;
-		L_2 = MemberBuilderSettings_IsException_m0C2CBDADE52AC9CFDBE869FAED44C3562977DFB9(L_0, (MemberInfo_t*)L_1, NULL);
 		return L_2;
 	}
 }
@@ -40077,32 +39856,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Exception_t* Exception_get_InnerE
 		Exception_t* L_0 = __this->____innerException;
 		return L_0;
 	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Tuple_3_get_Item1_mF5FCFBBB4F65DB24D82BF3A10AB37C6D25B56A16_gshared_inline (Tuple_3_tA9629AB90A9BD8C1E0490927A977DF122A277ACF* __this, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = __this->___m_Item1;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Tuple_3_get_Item2_m86B3AD728A7526D2D2AFAF81F5D36E370738A737_gshared_inline (Tuple_3_tA9629AB90A9BD8C1E0490927A977DF122A277ACF* __this, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = __this->___m_Item2;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Tuple_3_get_Item3_mB3FB90902E2ECEABF305882D4307381179CA83B0_gshared_inline (Tuple_3_tA9629AB90A9BD8C1E0490927A977DF122A277ACF* __this, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = __this->___m_Item3;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_gshared_inline (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* __this, RuntimeObject* ___0_arg1, RuntimeObject* ___1_arg2, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_arg1, ___1_arg2, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncOperationHandle_1_set_UnloadSceneOpExcludeReleaseCallback_mE5DB63D067FBDA0EDBD11D20E80C9BC41F84AF69_gshared_inline (AsyncOperationHandle_1_t074166892865CF484A3C77A1E9FB6F5E83DA1DA5* __this, bool ___0_value, const RuntimeMethod* method) 
 {

@@ -10,6 +10,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		"System.Core.dll",
 		"System.dll",
 		"Unity.Addressables.dll",
+		"Unity.Animation.Rigging.dll",
 		"Unity.InputSystem.dll",
 		"Unity.ResourceManager.dll",
 		"UnityEngine.CoreModule.dll",
@@ -381,9 +382,14 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Threading.Tasks.TaskFactory.<>c__DisplayClass35_0<object>
 	// System.Threading.Tasks.TaskFactory<object>
 	// UnityEngine.AddressableAssets.AddressablesImpl.<>c__DisplayClass79_0<object>
+	// UnityEngine.Animations.Rigging.AnimationJobBinder<UnityEngine.Animations.Rigging.MultiAimConstraintJob,UnityEngine.Animations.Rigging.MultiAimConstraintData>
+	// UnityEngine.Animations.Rigging.RigConstraint<UnityEngine.Animations.Rigging.MultiAimConstraintJob,UnityEngine.Animations.Rigging.MultiAimConstraintData,object>
 	// UnityEngine.InputSystem.InputBindingComposite<UnityEngine.Vector2>
+	// UnityEngine.InputSystem.InputBindingComposite<float>
 	// UnityEngine.InputSystem.InputControl<UnityEngine.Vector2>
+	// UnityEngine.InputSystem.InputControl<float>
 	// UnityEngine.InputSystem.InputProcessor<UnityEngine.Vector2>
+	// UnityEngine.InputSystem.InputProcessor<float>
 	// UnityEngine.InputSystem.Utilities.InlinedArray<object>
 	// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase.<>c__DisplayClass60_0<object>
 	// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase.<>c__DisplayClass61_0<object>
@@ -399,7 +405,9 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	{
 		// object Cinemachine.CinemachineVirtualCamera.GetCinemachineComponent<object>()
 		// System.Void* Unity.Collections.LowLevel.Unsafe.UnsafeUtility.AddressOf<UnityEngine.Vector2>(UnityEngine.Vector2&)
+		// System.Void* Unity.Collections.LowLevel.Unsafe.UnsafeUtility.AddressOf<float>(float&)
 		// int Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<UnityEngine.Vector2>()
+		// int Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<float>()
 		// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object> UnityEngine.AddressableAssets.Addressables.LoadAssetAsync<object>(object)
 		// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object> UnityEngine.AddressableAssets.AddressablesImpl.LoadAssetAsync<object>(object)
 		// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object> UnityEngine.AddressableAssets.AddressablesImpl.LoadAssetWithChain<object>(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle,object)
@@ -409,8 +417,12 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// object UnityEngine.GameObject.AddComponent<object>()
 		// object UnityEngine.GameObject.GetComponent<object>()
 		// UnityEngine.Vector2 UnityEngine.InputSystem.InputAction.ReadValue<UnityEngine.Vector2>()
+		// float UnityEngine.InputSystem.InputAction.ReadValue<float>()
+		// UnityEngine.Vector2 UnityEngine.InputSystem.InputAction.CallbackContext.ReadValue<UnityEngine.Vector2>()
 		// UnityEngine.Vector2 UnityEngine.InputSystem.InputActionState.ApplyProcessors<UnityEngine.Vector2>(int,UnityEngine.Vector2,UnityEngine.InputSystem.InputControl<UnityEngine.Vector2>)
+		// float UnityEngine.InputSystem.InputActionState.ApplyProcessors<float>(int,float,UnityEngine.InputSystem.InputControl<float>)
 		// UnityEngine.Vector2 UnityEngine.InputSystem.InputActionState.ReadValue<UnityEngine.Vector2>(int,int,bool)
+		// float UnityEngine.InputSystem.InputActionState.ReadValue<float>(int,int,bool)
 		// object UnityEngine.Object.Instantiate<object>(object)
 		// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object> UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle.Convert<object>()
 		// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object> UnityEngine.ResourceManagement.ResourceManager.CreateChainOperation<object>(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle,System.Func<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle,UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>>)
