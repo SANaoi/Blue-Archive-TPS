@@ -328,7 +328,7 @@ MonoBehaviour:
   disconnectInactiveConnections: 0
   disconnectInactiveTimeout: 60
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 7643075532326190884, guid: 258ccbae4897ddf49b892b43289b80b3,
+  playerPrefab: {fileID: 1480027675339556, guid: 21daf89214c6ee443ad6875b73083c60,
     type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 1
@@ -354,7 +354,7 @@ MonoBehaviour:
   roomPlayerPrefab: {fileID: 114033720796874720, guid: deae2134a1d77704b9c595efe69767dd,
     type: 3}
   RoomScene: Assets/Mirror/Examples/Room/Scenes/MirrorRoomOnline.unity
-  GameplayScene: Assets/AddressablesResources/Scenes/Main.unity
+  GameplayScene: Assets/Mirror/Examples/Room/Scenes/MirrorRoomGame.unity
   _allPlayersReady: 0
   roomSlots: []
   clientIndex: 0
