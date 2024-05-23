@@ -42,6 +42,10 @@ public class PlayerMovementState : IState
     { 
         // Debug.Log("State " + GetType().Name); 
         AddInputActionsCallbacks();
+        if (stateMachine != null && stateMachine.playerController != null && stateMachine.playerController.animator != null)
+        {
+            speedModifier = stateMachine.playerController.animator.GetFloat(stateMachine.playerController.AnimationData.speedParameterHash);
+        }
 
     }
     public virtual void OnExit() 
@@ -260,7 +264,7 @@ public class PlayerState_Idle : PlayerMovementState
     {
         base.OnEnter();
         //进入状态，玩家开始播放待机动画
-        speedModifier = stateMachine.playerController.animator.GetFloat(stateMachine.playerController.AnimationData.speedParameterHash);
+       
         targetSpeedModifier = 0f;
         ResetVelocity();
     }
@@ -293,7 +297,7 @@ public class PlayerState_Move : PlayerMovementState
     public override void OnEnter()
     {   
         base.OnEnter();
-        speedModifier = stateMachine.playerController.animator.GetFloat(stateMachine.playerController.AnimationData.speedParameterHash);
+        
     }
     public override void OnPhysicsUpdate()
     {
