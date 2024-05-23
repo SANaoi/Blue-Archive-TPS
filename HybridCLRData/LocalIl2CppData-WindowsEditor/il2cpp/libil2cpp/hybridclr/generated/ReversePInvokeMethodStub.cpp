@@ -5,10 +5,10 @@
 
 namespace hybridclr
 {
-namespace metadata
-{
+	namespace metadata
+	{
 
-	//!!!{{CODE
+		//!!!{{CODE
 
     ReversePInvokeMethodData g_reversePInvokeMethodStub[]
 	{
@@ -17,6 +17,6 @@ namespace metadata
 	};
 
 
-	//!!!}}CODE
-}
+		//!!!}}CODE
+	}
 }

@@ -69,22 +69,35 @@ namespace metadata
         Assembly::InitializePlaceHolderAssemblies();
     }
 
-    Il2CppMethodPointer MetadataModule::GetReversePInvokeWrapper(const Il2CppImage* image, const MethodInfo* method)
+    Il2CppMethodPointer MetadataModule::GetReversePInvokeWrapper(const Il2CppImage* image, const MethodInfo* method, Il2CppCallConvention callConvention)
     {
         if (!hybridclr::metadata::IsStaticMethod(method))
         {
             return nullptr;
         }
+
+        {
+            il2cpp::os::FastAutoLock lock(&g_reversePInvokeMethodLock);
+            auto it = s_methodInfo2ReverseInfos.find(method);
+            if (it != s_methodInfo2ReverseInfos.end())
+            {
+                return it->second->methodPointer;
+            }
+        }
+
+        char sigName[1000];
+        sigName[0] = 'A' + callConvention;
+        interpreter::ComputeSignature(method, false, sigName + 1, sizeof(sigName) - 2);
+
         il2cpp::os::FastAutoLock lock(&g_reversePInvokeMethodLock);
+
+
         auto it = s_methodInfo2ReverseInfos.find(method);
         if (it != s_methodInfo2ReverseInfos.end())
         {
             return it->second->methodPointer;
         }
 
-
-        char sigName[1000];
-        interpreter::ComputeSignature(method, false, sigName, sizeof(sigName) - 1);
         auto it2 = s_methodSig2Indexs.find(sigName);
         if (it2 == s_methodSig2Indexs.end())
         {

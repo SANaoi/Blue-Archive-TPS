@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: d3c7a958787b9ea4fbfbb53d4de92c5e
   m_currentHash:
     serializedVersion: 2
-    Hash: 91d3bee6b869e6cb9e36e5377366222e
+    Hash: e68ae64f39a4decebcc9aaf31e239e2e
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
@@ -46,10 +46,10 @@ MonoBehaviour:
   m_GroupAssets:
   - {fileID: 11400000, guid: 2194da10b5cb17042827de862194b20e, type: 2}
   - {fileID: 11400000, guid: 7756879499360b84ab684cb60957579e, type: 2}
-  - {fileID: 11400000, guid: d95d088c61e3b714c9653c14819574ae, type: 2}
   - {fileID: 11400000, guid: 3284348011053fb4d8bac7f39fc47def, type: 2}
   - {fileID: 11400000, guid: 3576aef906121944887f48cafe2df866, type: 2}
   - {fileID: 11400000, guid: 5a882372f0c743345bf7e8661d241f22, type: 2}
+  - {fileID: 11400000, guid: d95d088c61e3b714c9653c14819574ae, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -70,7 +70,7 @@ MonoBehaviour:
       - m_Id: 1fa5a32c4c3f3354782ab3c64c82a7fa
         m_Value: ServerData/[BuildTarget]
       - m_Id: caf45f5c1300e9349832f2d6a6587467
-        m_Value: http://127.0.0.1:4321
+        m_Value: http://127.0.0.1:4320
     m_ProfileEntryNames:
     - m_Id: 3c27a88ddbffe8d4cafffc61557c6a1b
       m_Name: BuildTarget
@@ -111,5 +111,6 @@ MonoBehaviour:
     m_HostingServiceInfos: []
     m_Settings: {fileID: 11400000}
     m_NextInstanceId: 0
-    m_RegisteredServiceTypeRefs: []
+    m_RegisteredServiceTypeRefs:
+    - UnityEditor.AddressableAssets.HostingServices.HttpHostingService, Unity.Addressables.Editor
     m_PingTimeoutInMilliseconds: 5000

@@ -5,18 +5,20 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/LocalData/Scenes/Init.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/AddressablesResources/Scenes/OfflineLobby.unity
-    guid: 98f5d78cdd64b67489f30fffc44a8676
-  - enabled: 1
     path: Assets/AddressablesResources/Scenes/OnlineLobby.unity
     guid: 2488703d26288974aa25c81845602fae
+  - enabled: 1
+    path: Assets/AddressablesResources/Scenes/OfflineLobby.unity
+    guid: 98f5d78cdd64b67489f30fffc44a8676
   - enabled: 1
     path: Assets/AddressablesResources/Scenes/GameRoom.unity
     guid: 9f9f0b11d7858f241b72909938b1b025
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 119bfedba58ce2644a3cd67d54f98a7f,
+      type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}

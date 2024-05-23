@@ -1051,12 +1051,6 @@
     <ClCompile Include="Source\Generics__17.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Generics__170.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Generics__171.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Generics__18.cpp">
       <Filter>Source</Filter>
     </ClCompile>

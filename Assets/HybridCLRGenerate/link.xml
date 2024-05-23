@@ -9,18 +9,28 @@
   <assembly fullname="Mirror">
     <type fullname="Mirror.AddPlayerMessage" preserve="all" />
     <type fullname="Mirror.ChangeOwnerMessage" preserve="all" />
+    <type fullname="Mirror.ClientAttribute" preserve="all" />
+    <type fullname="Mirror.ClientCallbackAttribute" preserve="all" />
+    <type fullname="Mirror.ClientRpcAttribute" preserve="all" />
+    <type fullname="Mirror.CommandAttribute" preserve="all" />
     <type fullname="Mirror.CommandMessage" preserve="all" />
     <type fullname="Mirror.EntityStateMessage" preserve="all" />
     <type fullname="Mirror.NetworkBehaviour" preserve="all" />
     <type fullname="Mirror.NetworkBehaviourSyncVar" preserve="all" />
+    <type fullname="Mirror.NetworkClient" preserve="all" />
+    <type fullname="Mirror.NetworkConnection" preserve="all" />
+    <type fullname="Mirror.NetworkConnectionToClient" preserve="all" />
     <type fullname="Mirror.NetworkIdentity" preserve="all" />
     <type fullname="Mirror.NetworkManager" preserve="all" />
     <type fullname="Mirror.NetworkPingMessage" preserve="all" />
     <type fullname="Mirror.NetworkPongMessage" preserve="all" />
     <type fullname="Mirror.NetworkReader" preserve="all" />
     <type fullname="Mirror.NetworkReaderExtensions" preserve="all" />
+    <type fullname="Mirror.NetworkServer" preserve="all" />
     <type fullname="Mirror.NetworkWriter" preserve="all" />
     <type fullname="Mirror.NetworkWriterExtensions" preserve="all" />
+    <type fullname="Mirror.NetworkWriterPool" preserve="all" />
+    <type fullname="Mirror.NetworkWriterPooled" preserve="all" />
     <type fullname="Mirror.NotReadyMessage" preserve="all" />
     <type fullname="Mirror.ObjectDestroyMessage" preserve="all" />
     <type fullname="Mirror.ObjectHideMessage" preserve="all" />
@@ -28,6 +38,8 @@
     <type fullname="Mirror.ObjectSpawnStartedMessage" preserve="all" />
     <type fullname="Mirror.Reader`1" preserve="all" />
     <type fullname="Mirror.ReadyMessage" preserve="all" />
+    <type fullname="Mirror.RemoteCalls.RemoteCallDelegate" preserve="all" />
+    <type fullname="Mirror.RemoteCalls.RemoteProcedureCalls" preserve="all" />
     <type fullname="Mirror.RpcMessage" preserve="all" />
     <type fullname="Mirror.SceneMessage" preserve="all" />
     <type fullname="Mirror.SceneOperation" preserve="all" />
@@ -88,6 +100,7 @@
     <type fullname="UnityEngine.Gradient" preserve="all" />
     <type fullname="UnityEngine.HeaderAttribute" preserve="all" />
     <type fullname="UnityEngine.HideInInspector" preserve="all" />
+    <type fullname="UnityEngine.KeyCode" preserve="all" />
     <type fullname="UnityEngine.LayerMask" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
     <type fullname="UnityEngine.Mathf" preserve="all" />
@@ -123,6 +136,9 @@
   <assembly fullname="UnityEngine.IMGUIModule">
     <type fullname="UnityEngine.GUI" preserve="all" />
   </assembly>
+  <assembly fullname="UnityEngine.InputLegacyModule">
+    <type fullname="UnityEngine.Input" preserve="all" />
+  </assembly>
   <assembly fullname="UnityEngine.PhysicsModule">
     <type fullname="UnityEngine.CharacterController" preserve="all" />
     <type fullname="UnityEngine.Collider" preserve="all" />
@@ -130,6 +146,10 @@
     <type fullname="UnityEngine.Physics" preserve="all" />
     <type fullname="UnityEngine.RaycastHit" preserve="all" />
     <type fullname="UnityEngine.Rigidbody" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.UI">
+    <type fullname="UnityEngine.UI.InputField" preserve="all" />
+    <type fullname="UnityEngine.UI.Text" preserve="all" />
   </assembly>
   <assembly fullname="mscorlib">
     <type fullname="System.Action`1" preserve="all" />
@@ -146,15 +166,16 @@
     <type fullname="System.Collections.IEnumerator" preserve="all" />
     <type fullname="System.DateTime" preserve="all" />
     <type fullname="System.Decimal" preserve="all" />
+    <type fullname="System.Delegate" preserve="all" />
     <type fullname="System.Diagnostics.DebuggableAttribute" preserve="all" />
     <type fullname="System.Diagnostics.DebuggableAttribute/DebuggingModes" preserve="all" />
     <type fullname="System.Diagnostics.DebuggerHiddenAttribute" preserve="all" />
     <type fullname="System.Enum" preserve="all" />
-    <type fullname="System.Exception" preserve="all" />
     <type fullname="System.Func`1" preserve="all" />
     <type fullname="System.Func`2" preserve="all" />
     <type fullname="System.Guid" preserve="all" />
     <type fullname="System.IDisposable" preserve="all" />
+    <type fullname="System.Int32" preserve="all" />
     <type fullname="System.NotSupportedException" preserve="all" />
     <type fullname="System.Nullable`1" preserve="all" />
     <type fullname="System.Object" preserve="all" />
@@ -164,6 +185,7 @@
     <type fullname="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.RuntimeHelpers" preserve="all" />
     <type fullname="System.RuntimeFieldHandle" preserve="all" />
+    <type fullname="System.RuntimeTypeHandle" preserve="all" />
     <type fullname="System.String" preserve="all" />
     <type fullname="System.Type" preserve="all" />
     <type fullname="System.ValueType" preserve="all" />

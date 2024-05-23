@@ -12,25 +12,13 @@
 
 
 
-extern void AOTGenericReferences_RefMethods_m17CF257D96D8BC2F232C4C1502905B792D17170C (void);
-extern void AOTGenericReferences__ctor_m41CBD692FC9B521512E552575AFE7A385DEC71A6 (void);
-extern void AOTGenericReferences__cctor_mA46BDC06A6577D725A2E5284A2A34C974CE65F68 (void);
 extern void ConsoleToScreen_OnEnable_m742C0F87C812F43375F76A54DAA0A5AF6A72864D (void);
 extern void ConsoleToScreen_OnDisable_m8EBC29961A3FECB32D8C0CD70D443B44C36E6629 (void);
 extern void ConsoleToScreen_Log_mA5DDFAB65C29E797A1C47CD29C6C83E3163A52EA (void);
 extern void ConsoleToScreen_OnGUI_m29CDFC3A06D7C876442EC871D62B622487B5A6F6 (void);
 extern void ConsoleToScreen__ctor_mA516CADF99E6463AC5FEC5CF38D1F4A5212A9415 (void);
 extern void CheckAssetsUpdate_Start_m395A4D1EE3D59B990210A3794A9D164DF01CF5C9 (void);
-extern void CheckAssetsUpdate_FechRemoteData_m115D528565C6498D09475A9C88190259768DB309 (void);
-extern void CheckAssetsUpdate_EnterGame_mC60B6E8EFDBA3DA58CC35BD9DC30E8AAFB220B17 (void);
-extern void CheckAssetsUpdate_OnDisable_m26252AD3E27974DD558CBC3BB99D98A32B1BB200 (void);
 extern void CheckAssetsUpdate__ctor_m3B86303AAD59647219A72F169B723DD7208C247C (void);
-extern void U3CFechRemoteDataU3Ed__1__ctor_mA70E56CF1C91BD9B1706CCDF55CE3EF1F425D9A7 (void);
-extern void U3CFechRemoteDataU3Ed__1_System_IDisposable_Dispose_m07928D6E013EC18E44889020B4988AE68FC263F2 (void);
-extern void U3CFechRemoteDataU3Ed__1_MoveNext_mCC1075A67EA89BDED4FA5B2CD5DC48DE44530163 (void);
-extern void U3CFechRemoteDataU3Ed__1_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1A472B7B0533F89904F482BEFC12AADE538214F7 (void);
-extern void U3CFechRemoteDataU3Ed__1_System_Collections_IEnumerator_Reset_m57C91E8CB31C4DA97C56D738325E2D2043105CC4 (void);
-extern void U3CFechRemoteDataU3Ed__1_System_Collections_IEnumerator_get_Current_m9DFCB0992DAE79844009EAA0EAE7043413E880E7 (void);
 extern void mParent_Update_m22F8DBDBC80F675023C92576B425253966563CB0 (void);
 extern void mParent_Start_m4EC1467A26BFB8107491D89AEED27B91E3CC0275 (void);
 extern void mParent_hand_m0EE377CDD1773426FA736760569C1DEFEB0B9DD0 (void);
@@ -118,42 +106,32 @@ extern void EntryManager__load_hotfix_dlls_m0177EABB672B77EC28663D6BF757CE541CD7
 extern void EntryManager__load_meta_data_for_aot_dlls_m774D5A9F8B33899C3069069621DD437980EA1694 (void);
 extern void EntryManager__enter_hotfix_main_scene_m81B01F1256F06C108AD9B960C450239ECE2C7AC9 (void);
 extern void EntryManager__wait_for_enter_input_m3F42E08EF4512373FBAD1144CFA4458BAB26D12A (void);
+extern void EntryManager_RequestSceneChange_m387A86A2797DD40C1BD4542F62705BD4AFA661FC (void);
+extern void EntryManager_ServerChangeScene_m781CEC75D761B3BFF6B56BCA57F8F81A94ACAD72 (void);
 extern void EntryManager__ctor_m01A0C0013006DF0FBB5743C5388949CFC598C54F (void);
-extern void U3C_check_updateU3Ed__4_MoveNext_m0E4BEA2825454A22367DD5352A65B3A8D8840B07 (void);
-extern void U3C_check_updateU3Ed__4_SetStateMachine_mE69D62E5A945D7CF28A8B7CC7706B407116D78B4 (void);
-extern void U3C_downloadU3Ed__6_MoveNext_mB866480A8BE4B4D8742A0A31F88FB7A0268CB8BA (void);
-extern void U3C_downloadU3Ed__6_SetStateMachine_mA12F1F5E91C0119BF41AD07931AB2EBE10F70C5F (void);
-extern void U3C_enter_hotfix_main_sceneU3Ed__9_MoveNext_mB840AB8F30805BAF74D25154F9337869386EAC35 (void);
-extern void U3C_enter_hotfix_main_sceneU3Ed__9_SetStateMachine_m945864B4347A5877E0407BF145665C1C7783D556 (void);
-extern void U3C_load_hotfix_dllsU3Ed__7_MoveNext_mE69E3D0A48D9A930890819A16223B623997CFD7A (void);
-extern void U3C_load_hotfix_dllsU3Ed__7_SetStateMachine_m18F2CAAC0A6D75C276B81ECDF536AA4A108A74C7 (void);
-extern void U3C_load_meta_data_for_aot_dllsU3Ed__8_MoveNext_mA824370DE3451C71DD94676E983ED37DB052C696 (void);
-extern void U3C_load_meta_data_for_aot_dllsU3Ed__8_SetStateMachine_m25F09A1FBDE578EB6EB43CF9D6D9993F55A91369 (void);
-extern void U3C_update_address_ablesU3Ed__5_MoveNext_mFEDBFF39994F7D2E47F5D4188D980E63BADCFCE8 (void);
-extern void U3C_update_address_ablesU3Ed__5_SetStateMachine_m4E984B38D70EC70B558F76575EE604FF8FC6D25D (void);
-extern void U3C_wait_for_enter_inputU3Ed__10_MoveNext_m84B2671F47EDAE51889D0ADD082260F88E2615A5 (void);
-extern void U3C_wait_for_enter_inputU3Ed__10_SetStateMachine_m934F222BA824800D354C30F9323C50D53E4593C6 (void);
-static Il2CppMethodPointer s_methodPointers[121] = 
+extern void U3C_check_updateU3Ed__5_MoveNext_m0B3FEFC17C78D1044F034F9CBC72135CA08B7FD8 (void);
+extern void U3C_check_updateU3Ed__5_SetStateMachine_m0B233BC8E3F084016E4D7AEDC7C6DED00AF1CABD (void);
+extern void U3C_downloadU3Ed__7_MoveNext_mB4B813A14F81AFA832E02731210DA678B5909ABD (void);
+extern void U3C_downloadU3Ed__7_SetStateMachine_m99CFE4E2C32A3F31821E694DCB858CE53965D8E2 (void);
+extern void U3C_enter_hotfix_main_sceneU3Ed__10_MoveNext_mFDEDF0E2756BFCB2F2627048B3CA7B3D082ACA9F (void);
+extern void U3C_enter_hotfix_main_sceneU3Ed__10_SetStateMachine_m504878087F26F1795F27381E3B7534B2BC78B296 (void);
+extern void U3C_load_hotfix_dllsU3Ed__8_MoveNext_mDEB710D947A3701DDF1BE7B071493219340E93AA (void);
+extern void U3C_load_hotfix_dllsU3Ed__8_SetStateMachine_mC2C2DAEBCAAA0C374DF1850C15B1D2DE23D554B6 (void);
+extern void U3C_load_meta_data_for_aot_dllsU3Ed__9_MoveNext_mB041181BDDFDD3D78A466A3049887FA8E117E152 (void);
+extern void U3C_load_meta_data_for_aot_dllsU3Ed__9_SetStateMachine_mC2C6BA4A168BC0CF43CB3D1F239AEE1C6274410E (void);
+extern void U3C_update_address_ablesU3Ed__6_MoveNext_mFC1A5D1CA008FC4F7ABB288359D6DCD18C2BFF67 (void);
+extern void U3C_update_address_ablesU3Ed__6_SetStateMachine_mD763CBDBDBD23F6C090B7193A7F7C126E4D67B6B (void);
+extern void U3C_wait_for_enter_inputU3Ed__11_MoveNext_m11CC604A8F18ABA9B0764630DCC537F284DCBA4F (void);
+extern void U3C_wait_for_enter_inputU3Ed__11_SetStateMachine_m911A029FFEE769E124EB42EFF57C8D809880EF66 (void);
+static Il2CppMethodPointer s_methodPointers[111] = 
 {
-	AOTGenericReferences_RefMethods_m17CF257D96D8BC2F232C4C1502905B792D17170C,
-	AOTGenericReferences__ctor_m41CBD692FC9B521512E552575AFE7A385DEC71A6,
-	AOTGenericReferences__cctor_mA46BDC06A6577D725A2E5284A2A34C974CE65F68,
 	ConsoleToScreen_OnEnable_m742C0F87C812F43375F76A54DAA0A5AF6A72864D,
 	ConsoleToScreen_OnDisable_m8EBC29961A3FECB32D8C0CD70D443B44C36E6629,
 	ConsoleToScreen_Log_mA5DDFAB65C29E797A1C47CD29C6C83E3163A52EA,
 	ConsoleToScreen_OnGUI_m29CDFC3A06D7C876442EC871D62B622487B5A6F6,
 	ConsoleToScreen__ctor_mA516CADF99E6463AC5FEC5CF38D1F4A5212A9415,
 	CheckAssetsUpdate_Start_m395A4D1EE3D59B990210A3794A9D164DF01CF5C9,
-	CheckAssetsUpdate_FechRemoteData_m115D528565C6498D09475A9C88190259768DB309,
-	CheckAssetsUpdate_EnterGame_mC60B6E8EFDBA3DA58CC35BD9DC30E8AAFB220B17,
-	CheckAssetsUpdate_OnDisable_m26252AD3E27974DD558CBC3BB99D98A32B1BB200,
 	CheckAssetsUpdate__ctor_m3B86303AAD59647219A72F169B723DD7208C247C,
-	U3CFechRemoteDataU3Ed__1__ctor_mA70E56CF1C91BD9B1706CCDF55CE3EF1F425D9A7,
-	U3CFechRemoteDataU3Ed__1_System_IDisposable_Dispose_m07928D6E013EC18E44889020B4988AE68FC263F2,
-	U3CFechRemoteDataU3Ed__1_MoveNext_mCC1075A67EA89BDED4FA5B2CD5DC48DE44530163,
-	U3CFechRemoteDataU3Ed__1_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1A472B7B0533F89904F482BEFC12AADE538214F7,
-	U3CFechRemoteDataU3Ed__1_System_Collections_IEnumerator_Reset_m57C91E8CB31C4DA97C56D738325E2D2043105CC4,
-	U3CFechRemoteDataU3Ed__1_System_Collections_IEnumerator_get_Current_m9DFCB0992DAE79844009EAA0EAE7043413E880E7,
 	mParent_Update_m22F8DBDBC80F675023C92576B425253966563CB0,
 	mParent_Start_m4EC1467A26BFB8107491D89AEED27B91E3CC0275,
 	mParent_hand_m0EE377CDD1773426FA736760569C1DEFEB0B9DD0,
@@ -241,182 +219,174 @@ static Il2CppMethodPointer s_methodPointers[121] =
 	EntryManager__load_meta_data_for_aot_dlls_m774D5A9F8B33899C3069069621DD437980EA1694,
 	EntryManager__enter_hotfix_main_scene_m81B01F1256F06C108AD9B960C450239ECE2C7AC9,
 	EntryManager__wait_for_enter_input_m3F42E08EF4512373FBAD1144CFA4458BAB26D12A,
+	EntryManager_RequestSceneChange_m387A86A2797DD40C1BD4542F62705BD4AFA661FC,
+	EntryManager_ServerChangeScene_m781CEC75D761B3BFF6B56BCA57F8F81A94ACAD72,
 	EntryManager__ctor_m01A0C0013006DF0FBB5743C5388949CFC598C54F,
-	U3C_check_updateU3Ed__4_MoveNext_m0E4BEA2825454A22367DD5352A65B3A8D8840B07,
-	U3C_check_updateU3Ed__4_SetStateMachine_mE69D62E5A945D7CF28A8B7CC7706B407116D78B4,
-	U3C_downloadU3Ed__6_MoveNext_mB866480A8BE4B4D8742A0A31F88FB7A0268CB8BA,
-	U3C_downloadU3Ed__6_SetStateMachine_mA12F1F5E91C0119BF41AD07931AB2EBE10F70C5F,
-	U3C_enter_hotfix_main_sceneU3Ed__9_MoveNext_mB840AB8F30805BAF74D25154F9337869386EAC35,
-	U3C_enter_hotfix_main_sceneU3Ed__9_SetStateMachine_m945864B4347A5877E0407BF145665C1C7783D556,
-	U3C_load_hotfix_dllsU3Ed__7_MoveNext_mE69E3D0A48D9A930890819A16223B623997CFD7A,
-	U3C_load_hotfix_dllsU3Ed__7_SetStateMachine_m18F2CAAC0A6D75C276B81ECDF536AA4A108A74C7,
-	U3C_load_meta_data_for_aot_dllsU3Ed__8_MoveNext_mA824370DE3451C71DD94676E983ED37DB052C696,
-	U3C_load_meta_data_for_aot_dllsU3Ed__8_SetStateMachine_m25F09A1FBDE578EB6EB43CF9D6D9993F55A91369,
-	U3C_update_address_ablesU3Ed__5_MoveNext_mFEDBFF39994F7D2E47F5D4188D980E63BADCFCE8,
-	U3C_update_address_ablesU3Ed__5_SetStateMachine_m4E984B38D70EC70B558F76575EE604FF8FC6D25D,
-	U3C_wait_for_enter_inputU3Ed__10_MoveNext_m84B2671F47EDAE51889D0ADD082260F88E2615A5,
-	U3C_wait_for_enter_inputU3Ed__10_SetStateMachine_m934F222BA824800D354C30F9323C50D53E4593C6,
+	U3C_check_updateU3Ed__5_MoveNext_m0B3FEFC17C78D1044F034F9CBC72135CA08B7FD8,
+	U3C_check_updateU3Ed__5_SetStateMachine_m0B233BC8E3F084016E4D7AEDC7C6DED00AF1CABD,
+	U3C_downloadU3Ed__7_MoveNext_mB4B813A14F81AFA832E02731210DA678B5909ABD,
+	U3C_downloadU3Ed__7_SetStateMachine_m99CFE4E2C32A3F31821E694DCB858CE53965D8E2,
+	U3C_enter_hotfix_main_sceneU3Ed__10_MoveNext_mFDEDF0E2756BFCB2F2627048B3CA7B3D082ACA9F,
+	U3C_enter_hotfix_main_sceneU3Ed__10_SetStateMachine_m504878087F26F1795F27381E3B7534B2BC78B296,
+	U3C_load_hotfix_dllsU3Ed__8_MoveNext_mDEB710D947A3701DDF1BE7B071493219340E93AA,
+	U3C_load_hotfix_dllsU3Ed__8_SetStateMachine_mC2C2DAEBCAAA0C374DF1850C15B1D2DE23D554B6,
+	U3C_load_meta_data_for_aot_dllsU3Ed__9_MoveNext_mB041181BDDFDD3D78A466A3049887FA8E117E152,
+	U3C_load_meta_data_for_aot_dllsU3Ed__9_SetStateMachine_mC2C6BA4A168BC0CF43CB3D1F239AEE1C6274410E,
+	U3C_update_address_ablesU3Ed__6_MoveNext_mFC1A5D1CA008FC4F7ABB288359D6DCD18C2BFF67,
+	U3C_update_address_ablesU3Ed__6_SetStateMachine_mD763CBDBDBD23F6C090B7193A7F7C126E4D67B6B,
+	U3C_wait_for_enter_inputU3Ed__11_MoveNext_m11CC604A8F18ABA9B0764630DCC537F284DCBA4F,
+	U3C_wait_for_enter_inputU3Ed__11_SetStateMachine_m911A029FFEE769E124EB42EFF57C8D809880EF66,
 };
-extern void U3C_check_updateU3Ed__4_MoveNext_m0E4BEA2825454A22367DD5352A65B3A8D8840B07_AdjustorThunk (void);
-extern void U3C_check_updateU3Ed__4_SetStateMachine_mE69D62E5A945D7CF28A8B7CC7706B407116D78B4_AdjustorThunk (void);
-extern void U3C_downloadU3Ed__6_MoveNext_mB866480A8BE4B4D8742A0A31F88FB7A0268CB8BA_AdjustorThunk (void);
-extern void U3C_downloadU3Ed__6_SetStateMachine_mA12F1F5E91C0119BF41AD07931AB2EBE10F70C5F_AdjustorThunk (void);
-extern void U3C_enter_hotfix_main_sceneU3Ed__9_MoveNext_mB840AB8F30805BAF74D25154F9337869386EAC35_AdjustorThunk (void);
-extern void U3C_enter_hotfix_main_sceneU3Ed__9_SetStateMachine_m945864B4347A5877E0407BF145665C1C7783D556_AdjustorThunk (void);
-extern void U3C_load_hotfix_dllsU3Ed__7_MoveNext_mE69E3D0A48D9A930890819A16223B623997CFD7A_AdjustorThunk (void);
-extern void U3C_load_hotfix_dllsU3Ed__7_SetStateMachine_m18F2CAAC0A6D75C276B81ECDF536AA4A108A74C7_AdjustorThunk (void);
-extern void U3C_load_meta_data_for_aot_dllsU3Ed__8_MoveNext_mA824370DE3451C71DD94676E983ED37DB052C696_AdjustorThunk (void);
-extern void U3C_load_meta_data_for_aot_dllsU3Ed__8_SetStateMachine_m25F09A1FBDE578EB6EB43CF9D6D9993F55A91369_AdjustorThunk (void);
-extern void U3C_update_address_ablesU3Ed__5_MoveNext_mFEDBFF39994F7D2E47F5D4188D980E63BADCFCE8_AdjustorThunk (void);
-extern void U3C_update_address_ablesU3Ed__5_SetStateMachine_m4E984B38D70EC70B558F76575EE604FF8FC6D25D_AdjustorThunk (void);
-extern void U3C_wait_for_enter_inputU3Ed__10_MoveNext_m84B2671F47EDAE51889D0ADD082260F88E2615A5_AdjustorThunk (void);
-extern void U3C_wait_for_enter_inputU3Ed__10_SetStateMachine_m934F222BA824800D354C30F9323C50D53E4593C6_AdjustorThunk (void);
+extern void U3C_check_updateU3Ed__5_MoveNext_m0B3FEFC17C78D1044F034F9CBC72135CA08B7FD8_AdjustorThunk (void);
+extern void U3C_check_updateU3Ed__5_SetStateMachine_m0B233BC8E3F084016E4D7AEDC7C6DED00AF1CABD_AdjustorThunk (void);
+extern void U3C_downloadU3Ed__7_MoveNext_mB4B813A14F81AFA832E02731210DA678B5909ABD_AdjustorThunk (void);
+extern void U3C_downloadU3Ed__7_SetStateMachine_m99CFE4E2C32A3F31821E694DCB858CE53965D8E2_AdjustorThunk (void);
+extern void U3C_enter_hotfix_main_sceneU3Ed__10_MoveNext_mFDEDF0E2756BFCB2F2627048B3CA7B3D082ACA9F_AdjustorThunk (void);
+extern void U3C_enter_hotfix_main_sceneU3Ed__10_SetStateMachine_m504878087F26F1795F27381E3B7534B2BC78B296_AdjustorThunk (void);
+extern void U3C_load_hotfix_dllsU3Ed__8_MoveNext_mDEB710D947A3701DDF1BE7B071493219340E93AA_AdjustorThunk (void);
+extern void U3C_load_hotfix_dllsU3Ed__8_SetStateMachine_mC2C2DAEBCAAA0C374DF1850C15B1D2DE23D554B6_AdjustorThunk (void);
+extern void U3C_load_meta_data_for_aot_dllsU3Ed__9_MoveNext_mB041181BDDFDD3D78A466A3049887FA8E117E152_AdjustorThunk (void);
+extern void U3C_load_meta_data_for_aot_dllsU3Ed__9_SetStateMachine_mC2C6BA4A168BC0CF43CB3D1F239AEE1C6274410E_AdjustorThunk (void);
+extern void U3C_update_address_ablesU3Ed__6_MoveNext_mFC1A5D1CA008FC4F7ABB288359D6DCD18C2BFF67_AdjustorThunk (void);
+extern void U3C_update_address_ablesU3Ed__6_SetStateMachine_mD763CBDBDBD23F6C090B7193A7F7C126E4D67B6B_AdjustorThunk (void);
+extern void U3C_wait_for_enter_inputU3Ed__11_MoveNext_m11CC604A8F18ABA9B0764630DCC537F284DCBA4F_AdjustorThunk (void);
+extern void U3C_wait_for_enter_inputU3Ed__11_SetStateMachine_m911A029FFEE769E124EB42EFF57C8D809880EF66_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[14] = 
 {
-	{ 0x0600006C, U3C_check_updateU3Ed__4_MoveNext_m0E4BEA2825454A22367DD5352A65B3A8D8840B07_AdjustorThunk },
-	{ 0x0600006D, U3C_check_updateU3Ed__4_SetStateMachine_mE69D62E5A945D7CF28A8B7CC7706B407116D78B4_AdjustorThunk },
-	{ 0x0600006E, U3C_downloadU3Ed__6_MoveNext_mB866480A8BE4B4D8742A0A31F88FB7A0268CB8BA_AdjustorThunk },
-	{ 0x0600006F, U3C_downloadU3Ed__6_SetStateMachine_mA12F1F5E91C0119BF41AD07931AB2EBE10F70C5F_AdjustorThunk },
-	{ 0x06000070, U3C_enter_hotfix_main_sceneU3Ed__9_MoveNext_mB840AB8F30805BAF74D25154F9337869386EAC35_AdjustorThunk },
-	{ 0x06000071, U3C_enter_hotfix_main_sceneU3Ed__9_SetStateMachine_m945864B4347A5877E0407BF145665C1C7783D556_AdjustorThunk },
-	{ 0x06000072, U3C_load_hotfix_dllsU3Ed__7_MoveNext_mE69E3D0A48D9A930890819A16223B623997CFD7A_AdjustorThunk },
-	{ 0x06000073, U3C_load_hotfix_dllsU3Ed__7_SetStateMachine_m18F2CAAC0A6D75C276B81ECDF536AA4A108A74C7_AdjustorThunk },
-	{ 0x06000074, U3C_load_meta_data_for_aot_dllsU3Ed__8_MoveNext_mA824370DE3451C71DD94676E983ED37DB052C696_AdjustorThunk },
-	{ 0x06000075, U3C_load_meta_data_for_aot_dllsU3Ed__8_SetStateMachine_m25F09A1FBDE578EB6EB43CF9D6D9993F55A91369_AdjustorThunk },
-	{ 0x06000076, U3C_update_address_ablesU3Ed__5_MoveNext_mFEDBFF39994F7D2E47F5D4188D980E63BADCFCE8_AdjustorThunk },
-	{ 0x06000077, U3C_update_address_ablesU3Ed__5_SetStateMachine_m4E984B38D70EC70B558F76575EE604FF8FC6D25D_AdjustorThunk },
-	{ 0x06000078, U3C_wait_for_enter_inputU3Ed__10_MoveNext_m84B2671F47EDAE51889D0ADD082260F88E2615A5_AdjustorThunk },
-	{ 0x06000079, U3C_wait_for_enter_inputU3Ed__10_SetStateMachine_m934F222BA824800D354C30F9323C50D53E4593C6_AdjustorThunk },
+	{ 0x06000062, U3C_check_updateU3Ed__5_MoveNext_m0B3FEFC17C78D1044F034F9CBC72135CA08B7FD8_AdjustorThunk },
+	{ 0x06000063, U3C_check_updateU3Ed__5_SetStateMachine_m0B233BC8E3F084016E4D7AEDC7C6DED00AF1CABD_AdjustorThunk },
+	{ 0x06000064, U3C_downloadU3Ed__7_MoveNext_mB4B813A14F81AFA832E02731210DA678B5909ABD_AdjustorThunk },
+	{ 0x06000065, U3C_downloadU3Ed__7_SetStateMachine_m99CFE4E2C32A3F31821E694DCB858CE53965D8E2_AdjustorThunk },
+	{ 0x06000066, U3C_enter_hotfix_main_sceneU3Ed__10_MoveNext_mFDEDF0E2756BFCB2F2627048B3CA7B3D082ACA9F_AdjustorThunk },
+	{ 0x06000067, U3C_enter_hotfix_main_sceneU3Ed__10_SetStateMachine_m504878087F26F1795F27381E3B7534B2BC78B296_AdjustorThunk },
+	{ 0x06000068, U3C_load_hotfix_dllsU3Ed__8_MoveNext_mDEB710D947A3701DDF1BE7B071493219340E93AA_AdjustorThunk },
+	{ 0x06000069, U3C_load_hotfix_dllsU3Ed__8_SetStateMachine_mC2C2DAEBCAAA0C374DF1850C15B1D2DE23D554B6_AdjustorThunk },
+	{ 0x0600006A, U3C_load_meta_data_for_aot_dllsU3Ed__9_MoveNext_mB041181BDDFDD3D78A466A3049887FA8E117E152_AdjustorThunk },
+	{ 0x0600006B, U3C_load_meta_data_for_aot_dllsU3Ed__9_SetStateMachine_mC2C6BA4A168BC0CF43CB3D1F239AEE1C6274410E_AdjustorThunk },
+	{ 0x0600006C, U3C_update_address_ablesU3Ed__6_MoveNext_mFC1A5D1CA008FC4F7ABB288359D6DCD18C2BFF67_AdjustorThunk },
+	{ 0x0600006D, U3C_update_address_ablesU3Ed__6_SetStateMachine_mD763CBDBDBD23F6C090B7193A7F7C126E4D67B6B_AdjustorThunk },
+	{ 0x0600006E, U3C_wait_for_enter_inputU3Ed__11_MoveNext_m11CC604A8F18ABA9B0764630DCC537F284DCBA4F_AdjustorThunk },
+	{ 0x0600006F, U3C_wait_for_enter_inputU3Ed__11_SetStateMachine_m911A029FFEE769E124EB42EFF57C8D809880EF66_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[121] = 
+static const int32_t s_InvokerIndices[111] = 
 {
-	15210,
-	15210,
-	23984,
-	15210,
-	15210,
-	3643,
-	15210,
-	15210,
-	15210,
-	15012,
-	15210,
-	15210,
-	15210,
-	11957,
-	15210,
-	14853,
-	15012,
-	15210,
-	15012,
-	15210,
-	15210,
-	15210,
-	15210,
-	15210,
-	15210,
-	12013,
-	12013,
-	12013,
-	11854,
-	15210,
-	15210,
-	15210,
-	15210,
-	15210,
-	15210,
-	12013,
-	12013,
-	12013,
-	12197,
-	12197,
-	11093,
-	11093,
-	11093,
-	10940,
-	15210,
-	15210,
-	15210,
-	15210,
-	12013,
-	12013,
-	12013,
-	12197,
-	12197,
-	6673,
-	5463,
-	11093,
-	11093,
-	10940,
-	15210,
-	15210,
-	12013,
-	12013,
-	15210,
-	15210,
-	15210,
-	24006,
-	15210,
-	12013,
-	12013,
-	12013,
-	12013,
-	12197,
-	12197,
-	11854,
-	11854,
-	11854,
-	11854,
-	15210,
-	12197,
-	12197,
-	11854,
-	11854,
-	15210,
-	14853,
-	15210,
-	15210,
-	15210,
-	15210,
-	15210,
-	15210,
-	15210,
-	15210,
-	15210,
-	18482,
-	15210,
-	12013,
-	12013,
-	15210,
-	15210,
-	15191,
-	15191,
-	11076,
-	15191,
-	15191,
-	15191,
-	15191,
-	15210,
-	15210,
-	12013,
-	15210,
-	12013,
-	15210,
-	12013,
-	15210,
-	12013,
-	15210,
-	12013,
-	15210,
-	12013,
-	15210,
-	12013,
+	15069,
+	15069,
+	3624,
+	15069,
+	15069,
+	15069,
+	15069,
+	15069,
+	15069,
+	15069,
+	15069,
+	15069,
+	15069,
+	11910,
+	11910,
+	11910,
+	11752,
+	15069,
+	15069,
+	15069,
+	15069,
+	15069,
+	15069,
+	11910,
+	11910,
+	11910,
+	12094,
+	12094,
+	11001,
+	11001,
+	11001,
+	10848,
+	15069,
+	15069,
+	15069,
+	15069,
+	11910,
+	11910,
+	11910,
+	12094,
+	12094,
+	6631,
+	5432,
+	11001,
+	11001,
+	10848,
+	15069,
+	15069,
+	11910,
+	11910,
+	15069,
+	15069,
+	15069,
+	23839,
+	15069,
+	11910,
+	11910,
+	11910,
+	11910,
+	12094,
+	12094,
+	11752,
+	11752,
+	11752,
+	11752,
+	15069,
+	12094,
+	12094,
+	11752,
+	11752,
+	15069,
+	14711,
+	15069,
+	15069,
+	15069,
+	15069,
+	15069,
+	15069,
+	15069,
+	15069,
+	15069,
+	18339,
+	15069,
+	11910,
+	11910,
+	15069,
+	15069,
+	15050,
+	15050,
+	10984,
+	15050,
+	15050,
+	15050,
+	15050,
+	11910,
+	11910,
+	15069,
+	15069,
+	11910,
+	15069,
+	11910,
+	15069,
+	11910,
+	15069,
+	11910,
+	15069,
+	11910,
+	15069,
+	11910,
+	15069,
+	11910,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	121,
+	111,
 	s_methodPointers,
 	14,
 	s_adjustorThunks,

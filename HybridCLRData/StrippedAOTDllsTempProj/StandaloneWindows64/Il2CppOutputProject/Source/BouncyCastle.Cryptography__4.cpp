@@ -3559,7 +3559,7 @@ CATCH_007a_1:
 				TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_35 = V_5;
 				NullCheck(L_35);
 				int16_t L_36;
-				L_36 = VirtualFuncInvoker0< int16_t >::Invoke(18, L_35);
+				L_36 = VirtualFuncInvoker0< int16_t >::Invoke(12, L_35);
 				VirtualActionInvoker3< ServerHandshakeState_tDE26345237F497C2B426059DFE03A5AAEA371B58*, DtlsRecordLayer_t098803B555908685D4D5EC699A6DFF37802DCB7F*, int16_t >::Invoke(9, __this, L_33, L_34, L_36);
 				IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
 			}
@@ -6825,7 +6825,7 @@ CATCH_0087:
 			TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_26 = V_1;
 			NullCheck(L_26);
 			int16_t L_27;
-			L_27 = VirtualFuncInvoker0< int16_t >::Invoke(18, L_26);
+			L_27 = VirtualFuncInvoker0< int16_t >::Invoke(12, L_26);
 			if ((!(((uint32_t)((int32_t)20)) == ((uint32_t)L_27))))
 			{
 				goto IL_009e;
@@ -6843,7 +6843,7 @@ IL_009e:
 			TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_29 = V_1;
 			NullCheck(L_29);
 			int16_t L_30;
-			L_30 = VirtualFuncInvoker0< int16_t >::Invoke(18, L_29);
+			L_30 = VirtualFuncInvoker0< int16_t >::Invoke(12, L_29);
 			NullCheck(L_28);
 			VirtualActionInvoker1< int16_t >::Invoke(25, L_28, L_30);
 			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
@@ -7056,7 +7056,7 @@ CATCH_0070:
 			TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_23 = V_1;
 			NullCheck(L_23);
 			int16_t L_24;
-			L_24 = VirtualFuncInvoker0< int16_t >::Invoke(18, L_23);
+			L_24 = VirtualFuncInvoker0< int16_t >::Invoke(12, L_23);
 			if ((!(((uint32_t)((int32_t)20)) == ((uint32_t)L_24))))
 			{
 				goto IL_0087;
@@ -7074,7 +7074,7 @@ IL_0087:
 			TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_26 = V_1;
 			NullCheck(L_26);
 			int16_t L_27;
-			L_27 = VirtualFuncInvoker0< int16_t >::Invoke(18, L_26);
+			L_27 = VirtualFuncInvoker0< int16_t >::Invoke(12, L_26);
 			NullCheck(L_25);
 			VirtualActionInvoker1< int16_t >::Invoke(25, L_25, L_27);
 			IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
@@ -7276,7 +7276,7 @@ CATCH_006d:
 		TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_21 = V_0;
 		NullCheck(L_21);
 		int16_t L_22;
-		L_22 = VirtualFuncInvoker0< int16_t >::Invoke(18, L_21);
+		L_22 = VirtualFuncInvoker0< int16_t >::Invoke(12, L_21);
 		NullCheck(L_20);
 		VirtualActionInvoker1< int16_t >::Invoke(25, L_20, L_22);
 		IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));

@@ -381,7 +381,8 @@ namespace interpreter
 	#else
 	static void* InterpreterInvoke(Il2CppMethodPointer methodPointer, const MethodInfo* method, void* __this, void** __args)
 	{
-		StackObject args[256];
+		InterpMethodInfo* imi = method->interpData ? (InterpMethodInfo*)method->interpData : InterpreterModule::GetInterpMethodInfo(method);
+		StackObject* args = (StackObject*)alloca(sizeof(StackObject) * imi->argStackObjectSize);
 		bool isInstanceMethod = metadata::IsInstanceMethod(method);
 		if (isInstanceMethod)
 		{
@@ -391,7 +392,6 @@ namespace interpreter
 			}
 			args[0].ptr = __this;
 		}
-		InterpMethodInfo* imi = method->interpData ? (InterpMethodInfo*)method->interpData : InterpreterModule::GetInterpMethodInfo(method);
 		MethodArgDesc* argDescs = imi->args + isInstanceMethod;
 		ConvertInvokeArgs(args + isInstanceMethod, method, argDescs, __args);
 		if (method->return_type->type == IL2CPP_TYPE_VOID)
@@ -518,7 +518,8 @@ namespace interpreter
 				methodInfo->klass->rank ? il2cpp_defaults.corlib->assembly : methodInfo->klass->image->assembly);
 		IL2CPP_ASSERT(image);
 
-		metadata::MethodBody* methodBody = image->GetMethodBody(methodInfo->token);
+		metadata::MethodBody tempMethodBody = {};
+		metadata::MethodBody* methodBody = image->GetMethodBody(methodInfo->token, tempMethodBody);
 		if (methodBody == nullptr || methodBody->ilcodes == nullptr)
 		{
 			TEMP_FORMAT(errMsg, "Method body is null. %s.%s::%s", methodInfo->klass->namespaze, methodInfo->klass->name, methodInfo->name);

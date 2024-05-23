@@ -44,17 +44,10 @@ public class UpdateDllsToAddressables
                     // AssetDatabase.CopyAsset(destDir, assetPath);
                     // AssetDatabase.Refresh();
                     // Debug.Log($"Copied {destDir} to {assetPath}");
+                    Debug.Log("copy hot update dlls success!");
                 }
             }
         }
-        Debug.Log("copy hot update dlls success!");
-
-        // 应用更改
-        // settings.SetDirty(AddressableAssetSettings.ModificationEvent.ProjectSettingsChanged, true, true);
-        // AddressableAssetSettings.SaveAssetSettings(settings);
-
-        // 构建Addressable组
-        // AddressableAssetSettings.BuildPlayerContent();
     }
 
     private static void CopyHotUpdateDll(AddressableAssetEntry entry, string destDir)

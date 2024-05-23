@@ -3701,7 +3701,7 @@ CATCH_003a:
 		Exception_t* L_20 = V_2;
 		NullCheck(L_20);
 		String_t* L_21;
-		L_21 = VirtualFuncInvoker0< String_t* >::Invoke(10, L_20);
+		L_21 = VirtualFuncInvoker0< String_t* >::Invoke(8, L_20);
 		NullCheck(L_19);
 		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_21);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_22 = L_19;
@@ -4719,7 +4719,7 @@ CATCH_0028:
 		Exception_t* L_14 = V_1;
 		NullCheck(L_14);
 		String_t* L_15;
-		L_15 = VirtualFuncInvoker0< String_t* >::Invoke(10, L_14);
+		L_15 = VirtualFuncInvoker0< String_t* >::Invoke(8, L_14);
 		String_t* L_16;
 		L_16 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralCAF6B4754ABAE3C7B91A9A0645D348D6AD9F3CE4)), L_11, L_13, L_15, NULL);
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Log_tDF759B8AED96580E050684099CA186888896D865_il2cpp_TypeInfo_var)));
@@ -6045,7 +6045,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Log_Exception_m9A0521B91059FC8381E317998
 		Exception_t* L_13 = ___0_e;
 		NullCheck(L_13);
 		String_t* L_14;
-		L_14 = VirtualFuncInvoker0< String_t* >::Invoke(10, L_13);
+		L_14 = VirtualFuncInvoker0< String_t* >::Invoke(8, L_13);
 		NullCheck(L_12);
 		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)L_14);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_15 = L_12;
@@ -7784,7 +7784,7 @@ CATCH_00f1_1:
 				InvalidDataException_t9D62CAAA10DD31CCD9C0F92AA5729A05282F18A1* L_44 = V_14;
 				NullCheck(L_44);
 				String_t* L_45;
-				L_45 = VirtualFuncInvoker0< String_t* >::Invoke(10, L_44);
+				L_45 = VirtualFuncInvoker0< String_t* >::Invoke(8, L_44);
 				String_t* L_46;
 				L_46 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral2B7BE22E0BDEFDC2C0952ADA1F8C4C4A172FE9AF)), L_41, L_43, L_45, NULL);
 				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Log_tDF759B8AED96580E050684099CA186888896D865_il2cpp_TypeInfo_var)));
