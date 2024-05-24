@@ -18,7 +18,7 @@ namespace Main
         public AssetLabelReference hotUpdateDllLabelRef; // 热更DLL标签
         public AssetLabelReference aotMetadataDllLabelRef; // AOT元数据DLL标签
         public AssetReference hotUpdateMainSceneRef;
-        public string sceneName;
+        // public string sceneName;
         
 
         // 热更入口 从这里开始
@@ -125,10 +125,10 @@ namespace Main
             // SceneManager.SetActive(true);
             // RequestSceneChange(SceneName);
             // 加载热更主场景
-            // var scene = await Addressables.LoadSceneAsync(hotUpdateMainSceneRef);
-            // // // 激活场景
-            // await scene.ActivateAsync();
-           await SceneManager.LoadSceneAsync(sceneName);
+            var scene = await Addressables.LoadSceneAsync(hotUpdateMainSceneRef);
+            // 激活场景
+            await scene.ActivateAsync();
+            // await SceneManager.LoadSceneAsync(sceneName);
         }
 
         private async UniTask _wait_for_enter_input()

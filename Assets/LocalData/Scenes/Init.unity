@@ -701,11 +701,10 @@ MonoBehaviour:
   aotMetadataDllLabelRef:
     m_LabelString: aot
   hotUpdateMainSceneRef:
-    m_AssetGUID: 
+    m_AssetGUID: 9f9f0b11d7858f241b72909938b1b025
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  sceneName: OfflineLobby
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
