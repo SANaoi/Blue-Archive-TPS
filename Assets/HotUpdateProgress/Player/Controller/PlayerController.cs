@@ -34,6 +34,13 @@ public class PlayerController : NetworkBehaviour
     // --- Muzzle ---
     public GameObject muzzlePosition;
 
+    // --- UI ---
+    public AmmoUI ammoUI;
+
+    private void Awake()
+    {
+        InitCharacterUI();
+    }
 
     private void Start()
     {
@@ -41,11 +48,11 @@ public class PlayerController : NetworkBehaviour
         animator = GetComponentInChildren<Animator>();
         rb = GetComponentInChildren<Rigidbody>();
         ShootController = GetComponent<PlayerShootController>();
-
+        // 设置animator参数的哈希值
         AnimationData = new PlayerAnimationData();
         AnimationData.InitializeData();
 
-
+        // 添加状态机
         StateMachine = new(this);
         //添加状态类
         StateMachine.AddState((int)PlayerStateEnum.Move, new PlayerState_Move(StateMachine));
@@ -139,9 +146,13 @@ public class PlayerController : NetworkBehaviour
         };
         MainCameraTransform = Camera.main.transform;  
     }
-
-
+    private async void InitCharacterUI()
+    {
+        Transform UIRoot = transform.Find("AmmoUI");
+        await UIManager.Instance.OpenPanelAsync(UIManager.UIConst.AmmoCanvas, UIRoot);
     
+        ammoUI = GetComponentInChildren<AmmoUI>();
+    }
 # endregion
 # region 可复用功能
     public bool isPlayerAim()
@@ -186,8 +197,5 @@ public class PlayerController : NetworkBehaviour
         float targetWeight = isAim == true ? 1f : 0f;
         AimConstraint.weight = Mathf.Lerp(AimConstraint.weight, targetWeight ,  2 * Time.deltaTime);
     }
-
 # endregion
-
-
 }

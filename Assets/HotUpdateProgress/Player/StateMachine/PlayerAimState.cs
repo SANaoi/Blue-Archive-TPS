@@ -176,6 +176,16 @@ public class PlayerAimState_Shoot : PlayerAimState
     {
         if (isShoot && Time.time > (fireRate + lastShoot))
         {
+            if (playerAimStateMachine.playerController.ammoUI.isReload)
+            {
+                playerAimStateMachine.playerController.ammoUI.reloadRefreshUI();
+                return;
+            }
+            else
+            {
+                playerAimStateMachine.playerController.ammoUI.shootRefreshUI();
+            }
+            
             playerAimStateMachine.playerController.animator.Play(playerAimStateMachine.playerController.AnimationData.shootAnimationName, -1, 0);
             
             playerAimStateMachine.playerController.recoilScript.RecoilFire();

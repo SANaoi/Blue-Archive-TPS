@@ -26,7 +26,6 @@ namespace Main
         {
             //在Start中调用执行更新检查的任务
             _check_update().Forget();
-            gameObject.SetActive(true); 
         }
 
         private async UniTask _check_update()
@@ -120,6 +119,8 @@ namespace Main
 
         private async UniTask _enter_hotfix_main_scene()
         {
+            
+            SetGameManager();
             // 等待用户输入
             await _wait_for_enter_input();
             // SceneManager.SetActive(true);
@@ -150,14 +151,11 @@ namespace Main
                     break;
             }
         }
-        public void RequestSceneChange(string newSceneName)
-        {
-            ServerChangeScene(newSceneName);
-        }
 
-        private void ServerChangeScene(string newSceneName)
+        private void SetGameManager()
         {
-            NetworkManager.singleton.ServerChangeScene(newSceneName);
+            GameObject gameManager = new GameObject("GameManager");
+            gameManager.AddComponent<GameManager>();
         }
     }
     
