@@ -14432,7 +14432,7 @@ CATCH_000f:
 		TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_4 = V_1;
 		NullCheck(L_4);
 		int16_t L_5;
-		L_5 = VirtualFuncInvoker0< int16_t >::Invoke(12, L_4);
+		L_5 = VirtualFuncInvoker0< int16_t >::Invoke(18, L_4);
 		TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_6 = V_1;
 		VirtualActionInvoker3< int16_t, String_t*, Exception_t* >::Invoke(14, __this, L_5, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral611C94FC30E43698E7F2C06CC525082A41D50E80)), L_6);
 		IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
@@ -14569,7 +14569,7 @@ CATCH_003c:
 		TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_8 = V_0;
 		NullCheck(L_8);
 		int16_t L_9;
-		L_9 = VirtualFuncInvoker0< int16_t >::Invoke(12, L_8);
+		L_9 = VirtualFuncInvoker0< int16_t >::Invoke(18, L_8);
 		TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_10 = V_0;
 		VirtualActionInvoker3< int16_t, String_t*, Exception_t* >::Invoke(14, __this, L_9, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral611C94FC30E43698E7F2C06CC525082A41D50E80)), L_10);
 		IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
@@ -14656,7 +14656,7 @@ CATCH_0011:
 		TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_6 = V_1;
 		NullCheck(L_6);
 		int16_t L_7;
-		L_7 = VirtualFuncInvoker0< int16_t >::Invoke(12, L_6);
+		L_7 = VirtualFuncInvoker0< int16_t >::Invoke(18, L_6);
 		TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_8 = V_1;
 		VirtualActionInvoker3< int16_t, String_t*, Exception_t* >::Invoke(14, __this, L_7, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralF1639F22E3CED8762511803274702EFBD22AF17F)), L_8);
 		IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));
@@ -14734,7 +14734,7 @@ CATCH_0012:
 		TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_6 = V_0;
 		NullCheck(L_6);
 		int16_t L_7;
-		L_7 = VirtualFuncInvoker0< int16_t >::Invoke(12, L_6);
+		L_7 = VirtualFuncInvoker0< int16_t >::Invoke(18, L_6);
 		TlsFatalAlert_tA4FD5F5119B5992A289CB97C88ACD6E43BCD1CE6* L_8 = V_0;
 		VirtualActionInvoker3< int16_t, String_t*, Exception_t* >::Invoke(14, __this, L_7, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral344D51DD192D0862CE0E9711FD4A3E4B873165CB)), L_8);
 		IL2CPP_RETHROW_MANAGED_EXCEPTION(IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*));

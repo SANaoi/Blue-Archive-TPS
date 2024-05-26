@@ -16,13 +16,16 @@ public class PlayerChatController : NetworkBehaviour
 
         OnMessage += HandleNewMessage;
     }
+    public override void OnStopAuthority()
+    {
+        base.OnStopAuthority();
 
+        OnMessage -= HandleNewMessage;
+    }
     // 只在客户端调用
     [ClientCallback] 
     private void OnDestroy()
     {
-        if (!isOwned) { return;}
-
         OnMessage -= HandleNewMessage;
     }
 

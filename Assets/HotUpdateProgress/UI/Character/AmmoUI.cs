@@ -46,7 +46,6 @@ public class AmmoUI : BasePanel
 
     public void shootRefreshUI()
     {
-        print(currentAmmoClip);
         if (currentAmmoClip == 0)
         { 
             isReload = true;

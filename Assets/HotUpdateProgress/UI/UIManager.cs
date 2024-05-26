@@ -228,6 +228,8 @@ public class UIManager : MonoBehaviour
         }
         if(panelDict.ContainsKey(name))
         {
+            Debug.Log("关闭界面" + name);
+            
             panelDict.Remove(name);
         }
         return true;

@@ -18,7 +18,7 @@ namespace Main
         public AssetLabelReference hotUpdateDllLabelRef; // 热更DLL标签
         public AssetLabelReference aotMetadataDllLabelRef; // AOT元数据DLL标签
         public AssetReference hotUpdateMainSceneRef;
-        // public string sceneName;
+        public AssetReference GameManager;
         
 
         // 热更入口 从这里开始
@@ -120,18 +120,18 @@ namespace Main
         private async UniTask _enter_hotfix_main_scene()
         {
             
-            SetGameManager();
             // 等待用户输入
             await _wait_for_enter_input();
             // SceneManager.SetActive(true);
             // RequestSceneChange(SceneName);
+            
+
             // 加载热更主场景
             var scene = await Addressables.LoadSceneAsync(hotUpdateMainSceneRef);
             // 激活场景
             await scene.ActivateAsync();
             // await SceneManager.LoadSceneAsync(sceneName);
         }
-
         private async UniTask _wait_for_enter_input()
         {
             print("按 空格键 进入主场景");
@@ -152,11 +152,6 @@ namespace Main
             }
         }
 
-        private void SetGameManager()
-        {
-            GameObject gameManager = new GameObject("GameManager");
-            gameManager.AddComponent<GameManager>();
-        }
     }
     
 }

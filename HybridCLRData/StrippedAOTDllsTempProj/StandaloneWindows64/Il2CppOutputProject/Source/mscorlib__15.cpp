@@ -516,6 +516,7 @@ IL2CPP_EXTERN_C RuntimeClass* DoubleU5BU5D_tCC308475BD3B8229DB2582938669EF2F9ECC
 IL2CPP_EXTERN_C RuntimeClass* Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EnvoyTerminatorSink_tB4B09D83D28409B7344C0F5EB67E836A5AE396BA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* FieldInfo_t_il2cpp_TypeInfo_var;
@@ -4026,6 +4027,7 @@ inline void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690 (List_1_tA239
 	((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventArgs__ctor_mC6F9412D03203ADEF854117542C8EBF61624C8C3 (EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3 (Delegate_t* ___0_source, Delegate_t* ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SerializationInfo_GetValueNoThrow_mC2AB5CF14F11B0C67E384D5CEF15C9ADDC754D06 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___0_name, Type_t* ___1_type, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SerializationInfo_GetValue_mE6091C2E906E113455D05E734C86F43B8E1D1034 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___0_name, Type_t* ___1_type, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeSerializationEventArgs__ctor_mBFCBE573C3146AB7CA03BFE30FB14242272BDD35 (SafeSerializationEventArgs_t321DE8654655D1DED43B42CA066C1511AC7B84ED* __this, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___0_streamingContext, const RuntimeMethod* method) ;
@@ -6499,7 +6501,7 @@ IL_0044:
 		MethodBase_t* L_15 = V_1;
 		NullCheck(L_15);
 		bool L_16;
-		L_16 = VirtualFuncInvoker0< bool >::Invoke(25, L_15);
+		L_16 = VirtualFuncInvoker0< bool >::Invoke(26, L_15);
 		if (L_16)
 		{
 			goto IL_005f;
@@ -6533,7 +6535,7 @@ IL_005f:
 		L_22 = CADMethodRef_GetTypes_m78261E68C2E4D2BB45F003A35BE4CDB5EFF0DA53(__this, L_21, NULL);
 		NullCheck(((MethodInfo_t*)CastclassClass((RuntimeObject*)L_20, MethodInfo_t_il2cpp_TypeInfo_var)));
 		MethodInfo_t* L_23;
-		L_23 = VirtualFuncInvoker1< MethodInfo_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(40, ((MethodInfo_t*)CastclassClass((RuntimeObject*)L_20, MethodInfo_t_il2cpp_TypeInfo_var)), L_22);
+		L_23 = VirtualFuncInvoker1< MethodInfo_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(41, ((MethodInfo_t*)CastclassClass((RuntimeObject*)L_20, MethodInfo_t_il2cpp_TypeInfo_var)), L_22);
 		V_1 = L_23;
 	}
 
@@ -6588,7 +6590,7 @@ IL_00ae:
 		MethodInfo_t* L_37 = V_5;
 		NullCheck(L_37);
 		bool L_38;
-		L_38 = VirtualFuncInvoker0< bool >::Invoke(25, L_37);
+		L_38 = VirtualFuncInvoker0< bool >::Invoke(26, L_37);
 		if (!L_38)
 		{
 			goto IL_0150;
@@ -6598,7 +6600,7 @@ IL_00ae:
 		MethodInfo_t* L_39 = V_5;
 		NullCheck(L_39);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_40;
-		L_40 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(26, L_39);
+		L_40 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(27, L_39);
 		NullCheck(L_40);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_41 = __this->___generic_arg_names;
 		NullCheck(L_41);
@@ -6614,7 +6616,7 @@ IL_00ae:
 		L_44 = CADMethodRef_GetTypes_m78261E68C2E4D2BB45F003A35BE4CDB5EFF0DA53(__this, L_43, NULL);
 		NullCheck(L_42);
 		MethodInfo_t* L_45;
-		L_45 = VirtualFuncInvoker1< MethodInfo_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(40, L_42, L_44);
+		L_45 = VirtualFuncInvoker1< MethodInfo_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(41, L_42, L_44);
 		V_1 = L_45;
 		MethodBase_t* L_46 = V_1;
 		NullCheck(L_46);
@@ -6849,7 +6851,7 @@ IL_0068:
 		MethodBase_t* L_25 = V_0;
 		NullCheck(L_25);
 		bool L_26;
-		L_26 = VirtualFuncInvoker0< bool >::Invoke(24, L_25);
+		L_26 = VirtualFuncInvoker0< bool >::Invoke(25, L_25);
 		if (!L_26)
 		{
 			goto IL_00b7;
@@ -6859,7 +6861,7 @@ IL_0068:
 		MethodBase_t* L_27 = V_0;
 		NullCheck(L_27);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_28;
-		L_28 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(26, L_27);
+		L_28 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(27, L_27);
 		V_3 = L_28;
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_29 = V_3;
 		NullCheck(L_29);
@@ -11369,7 +11371,7 @@ IL_01a6:
 		MethodBase_t* L_65 = __this->____methodBase;
 		NullCheck(L_65);
 		bool L_66;
-		L_66 = VirtualFuncInvoker0< bool >::Invoke(24, L_65);
+		L_66 = VirtualFuncInvoker0< bool >::Invoke(25, L_65);
 		if (!L_66)
 		{
 			goto IL_01ef;
@@ -11379,7 +11381,7 @@ IL_01a6:
 		MethodBase_t* L_67 = __this->____methodBase;
 		NullCheck(L_67);
 		bool L_68;
-		L_68 = VirtualFuncInvoker0< bool >::Invoke(27, L_67);
+		L_68 = VirtualFuncInvoker0< bool >::Invoke(28, L_67);
 		if (!L_68)
 		{
 			goto IL_01ef;
@@ -11406,7 +11408,7 @@ IL_01d3:
 		L_72 = MethodCall_get_GenericArguments_m2D34D98D7709E8EB964034C8D28CABCDF18DCE8E(__this, NULL);
 		NullCheck(((MethodInfo_t*)CastclassClass((RuntimeObject*)L_71, MethodInfo_t_il2cpp_TypeInfo_var)));
 		MethodInfo_t* L_73;
-		L_73 = VirtualFuncInvoker1< MethodInfo_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(40, ((MethodInfo_t*)CastclassClass((RuntimeObject*)L_71, MethodInfo_t_il2cpp_TypeInfo_var)), L_72);
+		L_73 = VirtualFuncInvoker1< MethodInfo_t*, TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(41, ((MethodInfo_t*)CastclassClass((RuntimeObject*)L_71, MethodInfo_t_il2cpp_TypeInfo_var)), L_72);
 		__this->____methodBase = L_73;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____methodBase), (void*)L_73);
 	}
@@ -11670,7 +11672,7 @@ IL_000f:
 		L_2 = MethodCall_get_MethodBase_mAD42B1090BEA6EC7127CF6231C03812507C8FB1A(__this, NULL);
 		NullCheck(L_2);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_3;
-		L_3 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(26, L_2);
+		L_3 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(27, L_2);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_4 = L_3;
 		V_0 = L_4;
 		__this->____genericArguments = L_4;
@@ -14765,7 +14767,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoMethodMessage_InitMessage_m45C1739BE
 		RuntimeMethodInfo_t851B32EA83B3E3A7B4D285162D1BB87AD389E7E6* L_1 = ___0_method;
 		NullCheck(L_1);
 		ParameterInfoU5BU5D_t86995AB4A1693393FE29B058CC3FD727DF0B984C* L_2;
-		L_2 = VirtualFuncInvoker0< ParameterInfoU5BU5D_t86995AB4A1693393FE29B058CC3FD727DF0B984C* >::Invoke(32, L_1);
+		L_2 = VirtualFuncInvoker0< ParameterInfoU5BU5D_t86995AB4A1693393FE29B058CC3FD727DF0B984C* >::Invoke(33, L_1);
 		V_0 = L_2;
 		ParameterInfoU5BU5D_t86995AB4A1693393FE29B058CC3FD727DF0B984C* L_3 = V_0;
 		NullCheck(L_3);
@@ -18311,7 +18313,7 @@ IL_000c_1:
 				RuntimeObject* L_6 = ___0_obj;
 				NullCheck(L_3);
 				Delegate_t* L_7;
-				L_7 = VirtualFuncInvoker2< Delegate_t*, Type_t*, RuntimeObject* >::Invoke(41, L_3, L_5, L_6);
+				L_7 = VirtualFuncInvoker2< Delegate_t*, Type_t*, RuntimeObject* >::Invoke(43, L_3, L_5, L_6);
 				V_1 = ((SerializationEventHandler_t0A09DB90E1E5E0B2CCCB82D3380E02F4ACE8995F*)CastclassSealed((RuntimeObject*)L_7, SerializationEventHandler_t0A09DB90E1E5E0B2CCCB82D3380E02F4ACE8995F_il2cpp_TypeInfo_var));
 				SerializationEventHandler_t0A09DB90E1E5E0B2CCCB82D3380E02F4ACE8995F* L_8 = ___1_handler;
 				SerializationEventHandler_t0A09DB90E1E5E0B2CCCB82D3380E02F4ACE8995F* L_9 = V_1;
@@ -26029,6 +26031,90 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SafeSerializationEventArgs_get
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeSerializationManager_add_SerializeObjectState_m874472664C532C860360D1BF9FA1D6D6BF096231 (SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* __this, EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* V_0 = NULL;
+	EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* V_1 = NULL;
+	EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* V_2 = NULL;
+	{
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_0 = __this->___SerializeObjectState;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_1 = V_0;
+		V_1 = L_1;
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_2 = V_1;
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		V_2 = ((EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A*)Castclass((RuntimeObject*)L_4, EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A_il2cpp_TypeInfo_var));
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A** L_5 = (EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A**)(&__this->___SerializeObjectState);
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_6 = V_2;
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_7 = V_1;
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_8;
+		L_8 = InterlockedCompareExchangeImpl<EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_9 = V_0;
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_10 = V_1;
+		if ((!(((RuntimeObject*)(EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A*)L_9) == ((RuntimeObject*)(EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeSerializationManager_remove_SerializeObjectState_mA1E12A7E0483052829D29BE922460871017DB509 (SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* __this, EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* ___0_value, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* V_0 = NULL;
+	EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* V_1 = NULL;
+	EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* V_2 = NULL;
+	{
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_0 = __this->___SerializeObjectState;
+		V_0 = L_0;
+	}
+
+IL_0007:
+	{
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_1 = V_0;
+		V_1 = L_1;
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_2 = V_1;
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_3 = ___0_value;
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		V_2 = ((EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A*)Castclass((RuntimeObject*)L_4, EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A_il2cpp_TypeInfo_var));
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A** L_5 = (EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A**)(&__this->___SerializeObjectState);
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_6 = V_2;
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_7 = V_1;
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_8;
+		L_8 = InterlockedCompareExchangeImpl<EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A*>(L_5, L_6, L_7);
+		V_0 = L_8;
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_9 = V_0;
+		EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A* L_10 = V_1;
+		if ((!(((RuntimeObject*)(EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A*)L_9) == ((RuntimeObject*)(EventHandler_1_tA781EB833573567953C9DFDE08D5E393A8EC458A*)L_10))))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		return;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeSerializationManager__ctor_mA0056A1EB04230A291DE1E28DE3012AFB9D28322 (SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -26394,7 +26480,7 @@ IL_0055:
 		RuntimeConstructorInfo_tB41E49C7CFA74A03CCC986E78ABB0C0BD331A5AE* L_21 = V_2;
 		NullCheck(L_21);
 		bool L_22;
-		L_22 = VirtualFuncInvoker0< bool >::Invoke(31, L_21);
+		L_22 = VirtualFuncInvoker0< bool >::Invoke(32, L_21);
 		if (L_22)
 		{
 			goto IL_0055;

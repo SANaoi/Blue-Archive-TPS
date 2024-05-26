@@ -30180,7 +30180,7 @@ IL_004e:
 		MethodInfo_t* L_17 = V_4;
 		NullCheck(L_17);
 		Type_t* L_18;
-		L_18 = VirtualFuncInvoker0< Type_t* >::Invoke(38, L_17);
+		L_18 = VirtualFuncInvoker0< Type_t* >::Invoke(39, L_17);
 		il2cpp_codegen_runtime_class_init_inline(DiagnosticsExtensions_t2E8E9DE173C53F2794D8E37806A23C31AB26A4BE_il2cpp_TypeInfo_var);
 		String_t* L_19;
 		L_19 = DiagnosticsExtensions_BeautifyType_m1A0350FA9FFB2651E61565CFC80007107813E28B(L_18, (bool)0, NULL);
@@ -30235,7 +30235,7 @@ IL_00a1:
 		MethodBase_t* L_36 = V_3;
 		NullCheck(L_36);
 		bool L_37;
-		L_37 = VirtualFuncInvoker0< bool >::Invoke(24, L_36);
+		L_37 = VirtualFuncInvoker0< bool >::Invoke(25, L_36);
 		if (!L_37)
 		{
 			goto IL_00ff;
@@ -30249,7 +30249,7 @@ IL_00a1:
 		MethodBase_t* L_40 = V_3;
 		NullCheck(L_40);
 		TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* L_41;
-		L_41 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(26, L_40);
+		L_41 = VirtualFuncInvoker0< TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* >::Invoke(27, L_40);
 		V_6 = L_41;
 		V_7 = 0;
 		goto IL_00eb;

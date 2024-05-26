@@ -9,6 +9,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		"Mirror.dll",
 		"System.Core.dll",
 		"System.dll",
+		"UniTask.dll",
 		"Unity.Addressables.dll",
 		"Unity.Animation.Rigging.dll",
 		"Unity.InputSystem.dll",
@@ -22,6 +23,11 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// }} 
 
 	// {{ AOT generic types
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask.<>c<GameManager.<LoadGamePlayer>d__2>
+	// Cysharp.Threading.Tasks.CompilerServices.AsyncUniTask<GameManager.<LoadGamePlayer>d__2>
+	// Cysharp.Threading.Tasks.ITaskPoolNode<object>
+	// Cysharp.Threading.Tasks.UniTaskCompletionSourceCore<Cysharp.Threading.Tasks.AsyncUnit>
+	// DelegateList<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>>
 	// DelegateList<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>>
 	// DelegateList<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
 	// DelegateList<float>
@@ -168,6 +174,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// Mirror.Writer<ushort>
 	// System.Action<UnityEngine.InputSystem.InputAction.CallbackContext>
 	// System.Action<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle,object>
+	// System.Action<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>>
 	// System.Action<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>>
 	// System.Action<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
 	// System.Action<float>
@@ -298,6 +305,8 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Comparison<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
 	// System.Comparison<object>
 	// System.Func<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle,UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>>
+	// System.Func<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
+	// System.Func<int>
 	// System.Func<object,Mirror.AddPlayerMessage>
 	// System.Func<object,Mirror.ChangeOwnerMessage>
 	// System.Func<object,Mirror.CommandMessage>
@@ -353,6 +362,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Func<object,UnityEngine.Quaternion>
 	// System.Func<object,UnityEngine.Ray>
 	// System.Func<object,UnityEngine.Rect>
+	// System.Func<object,UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
 	// System.Func<object,UnityEngine.Vector2>
 	// System.Func<object,UnityEngine.Vector2Int>
 	// System.Func<object,UnityEngine.Vector3>
@@ -373,13 +383,23 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Func<object>
 	// System.Predicate<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
 	// System.Predicate<object>
+	// System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
 	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter<object>
+	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
 	// System.Runtime.CompilerServices.ConfiguredTaskAwaitable<object>
+	// System.Runtime.CompilerServices.TaskAwaiter<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
 	// System.Runtime.CompilerServices.TaskAwaiter<object>
+	// System.Threading.Tasks.ContinuationResultTaskFromResultTask<object,object>
+	// System.Threading.Tasks.ContinuationTaskFromResultTask<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
 	// System.Threading.Tasks.ContinuationTaskFromResultTask<object>
+	// System.Threading.Tasks.Task<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
 	// System.Threading.Tasks.Task<object>
+	// System.Threading.Tasks.TaskCompletionSource<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
 	// System.Threading.Tasks.TaskCompletionSource<object>
+	// System.Threading.Tasks.TaskFactory.<>c__DisplayClass35_0<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
 	// System.Threading.Tasks.TaskFactory.<>c__DisplayClass35_0<object>
+	// System.Threading.Tasks.TaskFactory<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
 	// System.Threading.Tasks.TaskFactory<object>
 	// UnityEngine.AddressableAssets.AddressablesImpl.<>c__DisplayClass79_0<object>
 	// UnityEngine.Animations.Rigging.AnimationJobBinder<UnityEngine.Animations.Rigging.MultiAimConstraintJob,UnityEngine.Animations.Rigging.MultiAimConstraintData>
@@ -391,9 +411,13 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// UnityEngine.InputSystem.InputProcessor<UnityEngine.Vector2>
 	// UnityEngine.InputSystem.InputProcessor<float>
 	// UnityEngine.InputSystem.Utilities.InlinedArray<object>
+	// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase.<>c__DisplayClass60_0<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
 	// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase.<>c__DisplayClass60_0<object>
+	// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase.<>c__DisplayClass61_0<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
 	// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase.<>c__DisplayClass61_0<object>
+	// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
 	// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationBase<object>
+	// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
 	// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>
 	// UnityEngine.ResourceManagement.ChainOperationTypelessDepedency<object>
 	// UnityEngine.ResourceManagement.ResourceManager.CompletedOperation<object>
@@ -404,6 +428,18 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	public void RefMethods()
 	{
 		// object Cinemachine.CinemachineVirtualCamera.GetCinemachineComponent<object>()
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,GameManager.<LoadGamePlayer>d__2>(System.Runtime.CompilerServices.TaskAwaiter<object>&,GameManager.<LoadGamePlayer>d__2&)
+		// System.Void Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder.Start<GameManager.<LoadGamePlayer>d__2>(GameManager.<LoadGamePlayer>d__2&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,UIManager.<OpenPanelAsync>d__14>(System.Runtime.CompilerServices.TaskAwaiter<object>&,UIManager.<OpenPanelAsync>d__14&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<UIManager.<OpenPanelAsync>d__14>(UIManager.<OpenPanelAsync>d__14&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<Cysharp.Threading.Tasks.UniTask.Awaiter,GameManager.<Awake>d__1>(Cysharp.Threading.Tasks.UniTask.Awaiter&,GameManager.<Awake>d__1&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>,UINetworkManager.<StartGame>d__7>(System.Runtime.CompilerServices.TaskAwaiter<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>&,UINetworkManager.<StartGame>d__7&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,PlayerController.<InitCharacterUI>d__29>(System.Runtime.CompilerServices.TaskAwaiter<object>&,PlayerController.<InitCharacterUI>d__29&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<GameManager.<Awake>d__1>(GameManager.<Awake>d__1&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<PlayerController.<InitCharacterUI>d__29>(PlayerController.<InitCharacterUI>d__29&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<UINetworkManager.<StartGame>d__7>(UINetworkManager.<StartGame>d__7&)
+		// System.Threading.Tasks.Task<object> System.Threading.Tasks.Task<object>.ContinueWith<object>(System.Func<System.Threading.Tasks.Task<object>,object>,System.Threading.Tasks.TaskScheduler)
+		// System.Threading.Tasks.Task<object> System.Threading.Tasks.Task<object>.ContinueWith<object>(System.Func<System.Threading.Tasks.Task<object>,object>,System.Threading.Tasks.TaskScheduler,System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions)
 		// System.Void* Unity.Collections.LowLevel.Unsafe.UnsafeUtility.AddressOf<UnityEngine.Vector2>(UnityEngine.Vector2&)
 		// System.Void* Unity.Collections.LowLevel.Unsafe.UnsafeUtility.AddressOf<float>(float&)
 		// int Unity.Collections.LowLevel.Unsafe.UnsafeUtility.SizeOf<UnityEngine.Vector2>()
@@ -414,6 +450,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object> UnityEngine.AddressableAssets.AddressablesImpl.TrackHandle<object>(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>)
 		// object UnityEngine.Component.GetComponent<object>()
 		// object UnityEngine.Component.GetComponentInChildren<object>()
+		// object UnityEngine.Component.GetComponentInParent<object>()
 		// object UnityEngine.GameObject.AddComponent<object>()
 		// object UnityEngine.GameObject.GetComponent<object>()
 		// UnityEngine.Vector2 UnityEngine.InputSystem.InputAction.ReadValue<UnityEngine.Vector2>()
@@ -423,7 +460,9 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// float UnityEngine.InputSystem.InputActionState.ApplyProcessors<float>(int,float,UnityEngine.InputSystem.InputControl<float>)
 		// UnityEngine.Vector2 UnityEngine.InputSystem.InputActionState.ReadValue<UnityEngine.Vector2>(int,int,bool)
 		// float UnityEngine.InputSystem.InputActionState.ReadValue<float>(int,int,bool)
+		// object UnityEngine.Object.FindAnyObjectByType<object>()
 		// object UnityEngine.Object.Instantiate<object>(object)
+		// object UnityEngine.Object.Instantiate<object>(object,UnityEngine.Transform,bool)
 		// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object> UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle.Convert<object>()
 		// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object> UnityEngine.ResourceManagement.ResourceManager.CreateChainOperation<object>(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle,System.Func<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle,UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>>)
 		// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object> UnityEngine.ResourceManagement.ResourceManager.CreateCompletedOperationInternal<object>(object,bool,System.Exception,bool)

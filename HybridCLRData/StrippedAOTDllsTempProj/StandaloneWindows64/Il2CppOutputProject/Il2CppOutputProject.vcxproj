@@ -42,6 +42,10 @@
     <UnityPlayerConfiguration>Master</UnityPlayerConfiguration>
   </PropertyGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Assembly-CSharp-firstpass.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Assembly-CSharp-firstpass__1.cpp">
+    </ClCompile>
     <ClCompile Include="Source\Assembly-CSharp.cpp">
     </ClCompile>
     <ClCompile Include="Source\BouncyCastle.Cryptography.cpp">
@@ -161,6 +165,8 @@
     <ClCompile Include="Source\Cinemachine__3.cpp">
     </ClCompile>
     <ClCompile Include="Source\Cinemachine__4.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\CommandSystem.cpp">
     </ClCompile>
     <ClCompile Include="Source\GenericMethods.cpp">
     </ClCompile>
@@ -383,6 +389,20 @@
     <ClCompile Include="Source\Generics__169.cpp">
     </ClCompile>
     <ClCompile Include="Source\Generics__17.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__170.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__171.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__172.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__173.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__174.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__175.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\Generics__176.cpp">
     </ClCompile>
     <ClCompile Include="Source\Generics__18.cpp">
     </ClCompile>
@@ -672,6 +692,14 @@
     </ClCompile>
     <ClCompile Include="Source\System.Core.cpp">
     </ClCompile>
+    <ClCompile Include="Source\System.Core__1.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\System.Core__2.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\System.Core__3.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\System.Core__4.cpp">
+    </ClCompile>
     <ClCompile Include="Source\System.cpp">
     </ClCompile>
     <ClCompile Include="Source\System.Numerics.cpp">
@@ -854,7 +882,11 @@
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.CoreModule__4.cpp">
     </ClCompile>
+    <ClCompile Include="Source\UnityEngine.CoreModule__5.cpp">
+    </ClCompile>
     <ClCompile Include="Source\UnityEngine.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\UnityEngine.CrashReportingModule.cpp">
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.DirectorModule.cpp">
     </ClCompile>
@@ -873,6 +905,8 @@
     <ClCompile Include="Source\UnityEngine.JSONSerializeModule.cpp">
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.ParticleSystemModule.cpp">
+    </ClCompile>
+    <ClCompile Include="Source\UnityEngine.PerformanceReportingModule.cpp">
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.Physics2DModule.cpp">
     </ClCompile>
@@ -958,11 +992,15 @@
     </ClCompile>
     <ClCompile Include="Source\__Generated.cpp">
     </ClCompile>
+    <ClCompile Include="Source\Assembly-CSharp-firstpass_CodeGen.c">
+    </ClCompile>
     <ClCompile Include="Source\Assembly-CSharp_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\BouncyCastle.Cryptography_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\Cinemachine_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\CommandSystem_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\HybridCLR.Runtime_CodeGen.c">
     </ClCompile>
@@ -1068,6 +1106,8 @@
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.CoreModule_CodeGen.c">
     </ClCompile>
+    <ClCompile Include="Source\UnityEngine.CrashReportingModule_CodeGen.c">
+    </ClCompile>
     <ClCompile Include="Source\UnityEngine.DirectorModule_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.GridModule_CodeGen.c">
@@ -1081,6 +1121,8 @@
     <ClCompile Include="Source\UnityEngine.JSONSerializeModule_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.ParticleSystemModule_CodeGen.c">
+    </ClCompile>
+    <ClCompile Include="Source\UnityEngine.PerformanceReportingModule_CodeGen.c">
     </ClCompile>
     <ClCompile Include="Source\UnityEngine.Physics2DModule_CodeGen.c">
     </ClCompile>

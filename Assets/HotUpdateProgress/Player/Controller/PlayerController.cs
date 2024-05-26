@@ -39,12 +39,13 @@ public class PlayerController : NetworkBehaviour
 
     private void Awake()
     {
-        InitCharacterUI();
     }
 
     private void Start()
     {
+
         if (!isLocalPlayer) { return; }
+        print($"-----------------Start:  {name}-----------------");
         animator = GetComponentInChildren<Animator>();
         rb = GetComponentInChildren<Rigidbody>();
         ShootController = GetComponent<PlayerShootController>();
@@ -75,9 +76,14 @@ public class PlayerController : NetworkBehaviour
             AimConstraint.weight = 1f;
         }
     }
-
+    private void OnEnable()
+    {
+        print($"OnEnable:  {name}");
+        
+    }
     private void OnDisable() 
     {
+        print($"OnDisable:  {name}");
         if (!isLocalPlayer) { return; }
         StateMachine.StateDic.Clear();
         AimStateMachine.StateDic.Clear();
@@ -113,7 +119,7 @@ public class PlayerController : NetworkBehaviour
         PlayerInputAction inputActions = new PlayerInputAction();
         inputActions.Enable();
         playerInputAction = inputActions.Player;
-
+        InitCharacterUI();
     }
 
     public override void OnStopAuthority() 
@@ -122,6 +128,7 @@ public class PlayerController : NetworkBehaviour
         base.OnStartAuthority();
 
         inputActions.Disable();
+
     }
 
     public override void OnStartLocalPlayer()
@@ -146,12 +153,21 @@ public class PlayerController : NetworkBehaviour
         };
         MainCameraTransform = Camera.main.transform;  
     }
+
+    public override void OnStopLocalPlayer()
+    {
+        base.OnStopLocalPlayer();
+        UIManager.Instance.ClosePanel(UIManager.UIConst.AmmoCanvas);
+
+    }
     private async void InitCharacterUI()
     {
         Transform UIRoot = transform.Find("AmmoUI");
         await UIManager.Instance.OpenPanelAsync(UIManager.UIConst.AmmoCanvas, UIRoot);
-    
-        ammoUI = GetComponentInChildren<AmmoUI>();
+        if (ammoUI == null)
+        {
+            ammoUI = GetComponentInChildren<AmmoUI>();    
+        }
     }
 # endregion
 # region 可复用功能

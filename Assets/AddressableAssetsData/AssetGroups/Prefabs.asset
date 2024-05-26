@@ -41,8 +41,8 @@ MonoBehaviour:
     m_SerializedLabels:
     - default
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 33430213c7ee8a04f994a993956b7175
-    m_Address: NetRoomManager
+  - m_GUID: 9fe040b79658f584fb5968e13a7c7c7b
+    m_Address: GameManager
     m_ReadOnly: 0
     m_SerializedLabels:
     - default

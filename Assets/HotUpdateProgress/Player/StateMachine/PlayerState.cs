@@ -317,7 +317,7 @@ public class PlayerState_Move : PlayerMovementState
         }
         else
         {
-            targetSpeedModifier = 4f;
+            targetSpeedModifier = 5f;
         }
         speedModifier = Mathf.Lerp(speedModifier, targetSpeedModifier, 3 * Time.deltaTime);
     }

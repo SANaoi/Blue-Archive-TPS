@@ -13730,7 +13730,7 @@ IL_002e:
 		MethodInfo_t* L_13 = V_2;
 		NullCheck(L_13);
 		Type_t* L_14;
-		L_14 = VirtualFuncInvoker0< Type_t* >::Invoke(38, L_13);
+		L_14 = VirtualFuncInvoker0< Type_t* >::Invoke(39, L_13);
 		return L_14;
 	}
 
