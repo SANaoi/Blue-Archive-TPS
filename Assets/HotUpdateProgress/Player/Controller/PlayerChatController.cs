@@ -46,7 +46,7 @@ public class PlayerChatController : NetworkBehaviour
 
         inputField.text = string.Empty;
     }
-    [Command]
+    [Command(requiresAuthority = false)]
     private void CmdSendMessage(string message)
     {
         RpcHandleMessage($"[{connectionToClient.connectionId}]: {message}");
