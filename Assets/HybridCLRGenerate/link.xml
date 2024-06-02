@@ -66,6 +66,9 @@
     <type fullname="Cysharp.Threading.Tasks.CompilerServices.AsyncUniTaskMethodBuilder" preserve="all" />
     <type fullname="Cysharp.Threading.Tasks.UniTask" preserve="all" />
     <type fullname="Cysharp.Threading.Tasks.UniTask/Awaiter" preserve="all" />
+    <type fullname="Cysharp.Threading.Tasks.EnumeratorAsyncExtensions">
+            <method name="GetAwaiter" />
+    </type>
   </assembly>
   <assembly fullname="Unity.Addressables">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />

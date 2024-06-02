@@ -6,6 +6,8 @@ using kcp2k;
 using Cysharp.Threading.Tasks;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 
 
 public class GameManager : MonoBehaviour
@@ -21,13 +23,11 @@ public class GameManager : MonoBehaviour
         UIManager.AddComponent<UIManager>();
         
         // NetworkManager初始化
-        GameObject NetworkManager = new GameObject("NetworkManager");
-        NetworkManager.AddComponent<KcpTransport>();
-        NetworkManager.AddComponent<NetworkManager>();
-
+        GameObject NetworkManager = await LoadNetworkManager();
         NetworkManager networkManager = NetworkManager.GetComponent<NetworkManager>();
         await LoadGamePlayer(networkManager);
-        networkManager.transport = NetworkManager.GetComponent<KcpTransport>();
+
+        await LoadRoomManagerUI();
 
     }
 
@@ -45,5 +45,27 @@ public class GameManager : MonoBehaviour
             Debug.LogError("GamePlayer加载失败");
         }
     }
-    
+
+    async UniTask LoadRoomManagerUI()
+    {
+        var handle = Addressables.LoadAssetAsync<GameObject>("RoomManagerCanvas");
+        await handle.Task;
+
+        if (handle.Status == AsyncOperationStatus.Succeeded)
+        {
+            Instantiate(handle.Result);
+        }
+    }
+    async Task<GameObject> LoadNetworkManager()
+    {
+        var handle = Addressables.LoadAssetAsync<GameObject>("Network Manager");
+        await handle.Task;
+
+        if (handle.Status == AsyncOperationStatus.Succeeded)
+        {
+            Instantiate(handle.Result);
+            return handle.Result;
+        }
+        return null;
+    }
 }

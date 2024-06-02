@@ -1,4 +1,6 @@
 using System.Collections;
+using System.Net;
+using System.Net.Sockets;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine.UI;
@@ -6,8 +8,9 @@ using Mirror;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
-using UnityEngine.SceneManagement;
 using UnityEngine.ResourceManagement.ResourceProviders;
+using System;
+using System.Linq;
 
 public class UINetworkManager : MonoBehaviour
 {
@@ -20,6 +23,7 @@ public class UINetworkManager : MonoBehaviour
     // 端口UI
     private Transform Port;
     private InputField portInputField;
+    private InputField usernameInputField;
     private Text portText;
     private Transform addressText;
 
@@ -28,12 +32,12 @@ public class UINetworkManager : MonoBehaviour
     private Transform StopClientButton;
     private AsyncOperationHandle<SceneInstance> sceneInstance;
 
+
     void Start()
     {
         manager = FindAnyObjectByType<NetworkManager>();
         InitUI();
         Refresh();
-
     }
 
     void InitUI()
@@ -51,6 +55,7 @@ public class UINetworkManager : MonoBehaviour
 
 
         portInputField = Port.GetComponent<InputField>();
+        usernameInputField = transform.Find("playerName").transform.GetComponent<InputField>();
         portText = transform.Find("Port/InputText").GetComponent<Text>();
         addressText = transform.Find("AddressText");
         addressText.GetComponent<Text>().text = "端口号:";
@@ -78,6 +83,7 @@ public class UINetworkManager : MonoBehaviour
         if (!NetworkClient.isConnected && !NetworkClient.active)
         {
             StartHost.gameObject.SetActive(true);
+            StartClient.gameObject.SetActive(true);
             StopHostButton.gameObject.SetActive(false);
             StopClientButton.gameObject.SetActive(false);
             Port.gameObject.SetActive(true);
@@ -86,6 +92,7 @@ public class UINetworkManager : MonoBehaviour
         else
         {
             StartHost.gameObject.SetActive(false);
+            StartClient.gameObject.SetActive(false);
             StopHostButton.gameObject.SetActive(true);
             StopClientButton.gameObject.SetActive(true);
             Port.gameObject.SetActive(false);
@@ -95,19 +102,20 @@ public class UINetworkManager : MonoBehaviour
 
     #region 按键事件函数
     // 房主退出
-    public async void StopHost()
+    public void StopHost()
     {
-        await Addressables.UnloadSceneAsync(sceneInstance);
+        Addressables.UnloadSceneAsync(sceneInstance);
         manager.StopHost();
 
         Refresh();
     }
     
     // 其他玩家退出游戏
-    public async void StopClient()
+    public void StopClient()
     {
-        await Addressables.UnloadSceneAsync(sceneInstance);
+        Addressables.UnloadSceneAsync(sceneInstance);
         manager.StopClient();
+
         Refresh(); 
 
     }
@@ -119,24 +127,40 @@ public class UINetworkManager : MonoBehaviour
             Debug.LogError("GameSceneRef is not set.");
             return;
         }
-        AsyncOperationHandle<SceneInstance> handle = Addressables.LoadSceneAsync(GameSceneRef, UnityEngine.SceneManagement.LoadSceneMode.Additive);
-        sceneInstance = handle;
-        await handle.Task;
-
-        if (handle.Status == AsyncOperationStatus.Succeeded)
+        
+        if (!NetworkClient.isConnected && !NetworkClient.active)
         {
-            Debug.Log("Scene loaded successfully.");
-            print(NetworkClient.isConnected +"------  "+NetworkClient.active);
-            manager.StartHost();
-            print(NetworkClient.isConnected +"------  "+NetworkClient.active);
 
+            AsyncOperationHandle<SceneInstance> handle = Addressables.LoadSceneAsync(GameSceneRef, UnityEngine.SceneManagement.LoadSceneMode.Additive);
+            sceneInstance = handle;
+            await handle.Task;
+
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+                try
+                {
+                    NetworkManager.singleton.StartHost();
+                }
+                catch
+                {
+                    await Addressables.UnloadSceneAsync(sceneInstance);
+    
+                    Refresh(); 
+                }
+            }
+            else
+            {
+                 Debug.LogError("Failed to load scene.");
+            }
+
+            Refresh();
         }
         else
         {
-             Debug.LogError("Failed to load scene.");
+            print("无法创建房间");
         }
 
-        Refresh();
+        
     }
 
     public async void StartClientButton()
@@ -146,24 +170,30 @@ public class UINetworkManager : MonoBehaviour
             Debug.LogError("GameSceneRef is not set.");
             return;
         }
-        AsyncOperationHandle<SceneInstance> handle = Addressables.LoadSceneAsync(GameSceneRef, UnityEngine.SceneManagement.LoadSceneMode.Additive);
-        sceneInstance = handle;
-        await handle.Task;
-
-        if (handle.Status == AsyncOperationStatus.Succeeded)
+        if (!NetworkClient.isConnected && NetworkClient.active)
         {
-            Debug.Log("Scene loaded successfully.");
-            print(NetworkClient.isConnected +"------  "+NetworkClient.active);
-            manager.StartClient();
-            print(NetworkClient.isConnected +"------  "+NetworkClient.active);
-
+            print("NetworkClient已处于活动状态");
+            return;
         }
         else
         {
-             Debug.LogError("Failed to load scene.");
+
+            AsyncOperationHandle<SceneInstance> handle = Addressables.LoadSceneAsync(GameSceneRef, UnityEngine.SceneManagement.LoadSceneMode.Additive);
+            sceneInstance = handle;
+            await handle.Task;
+
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+                manager.StartClient();
+
+            }
+            else
+            {
+                 Debug.LogError("Failed to load scene.");
+            }
+            Refresh();
         }
 
-        Refresh();
     }
 
     // 输入房间端口

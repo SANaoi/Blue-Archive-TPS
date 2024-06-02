@@ -199,7 +199,65 @@ public class UIManager : MonoBehaviour
         panelDict.Add(UIname, panel);
         return panel;
     }
+    public async Task<BasePanel> OpenPanelAsync(string UIname)
+    {
+        BasePanel panel = null;
+        if (panelDict.TryGetValue(UIname, out panel))
+        {
+            return panel;
+        }
 
+        string path = "";
+        if (!pathDict.TryGetValue(UIname, out path))
+        {
+            Debug.LogError("界面显示错误或未配置路径：" + UIname);
+            return null;
+        }
+
+        GameObject panelPrefab = null;
+        if (!prefabDict.TryGetValue(UIname, out panelPrefab))
+        {
+            var handle = Addressables.LoadAssetAsync<GameObject>(path);
+
+            // 等待加载完成
+            await handle.Task;
+
+            if (handle.Status == AsyncOperationStatus.Succeeded)
+            {
+                panelPrefab = handle.Result;
+                print(panelPrefab.name);
+                prefabDict.Add(UIname, panelPrefab); 
+            }
+            else
+            {
+                Debug.LogError("预制件加载失败：" + UIname);
+                return null;
+            }
+        }
+
+        GameObject panelObject = Instantiate(panelPrefab);
+        panel = panelObject.GetComponent<BasePanel>();
+        panelDict.Add(UIname, panel);
+        return panel;
+    }
+    public BasePanel OpenPanel(string UIname)
+    {
+        OpenPanelAsync(UIname).ContinueWith(task =>
+        {
+            if (task.Result != null)
+            {
+                Debug.Log($"{UIname} 面板已成功生成");
+                return task.Result;
+            }
+            else
+            {
+                Debug.LogError($"{UIname} 面板生成失败");
+                return null;
+            }
+        }, TaskScheduler.FromCurrentSynchronizationContext());
+        return null;
+    }
+    
     public BasePanel OpenPanel(string UIname, Transform UIRoot)
     {
         OpenPanelAsync(UIname, UIRoot).ContinueWith(task =>

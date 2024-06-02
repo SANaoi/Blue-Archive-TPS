@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2481540738214078806}
   - component: {fileID: 811469075300686702}
   - component: {fileID: 4103277569708648676}
-  - component: {fileID: 4163466719913619153}
   m_Layer: 0
   m_Name: Network Manager
   m_TagString: Untagged
@@ -65,7 +64,9 @@ MonoBehaviour:
     type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
-  spawnPrefabs: []
+  spawnPrefabs:
+  - {fileID: 7494228858359995977, guid: 6ae3ddfde8892a84eaed6d8100c447c8, type: 3}
+  - {fileID: 1441415468588490415, guid: 767f8df3c2d37ea4a9c6fbff4de28d15, type: 3}
   exceptionsDisconnect: 1
   snapshotSettings:
     bufferTimeMultiplier: 2
@@ -110,17 +111,3 @@ MonoBehaviour:
   debugLog: 0
   statisticsGUI: 0
   statisticsLog: 0
---- !u!114 &4163466719913619153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1430338893724160356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetX: 0
-  offsetY: 0

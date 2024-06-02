@@ -437,10 +437,8 @@ namespace Mirror
             mode = NetworkManagerMode.ClientOnly;
 
             SetupClient();
-
             // In case this is a headless client...
             ConfigureHeadlessFrameRate();
-
             RegisterClientMessages();
 
             NetworkClient.Connect(networkAddress);

@@ -23,6 +23,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - default
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 15f8bed309ea3bd4c95cf7203936b5be
+    m_Address: RoomManagerCanvas
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - default
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: dbdd65104e386d54d8fd5b7b0fa404d6, type: 2}
   m_SchemaSet:

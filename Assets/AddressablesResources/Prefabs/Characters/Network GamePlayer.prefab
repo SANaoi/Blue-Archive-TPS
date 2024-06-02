@@ -849,6 +849,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07df8d0cb6115cc4b9d0a231e4d66927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  ImpactParticle: {fileID: 4359151404552103371, guid: 6ae3ddfde8892a84eaed6d8100c447c8,
+    type: 3}
+  Trail: {fileID: 4553974021832563537, guid: 767f8df3c2d37ea4a9c6fbff4de28d15, type: 3}
   shootConfig: {fileID: 11400000, guid: 96f579bf704ea7448b49c631518b6c1d, type: 2}
   trailConfig: {fileID: 11400000, guid: 023b0e61eb47b8f4d8819161bee3489e, type: 2}
 --- !u!1 &1031305152984078716

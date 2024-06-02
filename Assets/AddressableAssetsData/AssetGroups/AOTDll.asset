@@ -23,6 +23,12 @@ MonoBehaviour:
     m_SerializedLabels:
     - aot
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4ca8a4e7a3382fb469e5e2a4571b4789
+    m_Address: UniTask.dll
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - aot
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: dbdd65104e386d54d8fd5b7b0fa404d6, type: 2}
   m_SchemaSet:
